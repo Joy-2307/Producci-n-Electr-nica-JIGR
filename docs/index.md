@@ -1,6 +1,6 @@
 # Portafolio Ibero 
 
 Bienvenido 
-Esta es mi **Portafolio** para cursos y proyectos a lo largo de mi Carrera.
+Este es mi **Portafolio** para documentación de aprendizajes y proyectos realizados a lo largo de mi Carrera.
 ---
 
