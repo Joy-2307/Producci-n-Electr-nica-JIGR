@@ -79,9 +79,11 @@ Selecciona la capa Edge.Cuts y utiliza la herramienta depolígono o Rectángulo 
 [ss mostrando el contorno de la placa en Edge.Cuts y una zona de relleno generada]
 
 -Adición de texto en la placa
-Puedes añadir texto identificativo (como tu nombre, fecha o versión del circuito o simplemente añadir etiquetas a las pistas como GND ó V+) directamente sobre la placa utilizando la herramienta de Texto (T). Asegúrate de colocarlo en las capas de serigrafía (F.Silkscreen o B.Silkscreen) para que se imprima o se grave correctamente en el circuito final.
+Puedes añadir texto identificativo (como tu nombre, fecha o versión del circuito o simplemente añadir etiquetas a las pistas como GND ó V+) directamente sobre la placa utilizando la herramienta de Texto (T). Asegúrate de colocarlo en las capas como F.Cu o en una capa de Userx para que se imprima o se grave correctamente en el circuito final.
 
 [ss mostrando texto en la capa de serigrafía de la placa]
+
+-Perforacion de la placa 
 
 -Detector de errores (DRC - Design Rules Check)
 El paso final antes de mandar a fabricar o fresar la tarjeta es verificar que el diseño cumpla con los parámetros físicos de fabricación (distancias mínimas entre pistas, anchos, cortos circuitos, etc.). Abre el Verificador de Reglas de Diseño (DRC) desde la barra superior. Ejecuta la comprobación y asegúrate de solucionar cualquier violación reportada antes de exportar tus archivos de fabricación (Gerber o trazos para CNC).
