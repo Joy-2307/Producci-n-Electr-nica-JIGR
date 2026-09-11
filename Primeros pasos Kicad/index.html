@@ -1,0 +1,996 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Presentacion/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Guía de Inicio Rápido: Primeros pasos con KiCad - Producción Electrónica.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-de-inicio-rapido-primeros-pasos-con-kicad" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Producción Electrónica." class="md-header__button md-logo" aria-label="Producción Electrónica." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Producción Electrónica.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía de Inicio Rápido: Primeros pasos con KiCad
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Producción Electrónica." class="md-nav__button md-logo" aria-label="Producción Electrónica." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Producción Electrónica.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portafolio Ibero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Equipo%20de%20trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipo de Trabajo.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Presentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de mi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Inicio Rápido: Primeros pasos con KiCad
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Inicio Rápido: Primeros pasos con KiCad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-instalacion-y-comprobacion-de-kicad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Instalación y comprobación de KiCad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacion-y-configuracion-de-la-libreria-fab-lab-fablib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Instalación y configuración de la librería Fab Lab (fablib)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Instalación y configuración de la librería Fab Lab (fablib)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-instalar-y-configurar-la-libreria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos para instalar y configurar la librería:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-el-editor-de-esquemas-schematic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. El Editor de Esquemas (Schematic Editor)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. El Editor de Esquemas (Schematic Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insercion-de-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserción de componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uso-de-etiquetas-labels-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso de etiquetas (Labels) y conexiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-de-apoyo-visual-rectangulos-y-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Herramientas de apoyo visual (Rectángulos y Texto)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deteccion-de-errores-erc-electrical-rules-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detección de errores (ERC - Electrical Rules Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-editor-de-placas-pcb-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El Editor de Placas (PCB Editor)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. El Editor de Placas (PCB Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sincronizacion-actualizar-placa-desde-el-esquema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronización: Actualizar placa desde el esquema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capas-principales-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capas principales (Layers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personalizacion-predeterminada-del-ancho-de-pistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personalización predeterminada del ancho de pistas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rutear-pistas-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rutear pistas (Routing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dibujar-el-contorno-y-poligonos-filled-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dibujar el contorno y polígonos (Filled Zones)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adicion-de-texto-en-la-placa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adición de texto en la placa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perforacion-de-la-placa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perforación de la placa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detector-de-errores-drc-design-rules-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detector de errores (DRC - Design Rules Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportacion-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportación de archivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-instalacion-y-comprobacion-de-kicad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Instalación y comprobación de KiCad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacion-y-configuracion-de-la-libreria-fab-lab-fablib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Instalación y configuración de la librería Fab Lab (fablib)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Instalación y configuración de la librería Fab Lab (fablib)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-instalar-y-configurar-la-libreria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos para instalar y configurar la librería:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-el-editor-de-esquemas-schematic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. El Editor de Esquemas (Schematic Editor)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. El Editor de Esquemas (Schematic Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insercion-de-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserción de componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uso-de-etiquetas-labels-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso de etiquetas (Labels) y conexiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-de-apoyo-visual-rectangulos-y-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Herramientas de apoyo visual (Rectángulos y Texto)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deteccion-de-errores-erc-electrical-rules-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detección de errores (ERC - Electrical Rules Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-editor-de-placas-pcb-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El Editor de Placas (PCB Editor)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. El Editor de Placas (PCB Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sincronizacion-actualizar-placa-desde-el-esquema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronización: Actualizar placa desde el esquema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capas-principales-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capas principales (Layers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personalizacion-predeterminada-del-ancho-de-pistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personalización predeterminada del ancho de pistas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rutear-pistas-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rutear pistas (Routing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dibujar-el-contorno-y-poligonos-filled-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dibujar el contorno y polígonos (Filled Zones)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adicion-de-texto-en-la-placa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adición de texto en la placa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perforacion-de-la-placa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perforación de la placa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detector-de-errores-drc-design-rules-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detector de errores (DRC - Design Rules Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportacion-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportación de archivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guia-de-inicio-rapido-primeros-pasos-con-kicad">Guía de Inicio Rápido: Primeros pasos con KiCad</h1>
+<p>Bienvenido a esta guía básica sobre el uso de <strong>KiCad</strong> para el diseño de circuitos impresos (PCB). Aquí encontrarás los conceptos fundamentales y el flujo de trabajo esencial para pasar de un diagrama esquemático hasta el diseño físico de tu tarjeta, incluyendo la incorporación de librerías externas como la de Fab Lab (<code>fablib</code>).</p>
+<hr />
+<h2 id="1-instalacion-y-comprobacion-de-kicad">1. Instalación y comprobación de KiCad</h2>
+<p>Para comenzar, nos dirigimos al sitio oficial de KiCad para descargar e instalar la versión más reciente compatible con tu sistema operativo.</p>
+<blockquote>
+<p>🔗 <a href="https://www.kicad.org/download/">Sitio oficial de descarga de KiCad</a></p>
+</blockquote>
+<hr />
+<h2 id="2-instalacion-y-configuracion-de-la-libreria-fab-lab-fablib">2. Instalación y configuración de la librería Fab Lab (<code>fablib</code>)</h2>
+<p>Para trabajar con los componentes estándar utilizados en entornos de fabricación digital y laboratorios Fab Lab, es necesario integrar la librería <code>fablib</code> en KiCad.</p>
+<h3 id="pasos-para-instalar-y-configurar-la-libreria">Pasos para instalar y configurar la librería:</h3>
+<ol>
+<li>Abre KiCad y dirígete al <strong>Administrador de complementos y contenidos</strong>.</li>
+<li>Desde la pestaña de <strong>Bibliotecas</strong>, busca en la barra de búsqueda <code>FABLIB</code>.</li>
+<li>Una vez encontrada, descárgala y espera a que se complete la instalación.</li>
+<li>Guarda los cambios para que los componentes queden disponibles en tus proyectos.</li>
+<li>Finalmente, cierra y vuelve a abrir el programa para asegurar una correcta integración.</li>
+</ol>
+<p><img alt="Administrador de bibliotecas de símbolos con la librería fablib añadida" src="img/fablib_instalacion.png" /></p>
+<hr />
+<h2 id="3-el-editor-de-esquemas-schematic-editor">3. El Editor de Esquemas (Schematic Editor)</h2>
+<p>El editor de esquemas es el lugar donde defines la lógica de tu circuito electrónico mediante símbolos y conexiones eléctricas, sin preocuparte todavía por la forma física de la placa.</p>
+<h3 id="insercion-de-componentes">Inserción de componentes</h3>
+<p>Para añadir un componente al lienzo de trabajo, utiliza la herramienta de inserción o presiona la tecla <code>A</code>. Se abrirá una ventana de búsqueda donde podrás buscar componentes genéricos o de la librería <code>fablib</code> (como microcontroladores, resistencias, pines, etc.). Haz clic sobre el componente y colócalo en el espacio de trabajo.</p>
+<p><img alt="Diálogo de selección de componentes al presionar la tecla A" src="img/esquematico_agregar_componente.png" /></p>
+<h3 id="uso-de-etiquetas-labels-y-conexiones">Uso de etiquetas (Labels) y conexiones</h3>
+<p>Para conectar componentes distantes sin saturar el diagrama con líneas largas, se utilizan las <strong>etiquetas (Labels)</strong>. Al asignar el mismo nombre de etiqueta a dos nodos diferentes, KiCad entenderá que están conectados eléctricamente.
+* Para agregar una etiqueta, presiona la tecla <code>L</code> y escribe el nombre deseado.
+* Utiliza la herramienta de <strong>cable (<code>W</code>)</strong> para realizar conexiones directas entre pines cercanos.</p>
+<p><img alt="Esquema con cables y etiquetas de red aplicadas" src="img/esquematico_etiquetas.png" /></p>
+<h3 id="herramientas-de-apoyo-visual-rectangulos-y-texto">Herramientas de apoyo visual (Rectángulos y Texto)</h3>
+<p>Para organizar mejor tu diagrama o documentar secciones importantes, puedes utilizar la herramienta de <strong>Rectángulo</strong> y <strong>Gráfico de Texto</strong>. Estas herramientas se encuentran en la barra lateral derecha y sirven exclusivamente con fines estéticos y de documentación visual, sin alterar las conexiones eléctricas.</p>
+<p><img alt="Esquema con cuadros organizadores y texto descriptivo" src="img/esquematico_apoyo_visual.png" /></p>
+<h3 id="deteccion-de-errores-erc-electrical-rules-check">Detección de errores (ERC - Electrical Rules Check)</h3>
+<p>Antes de pasar al diseño de la placa, es fundamental comprobar que el circuito no tenga errores lógicos (como pines de alimentación sin conectar o salidas cruzadas). 
+* Haz clic en el icono del <strong>chequeo de reglas eléctricas (ERC)</strong> en la barra superior (símbolo de un insecto con una marca de verificación).
+* Ejecuta la prueba y revisa la lista de advertencias o errores para corregirlos en el esquemático.</p>
+<p><img alt="Ventana de ejecución del ERC mostrando cero errores" src="img/esquematico_erc.png" /></p>
+<hr />
+<h2 id="4-el-editor-de-placas-pcb-editor">4. El Editor de Placas (PCB Editor)</h2>
+<p>Una vez que el esquema está completo y verificado, se procede al diseño físico de la tarjeta en el <strong>PCB Editor</strong>.</p>
+<h3 id="sincronizacion-actualizar-placa-desde-el-esquema">Sincronización: Actualizar placa desde el esquema</h3>
+<p>Para transferir los componentes y conexiones lógicas del esquemático al editor de placas, haz clic en el botón <strong>"Actualizar PCB desde el esquema"</strong> (o presiona <code>F8</code>). 
+* Es muy importante verificar que no existan errores o conflictos; esto indica que todos los componentes utilizados cuentan con su respectivo símbolo y huella.
+* Este paso colocará los componentes agrupados, listos para ser posicionados en el área de trabajo. En esta etapa, procura evitar cruzar líneas guía innecesarias, ya que estas marcan las rutas de conexión.</p>
+<p><img alt="Botón y ventana de actualización de la PCB" src="img/pcb_actualizar.png" /></p>
+<h3 id="capas-principales-layers">Capas principales (Layers)</h3>
+<p>En el editor de placas trabajas con diferentes capas superpuestas. Las más destacadas son:
+* <strong>F.Cu (Front Copper):</strong> Capa de cobre frontal (pistas superiores).
+* <strong>Edge.Cuts:</strong> Capa de recortes, donde se dibuja el contorno o la silueta física de la tarjeta.</p>
+<p>Puedes alternar entre capas utilizando el panel derecho de selección o mediante atajos rápidos.</p>
+<p><img alt="Panel de gestión de capas en el lado derecho" src="img/pcb_capas.png" /></p>
+<h3 id="personalizacion-predeterminada-del-ancho-de-pistas">Personalización predeterminada del ancho de pistas</h3>
+<p>Puedes configurar previamente los grosores para el trazado de pistas. Como recomendación general, se sugieren <strong>0.4 mm</strong> para las pistas de ruteo y <strong>0.8 mm</strong> para los bordes de corte. 
+* Dirígete a la parte superior izquierda, debajo de la barra de tareas, y en el menú desplegable configura los nuevos valores predeterminados.</p>
+<p><img alt="Ventana de personalización de ancho de pistas" src="img/pcb_ancho_pistas.png" /></p>
+<h3 id="rutear-pistas-routing">Rutear pistas (Routing)</h3>
+<p>El ruteo consiste en trazar las conexiones físicas de cobre entre los pines de los componentes. 
+* Selecciona la herramienta <strong>Ruta de pistas</strong> (o presiona la tecla <code>X</code>).
+* Haz clic en el pin de origen y guía la pista hasta el destino respetando las reglas de diseño y el ancho adecuado. 
+* <strong>Recomendaciones:</strong> Evita dejar pistas con ángulos rectos (90°) y trabaja siempre sobre la capa <code>F.Cu</code>, ya que ahí quedarán grabadas las pistas sobre el cobre.</p>
+<p><img alt="Pistas ruteadas entre diferentes componentes" src="img/pcb_ruteo.png" /></p>
+<blockquote>
+<p><strong>¿Qué hacer si no se puede completar una conexión?</strong> Puedes implementar un puente regresando al esquemático para añadir una resistencia con valor <code>0 ohms</code>, la cuál servirá como puente físico para pasar por encima de otras pistas. Actualiza la placa tras añadirla para importarla al diseño físico.</p>
+</blockquote>
+<p><img alt="Puente con una resistencia de 0 ohms sobre pistas ruteadas" src="img/pcb_puente_resistencia.png" /></p>
+<h3 id="dibujar-el-contorno-y-poligonos-filled-zones">Dibujar el contorno y polígonos (Filled Zones)</h3>
+<ol>
+<li>Selecciona la capa <strong>Edge.Cuts</strong> y utiliza la herramienta de polígono o rectángulo para trazar el contorno de tu placa.</li>
+<li>Para crear planos de tierra o alimentación, utiliza la herramienta <strong>Añadir zona llena</strong> (<code>Ctrl + Shift + Z</code>). Selecciona la capa correspondiente (por ejemplo, <code>GND</code> en <code>B.Cu</code> o <code>F.Cu</code>) y dibuja el perímetro alrededor de tus componentes para rellenar los espacios vacíos de cobre.</li>
+</ol>
+<p><img alt="Contorno de la placa en Edge.Cuts y zona de relleno generada" src="img/pcb_contorno_zonas.png" /></p>
+<h3 id="adicion-de-texto-en-la-placa">Adición de texto en la placa</h3>
+<p>Puedes añadir texto identificativo (nombre, fecha, versión o etiquetas de pistas como <code>GND</code> o <code>V+</code>) directamente sobre la placa utilizando la herramienta de <strong>Texto</strong> (<code>T</code>). Colócalo en capas como <code>F.Cu</code> o en una capa de usuario (<code>User.Drawings</code>) para que se grave o imprima correctamente en el circuito final.</p>
+<p><img alt="Texto en la capa de serigrafía o diseño de la placa" src="img/pcb_texto.png" /></p>
+<h3 id="perforacion-de-la-placa">Perforación de la placa</h3>
+<p>Cuando los componentes requieran perforaciones adicionales:
+1. Emplea una capa de usuario libre (por ejemplo, una capa <code>User</code> que no estés utilizando).
+2. Dibuja un círculo con la herramienta correspondiente en el sitio exacto y asegúrate de asignarle un relleno sólido.
+3. Para ajustar su posición exacta, selecciónalo, presiona la tecla <code>E</code> y modifica los valores de las coordenadas <code>X</code> e <code>Y</code>.
+4. Si necesitas múltiples perforaciones idénticas, selecciona el círculo y presiona la combinación <code>Ctrl + T</code> para generar una matriz, configurando el origen, la orientación y el número de copias necesarias.</p>
+<p><img alt="Ventana para generar matriz y círculo generado" src="img/pcb_perforaciones_matriz.png" /></p>
+<h3 id="detector-de-errores-drc-design-rules-check">Detector de errores (DRC - Design Rules Check)</h3>
+<p>El paso final antes de exportar para fresar o fabricar la tarjeta es verificar que el diseño cumpla con los parámetros físicos (distancias mínimas, anchos y ausencia de cortos circuitos).
+* Abre el <strong>Verificador de Reglas de Diseño (DRC)</strong> desde la barra superior.
+* Ejecuta la comprobación y asegúrate de solucionar cualquier advertencia o error reportado.</p>
+<p><img alt="Ventana del DRC indicando que la placa está lista y sin errores" src="img/pcb_drc.png" /></p>
+<h3 id="exportacion-de-archivos">Exportación de archivos</h3>
+<p>Una vez comprobado que el diseño está libre de errores de geometría o conexiones:
+1. Dirígete al menú <strong>Archivo &gt; Salidas de fabricación &gt; Gerbers</strong> (o selecciona trazados vectoriales).
+2. Selecciona el formato de salida (por ejemplo, <strong>SVG</strong> para procesos de corte y grabado digital).
+3. Marca únicamente las capas donde añadiste pistas, etiquetas, perforaciones y contornos de corte.
+4. Asegúrate de marcar la opción de ajustar la página a la placa y procede a trazar. Los archivos se guardarán directamente en la carpeta de tu proyecto listos para manufactura.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
