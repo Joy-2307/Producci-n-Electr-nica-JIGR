@@ -84,6 +84,7 @@ Puedes añadir texto identificativo (como tu nombre, fecha o versión del circui
 [ss mostrando texto en la capa de serigrafía de la placa]
 
 -Perforacion de la placa 
+Cuando trabajamos con componentes que requieren de perforaciones, debemos usar una capa adicional para marcar las perforaciones, trabajamos en una capa que no usemos, como recomendación usamos una capa de userx que no hayamos usado, usamos la herramienta de circulo y ponemos las perforaciones donde las necesitemos, para mover el circulo y centrar correctamente, seleccionamos el circulo y presionamos la tecla E, y en posición X, Y ajustamos hasta centrar, en caso de querer hacer una matriz porque se requiere de más de una perforación, seleccionamos el primer círculo trazado y usando la combinación crtl+T , podemos crear una matriz 
 
 -Detector de errores (DRC - Design Rules Check)
 El paso final antes de mandar a fabricar o fresar la tarjeta es verificar que el diseño cumpla con los parámetros físicos de fabricación (distancias mínimas entre pistas, anchos, cortos circuitos, etc.). Abre el Verificador de Reglas de Diseño (DRC) desde la barra superior. Ejecuta la comprobación y asegúrate de solucionar cualquier violación reportada antes de exportar tus archivos de fabricación (Gerber o trazos para CNC).
