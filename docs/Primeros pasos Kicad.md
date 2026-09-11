@@ -17,7 +17,7 @@ Abre KiCad y dirígete al administrador de complementos y contenidos, desde la p
 
 ---
 
-2. El Editor de Esquemas (Schematic Editor)
+3. El Editor de Esquemas (Schematic Editor)
 El editor de esquemas es el lugar donde defines la lógica de tu circuito electrónico mediante símbolos y conexiones eléctricas, sin preocuparte todavía por la forma física de la placa.
 
 -Inserción de componentes:
@@ -42,7 +42,7 @@ Antes de pasar al diseño de la placa, es fundamental comprobar que el circuito 
 
 ---
 
-3. El Editor de Placas (PCB Editor)
+4. El Editor de Placas (PCB Editor)
 Una vez que el esquema está completo y verificado, se procede al diseño físico de la tarjeta en el PCB Editor.
 
 -Sincronización: Actualizar placa desde el esquema
