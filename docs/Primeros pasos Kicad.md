@@ -2,6 +2,7 @@ Guía de Inicio Rápido: Primeros pasos con KiCad
 Bienvenido a esta guía básica sobre el uso de KiCad para el diseño de circuitos impresos (PCB). Aquí encontrarás los conceptos fundamentales y el flujo de trabajo esencial para pasar de un diagrama esquemático hasta el diseño físico de tu tarjeta, incluyendo la incorporación de librerías externas como la de Fab Lab (fablib).
 
 1. Instalación y comprobación de la última versión de Kicad, para esto nos vamos al sitio oficial de Kicad donde podemos decidir desde donde descargarlo.
+
 [link de la página oficial de instalación de Kicad]
 
 ---
