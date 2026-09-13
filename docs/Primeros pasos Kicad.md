@@ -91,12 +91,6 @@ El ruteo consiste en trazar las conexiones físicas de cobre entre los pines de 
 
 ![Puente con una resistencia de 0 ohms sobre pistas ruteadas](img/pcb_puente_resistencia.png)
 
-### Dibujar el contorno y polígonos (Filled Zones)
-1. Selecciona la capa **Edge.Cuts** y utiliza la herramienta de polígono o rectángulo para trazar el contorno de tu placa.
-2. Para crear planos de tierra o alimentación, utiliza la herramienta **Añadir zona llena** (`Ctrl + Shift + Z`). Selecciona la capa correspondiente (por ejemplo, `GND` en `B.Cu` o `F.Cu`) y dibuja el perímetro alrededor de tus componentes para rellenar los espacios vacíos de cobre.
-
-![Contorno de la placa en Edge.Cuts y zona de relleno generada](img/pcb_contorno_zonas.png)
-
 ### Adición de texto en la placa
 Puedes añadir texto identificativo (nombre, fecha, versión o etiquetas de pistas como `GND` o `V+`) directamente sobre la placa utilizando la herramienta de **Texto** (`T`). Colócalo en capas como `F.Cu` o en una capa de usuario (`User.Drawings`) para que se grave o imprima correctamente en el circuito final.
 
