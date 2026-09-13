@@ -111,6 +111,33 @@ Cuando los componentes requieran perforaciones adicionales:
 
 ![Ventana para generar matriz y círculo generado](img/pcb_perforaciones_matriz.png)
 
+### Dibujar el contorno y polígonos (Filled Zones)
+1. Selecciona la capa **Edge.Cuts** y utiliza la herramienta de polígono o rectángulo para trazar el contorno de tu placa.
+2. Para crear planos de tierra o alimentación, utiliza la herramienta **Añadir zona llena** (`Ctrl + Shift + Z`). Selecciona la capa correspondiente (por ejemplo, `GND` en `B.Cu` o `F.Cu`) y dibuja el perímetro alrededor de tus componentes para rellenar los espacios vacíos de cobre.
+
+![Contorno de la placa en Edge.Cuts y zona de relleno generada](img/pcb_contorno_zonas.png)
+
+### Añadir zonas rellenas (Filled Zones) con o sin red
+La función de **zonas rellenas** (que puedes activar con el atajo `Ctrl + Shift + Z` o desde la barra lateral derecha) permite rellenar áreas vacías de la placa de cobre. Su funcionamiento principal es crear planos continuos de cobre que sirven comúnmente como planos de tierra (`GND`) o de alimentación (`VCC`), ayudando a reducir interferencias electromagnéticas y facilitando el retorno de corriente.
+
+* **Con red asignada:** Al crear la zona, puedes vincularla a una red eléctrica específica (por ejemplo, `GND`). KiCad conectará automáticamente el relleno a todos los pines que pertenezcan a esa misma red, respetando los espacios de aislamiento configurados.
+* **Sin red (Libre / Aislada):** Si decides no asignarle ninguna red, la zona funcionará como un plano flotante o estético, útil en algunos procesos de fresado para vaciar el exceso de cobre no deseado alrededor de las pistas sin conectarlo eléctricamente a ningún nodo.
+* Es importante asegurarnos de que el primer punto coincida con el último para evitar errores y una vez dibujada la zona y terminada de configurar, debemos presionar la tecla `B` para poder notar los cambios.
+
+![Panel de configuración de zonas rellenas](img/pcb_zona_rellena_panel.png)
+
+---
+
+### Configuración de reglas de diseño para el DRC (Design Rules Check)
+Antes de ejecutar el verificador de reglas, es fundamental configurar los parámetros físicos y de clearances (distancias de aislamiento) que tu método de fabricación soporta (ya sea fresadora CNC o plancha). 
+
+Para modificar estas reglas y los tamaños predeterminados de pistas, debes dirigirte a la barra de menú superior y abrir la configuración de reglas de diseño:
+1. Ve a la barra que se encuentra debajo de la barra de herramientas (la que usamos para modificar el ancho de pista).
+2. Posteriormente dentro de ese menú dirígete al apartado ** Requerimientos **.
+3. Aquí podrás modificar los márgenes o anchos mínimos de pistas (*Track width*), el tamaño de las vías (*Vias*) y las holguras mínimas (*Clearance*), asegurándote de que los valores coincidan con las capacidades técnicas de tu área de trabajo o laboratorio antes de correr el DRC.
+
+![Panel superior y ventana de configuración de reglas de diseño y tamaños de pistas](img/pcb_reglas_drc_config.png)
+
 ### Detector de errores (DRC - Design Rules Check)
 El paso final antes de exportar para fresar o fabricar la tarjeta es verificar que el diseño cumpla con los parámetros físicos (distancias mínimas, anchos y ausencia de cortos circuitos).
 * Abre el **Verificador de Reglas de Diseño (DRC)** desde la barra superior.
@@ -124,3 +151,10 @@ Una vez comprobado que el diseño está libre de errores de geometría o conexio
 2. Selecciona el formato de salida (por ejemplo, **SVG** para procesos de corte y grabado digital).
 3. Marca únicamente las capas donde añadiste pistas, etiquetas, perforaciones y contornos de corte.
 4. Asegúrate de marcar la opción de ajustar la página a la placa y procede a trazar. Los archivos se guardarán directamente en la carpeta de tu proyecto listos para manufactura.
+
+![Menú de opciones del archivo con salidas de fabricación y opción Gerbers](img/pcb_salidas_de_fabricacion.png)
+
+![Menú de Gerbers, modificando el formato de salida](img/pcb_menu_gerbers.png)
+
+
+
