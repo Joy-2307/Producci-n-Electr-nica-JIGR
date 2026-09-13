@@ -21,7 +21,7 @@ Para trabajar con los componentes estándar utilizados en entornos de fabricaci�
 4. Guarda los cambios para que los componentes queden disponibles en tus proyectos.
 5. Finalmente, cierra y vuelve a abrir el programa para asegurar una correcta integración.
 
-<img src="../recursos/imgs/fablib_instalacion.jpg" alt="Administrador de bibliotecas de símbolos con la librería fablib añadida" width="200">
+<img src="../recursos/imgs/fablib_instalacion.png" alt="Administrador de bibliotecas de símbolos con la librería fablib añadida" width="200">
 
 ---
 
@@ -151,7 +151,7 @@ Una vez comprobado que el diseño está libre de errores de geometría o conexio
 
 <img src="../recursos/imgs/pcb_salidas_de_fabricacion.jpg" alt="Menú de opciones del archivo con salidas de fabricación y opción Gerbers" width="200">
 
-<img src="../recursos/imgs/pcb_menu_gerbers.jpg" alt="Menú de Gerbers, modificando el formato de salida" width="200">
+<img src="../recursos/imgs/Captura de pantalla 2026-09-12 232851.png" alt="Menú de Gerbers, modificando el formato de salida" width="200">
 
 
 
