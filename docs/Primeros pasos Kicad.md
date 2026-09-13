@@ -3,6 +3,13 @@
 Bienvenido a esta guía básica sobre el uso de **KiCad** para el diseño de circuitos impresos (PCB). Aquí encontrarás los conceptos fundamentales y el flujo de trabajo esencial para pasar de un diagrama esquemático hasta el diseño físico de tu tarjeta, incluyendo la incorporación de librerías externas como la de Fab Lab (`fablib`).
 
 ---
+## Contenido
+- [1. Instalación y comprobación de KiCad](#1-instalación-y-comprobación-de-kicad)
+- [2. Instalación y configuración de la librería Fab Lab (fablib)](#2-instalación-y-configuración-de-la-librería-fablib-fablib)
+- [3. El Editor de Esquemas (Schematic Editor)](#3-el-editor-de-esquemas-schematic-editor)
+- [4. El Editor de Placas (PCB Editor)](#4-el-editor-de-placas-pcb-editor)
+- 
+---
 
 ## 1. Instalación y comprobación de KiCad
 Para comenzar, nos dirigimos al sitio oficial de KiCad para descargar e instalar la versión más reciente compatible con tu sistema operativo.
