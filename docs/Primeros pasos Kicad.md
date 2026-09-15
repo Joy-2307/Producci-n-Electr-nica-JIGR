@@ -18,6 +18,12 @@ Para comenzar, nos dirigimos al sitio oficial de KiCad para descargar e instalar
 > 🔗 [Sitio oficial de descarga de KiCad](https://www.kicad.org/download/)
 
 ---
+### Vista General del Proyecto en KiCad
+Esta vista muestra el entorno de trabajo general y el gestor de proyectos de KiCad, donde se vinculan tanto el esquemático como la placa PCB y las librerías externas utilizadas.
+
+<img src="../recursos/imgs/kicad_pantalla_completa_general.png" alt="Vista general de KiCad a pantalla completa" width="800">
+
+---
 
 ## 2. Instalación y configuración de la librería Fab Lab (`fablib`)
 Para trabajar con los componentes estándar utilizados en entornos de fabricación digital y laboratorios Fab Lab, es necesario integrar la librería `fablib` en KiCad.
@@ -35,6 +41,13 @@ Para trabajar con los componentes estándar utilizados en entornos de fabricaci�
 
 ## 3. El Editor de Esquemas (Schematic Editor)
 El editor de esquemas es el lugar donde defines la lógica de tu circuito electrónico mediante símbolos y conexiones eléctricas, sin preocuparte todavía por la forma física de la placa.
+
+### Vista del Diagrama Esquemático Completo
+Aquí se aprecia el circuito lógico completo, mostrando la distribución de los componentes de la librería `fablib`, las conexiones mediante etiquetas (*labels*) y los bloques organizados para mantener un diseño limpio y estructurado.
+
+<img src="../recursos/imgs/esquematico_pantalla_completa.png" alt="Diagrama esquemático completo a pantalla completa" width="800">
+
+---
 
 ### Inserción de componentes
 Para añadir un componente al lienzo de trabajo, utiliza la herramienta de inserción o presiona la tecla `A`. Se abrirá una ventana de búsqueda donde podrás buscar componentes genéricos o de la librería `fablib` (como microcontroladores, resistencias, pines, etc.). Haz clic sobre el componente y colócalo en el espacio de trabajo.
@@ -64,6 +77,11 @@ Antes de pasar al diseño de la placa, es fundamental comprobar que el circuito 
 
 ## 4. El Editor de Placas (PCB Editor)
 Una vez que el esquema está completo y verificado, se procede al diseño físico de la tarjeta en el **PCB Editor**.
+
+### Vista del Editor de Placas (PCB Editor) a Pantalla Completa
+En esta sección se visualiza el diseño físico final de la tarjeta de circuito impreso, integrando el ruteo de pistas en la capa frontal (`F.Cu`), el contorno definido en `Edge.Cuts`, las zonas rellenas y la ausencia de errores tras la verificación del DRC.
+
+<img src="../recursos/imgs/pcb_pantalla_completa.png" alt="Editor de placas PCB completo a pantalla completa" width="800">
 
 ### Sincronización: Actualizar placa desde el esquema
 Para transferir los componentes y conexiones lógicas del esquemático al editor de placas, haz clic en el botón **"Actualizar PCB desde el esquema"** (o presiona `F8`). 
