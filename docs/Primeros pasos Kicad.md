@@ -32,10 +32,9 @@ En esta sección encontraremos una lista de **espejos de descarga geográficos**
 <img src="../recursos/imgs/kicad_espejos_descarga.png" alt="Panel de espejos de descarga para Windows clasificados por regiones" width="600">
 ---
 ### Vista General del Proyecto en KiCad
-Esta vista muestra el entorno de trabajo general y el gestor de proyectos de KiCad, donde se vinculan tanto el esquemático como la placa PCB y las librerías externas utilizadas.
+En esta vista se muestra el gestor principal del proyecto, desde el cual se administran y vinculan todos los archivos fuente (esquemático, diseño de placa, archivos vectoriales SVG e historial), además de dar acceso directo a las herramientas integradas como el editor de esquemas, editor de placas y visores de fabricación.
 
 <img src="../recursos/imgs/kicad_pantalla_completa_general.png" alt="Vista general de KiCad a pantalla completa" width="800">
-
 ---
 
 ## 2. Instalación y configuración de la librería Fab Lab (`fablib`)
@@ -56,7 +55,7 @@ Para trabajar con los componentes estándar utilizados en entornos de fabricaci�
 El editor de esquemas es el lugar donde defines la lógica de tu circuito electrónico mediante símbolos y conexiones eléctricas, sin preocuparte todavía por la forma física de la placa.
 
 ### Vista del Diagrama Esquemático Completo
-Aquí se aprecia el circuito lógico completo, mostrando la distribución de los componentes de la librería `fablib`, las conexiones mediante etiquetas (*labels*) y los bloques organizados para mantener un diseño limpio y estructurado.
+Aquí se visualiza el circuito lógico completo del proyecto, estructurado en secciones claras como los bloques de **Entradas y Salidas** y el bloque de **Botones**, utilizando los componentes de la librería `fablib`, etiquetas de red (*labels*) y conexiones eléctricas verificadas.
 
 <img src="../recursos/imgs/esquematico_pantalla_completa.png" alt="Diagrama esquemático completo a pantalla completa" width="800">
 
@@ -91,8 +90,8 @@ Antes de pasar al diseño de la placa, es fundamental comprobar que el circuito 
 ## 4. El Editor de Placas (PCB Editor)
 Una vez que el esquema está completo y verificado, se procede al diseño físico de la tarjeta en el **PCB Editor**.
 
-### Vista del Editor de Placas (PCB Editor) a Pantalla Completa
-En esta sección se visualiza el diseño físico final de la tarjeta de circuito impreso, integrando el ruteo de pistas en la capa frontal (`F.Cu`), el contorno definido en `Edge.Cuts`, las zonas rellenas y la ausencia de errores tras la verificación del DRC.
+### Vista del Editor de Placas (PCB Editor)
+Esta vista de pantalla completa muestra el diseño físico final de la tarjeta de circuito impreso con una singular **geometría en forma de corazón**, evidenciando el ruteo completo de pistas sobre la capa frontal de cobre (`F.Cu`), el contorno definido en `Edge.Cuts`, las zonas rellenas y la distribución óptima de los componentes táctiles y de conexión.
 
 <img src="../recursos/imgs/pcb_pantalla_completa.png" alt="Editor de placas PCB completo a pantalla completa" width="800">
 
@@ -190,5 +189,4 @@ Una vez comprobado que el diseño está libre de errores de geometría o conexio
 <img src="../recursos/imgs/pcb_salidas_de_fabricacion.png" alt="Menú de opciones del archivo con salidas de fabricación y opción Gerbers" width="600">
 
 <img src="../recursos/imgs/Captura de pantalla 2026-09-12 232851.png" alt="Menú de Gerbers, modificando el formato de salida" width="600">
-
 
