@@ -90,11 +90,6 @@ Antes de pasar al diseño de la placa, es fundamental comprobar que el circuito 
 ## 4. El Editor de Placas (PCB Editor)
 Una vez que el esquema está completo y verificado, se procede al diseño físico de la tarjeta en el **PCB Editor**.
 
-### Vista del Editor de Placas (PCB Editor)
-Esta vista de pantalla completa muestra el diseño físico final de la tarjeta de circuito impreso con una singular **geometría en forma de corazón**, evidenciando el ruteo completo de pistas sobre la capa frontal de cobre (`F.Cu`), el contorno definido en `Edge.Cuts`, las zonas rellenas y la distribución óptima de los componentes táctiles y de conexión.
-
-<img src="../recursos/imgs/pcb_pantalla_completa.png" alt="Editor de placas PCB completo a pantalla completa" width="800">
-
 ### Sincronización: Actualizar placa desde el esquema
 Para transferir los componentes y conexiones lógicas del esquemático al editor de placas, haz clic en el botón **"Actualizar PCB desde el esquema"** (o presiona `F8`). 
 * Es muy importante verificar que no existan errores o conflictos; esto indica que todos los componentes utilizados cuentan con su respectivo símbolo y huella.
@@ -103,6 +98,11 @@ Para transferir los componentes y conexiones lógicas del esquemático al editor
 <img src="../recursos/imgs/pcb_actualizar.png" alt="Botón de la PCB" width="600">
 
 <img src="../recursos/imgs/pcb_actualizar1.png" alt="Ventana de actualización de la PCB" width="600">
+
+### Vista del Editor de Placas (PCB Editor)
+Esta vista de pantalla completa muestra el diseño físico final de la tarjeta de circuito impreso con una singular **geometría en forma de corazón**, evidenciando el ruteo completo de pistas sobre la capa frontal de cobre (`F.Cu`), el contorno definido en `Edge.Cuts`, las zonas rellenas y la distribución óptima de los componentes táctiles y de conexión.
+
+<img src="../recursos/imgs/pcb_pantalla_completa.png" alt="Editor de placas PCB completo a pantalla completa" width="800">
 
 ### Capas principales (Layers)
 En el editor de placas trabajas con diferentes capas superpuestas. Las más destacadas son:
