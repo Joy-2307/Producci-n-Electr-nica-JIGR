@@ -13,10 +13,23 @@ Bienvenido a esta guía básica sobre el uso de **KiCad** para el diseño de cir
 ---
 
 ## 1. Instalación y comprobación de KiCad
-Para comenzar, nos dirigimos al sitio oficial de KiCad para descargar e instalar la versión más reciente compatible con tu sistema operativo.
+Para comenzar con el desarrollo de nuestros circuitos, debemos dirigirnos al sitio oficial de KiCad para descargar e instalar la versión más reciente compatible con nuestro equipo.
 
 > 🔗 [Sitio oficial de descarga de KiCad](https://www.kicad.org/download/)
 
+Una vez dentro de la plataforma de descargas, el proceso se divide en dos etapas principales para asegurar que obtengamos el paquete correcto:
+
+### Selección del Sistema Operativo
+En la primera vista del sitio web, se nos presenta un panel interactivo donde debemos elegir la plataforma sobre la cual trabajaremos. KiCad ofrece soporte oficial para los sistemas operativos más populares del mercado, permitiendo seleccionar entre **Windows**, **macOS**, **Linux** e incluso contenedores mediante **Docker** para entornos avanzados de desarrollo o servidores.
+
+<img src="../recursos/imgs/kicad_seleccion_so.png" alt="Pantalla de selección de sistema operativo en el sitio oficial de KiCad" width="600">
+
+### Selección de Espejos de Descarga (Mirrors) y Regiones
+Al hacer clic en nuestro sistema operativo (por ejemplo, Windows), el sitio nos redirige a una sección específica de descargas que muestra la versión estable actual (como la versión 10.0.6 compatible con arquitecturas de 64 bits y ARM). 
+
+En esta sección encontraremos una lista de **espejos de descarga geográficos** divididos por regiones del mundo (como Asia, Australia, Europa y Norteamérica), los cuales son servidores alojados por distintas universidades, fundaciones y empresas aliadas (por ejemplo, CERN, AlibabaCloud, GitHub, entre otros). Esto nos permite elegir el servidor más cercano a nuestra ubicación geográfica para garantizar una descarga rápida, segura y sin interrupciones del instalador oficial.
+
+<img src="../recursos/imgs/kicad_espejos_descarga.png" alt="Panel de espejos de descarga para Windows clasificados por regiones" width="600">
 ---
 ### Vista General del Proyecto en KiCad
 Esta vista muestra el entorno de trabajo general y el gestor de proyectos de KiCad, donde se vinculan tanto el esquemático como la placa PCB y las librerías externas utilizadas.
