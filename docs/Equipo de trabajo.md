@@ -22,7 +22,7 @@
 ## Gerardo Esquivel De Luna
 ---
 
-<img src="../recursos/imgs/gera.jpg" alt="Foto_Gera" width="200">
+<img src="../recursos/imgs/gera.jpeg" alt="Foto_Gera" width="200">
   
 ---
 
