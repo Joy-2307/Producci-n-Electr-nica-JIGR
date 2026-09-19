@@ -17,7 +17,7 @@
 - **Edad:** 19
 - **Cumpleaños:** 23 Julio
 - **Contacto:** 203563@iberopuebla.mx
-- ** [LinkedIn](https://www.linkedin.com/in/josé-ismael-guerrero-romàn-80b4b9438?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
+- [LinkedIn](https://www.linkedin.com/in/josé-ismael-guerrero-romàn-80b4b9438?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
 
 ---
 ## Gerardo Esquivel De Luna
