@@ -1,4 +1,4 @@
-# Documentación de Producción Electrónica: Procesamiento de SVG a RML con Mods
+# Procesamiento de SVG a RML con Mods
 
 Este apartado constituye una continuación directa de nuestra documentación de diseño en KiCad. Una vez que hemos exportado los archivos necesarios de nuestras placas, el siguiente paso crítico en el proceso de fabricación digital con la fresadora Roland MonoFab (SRM-20) es transformar nuestros vectores en trayectorias de maquinado legibles (archivos `.rml`) utilizando la herramienta web **Mods**.
 
