@@ -106,7 +106,7 @@ Justo al lado derecho del módulo de entrada, se despliegan distintas vistas e i
 Desplazándonos hacia la esquina inferior izquierda, configuraremos las bases métricas y operativas del trabajo:
 * **Conversión de unidades:** Asegúrate de cambiar las medidas de pulgadas (`in`) a milímetros (`mm`) para trabajar bajo el sistema métrico estándar.
 * **Herramientas predefinidas:** En este apartado podemos seleccionar algunas configuraciones y geometrías de corte ya preestablecidas, dependiendo de si realizaremos un proceso de contorno, trazado de pistas o perforación.
-* **NOTA: En caso de que se encuentre la herramienta con la que vamos a trabajar, podemos seleccionamos la que más se aproxime a las medidas de nuestra herramienta y que realice la misma función, posteriormente prodremos definir bien el tamaño en la siguiente sección** 
+* **NOTA:** En caso de que se encuentre la herramienta con la que vamos a trabajar, podemos seleccionamos la que más se aproxime a las medidas de nuestra herramienta y que realice la misma función, posteriormente prodremos definir bien el tamaño en la siguiente sección.
 
 <p align="center">
   <img src="../recursos/imgs/mods_esquina_inferior_izquierda.png" alt="Configuración de unidades en mm y herramientas predefinidas en la esquina inferior izquierda" width="600"><br>
