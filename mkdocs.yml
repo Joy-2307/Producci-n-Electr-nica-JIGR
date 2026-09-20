@@ -31,8 +31,8 @@ theme:
     logo: material/chip
   palette:
       - scheme: slate
-        primary: indigo
-        accent: cyan
+        primary: black
+        accent: teal
   features:
     - content.code.copy
     - content.tooltips
