@@ -16,7 +16,7 @@ Bienvenido a esta guía básica sobre el uso de **KiCad** para el diseño de cir
 ## 1. Instalación y comprobación de KiCad
 Para comenzar con el desarrollo de nuestros circuitos, debemos dirigirnos al sitio oficial de KiCad para descargar e instalar la versión más reciente compatible con nuestro equipo.
 
-> 🔗 [Sitio oficial de descarga de KiCad](https://www.kicad.org/download/)
+> 🔗 [Sitio oficial de descarga de KiCad](https://www.kicad.org/download/){: target="_blank" }
 
 Una vez dentro de la plataforma de descargas, el proceso se divide en dos etapas principales para asegurar que obtengamos el paquete correcto:
 
