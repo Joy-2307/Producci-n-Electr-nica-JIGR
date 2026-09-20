@@ -62,7 +62,8 @@ Al cargar el programa, verás un conjunto interconectado de bloques o nodos que 
 * 🔵 **Azul:** Módulo de entrada de archivos y visualización gráfica.
 * 🟢 **Verde:** Configuración de unidades y selección de herramientas de corte.
 * 🟠 **Naranja:** Parámetros de la herramienta, diámetros, número de pasadas y cálculo de trayectorias.
-* 🟣 **Morado:** Control de origen, velocidades de avance y guardado final del archivo RML.
+* 🟣 **Morado:** Control de origen, velocidades de avance
+* 🔴 **Rojo:** Guardado final del archivo RML.
 
 <p align="center">
   <img src="../recursos/imgs/mods_vista_general_nodos.png" alt="Vista general de nodos en Mods con secciones resaltadas por colores" width="800"><br>
@@ -152,7 +153,7 @@ Finalmente, desplazándonos hacia la sección derecha de los nodos, controlaremo
 
 Para llevar a cabo la manufactura exitosa de nuestra placa en la Roland MonoFab (SRM-20) utilizando Mods, debemos seguir un orden estricto de procesos. 
 
-⚠️ **Regla fundamental entre procesos:** Es **indispensable** dar un *refresh* (recargar) a la página web de Mods al finalizar cada etapa. Esto nos garantiza limpiar la memoria caché de los nodos y evitar conflictos al cargar un nuevo archivo vectorial (SVG) con configuraciones de herramientas distintas.
+**Regla fundamental entre procesos:** Es **indispensable** dar un *refresh* (recargar) a la página web de Mods al finalizar cada etapa. Esto nos garantiza limpiar la memoria caché de los nodos y evitar conflictos al cargar un nuevo archivo vectorial (SVG) con configuraciones de herramientas distintas.
 
 ### 4.1. Primera Etapa: Contornos
 Comenzaremos procesando el archivo vectorial correspondiente al contorno exterior de nuestra placa.
