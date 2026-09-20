@@ -62,7 +62,7 @@ Al cargar el programa, verás un conjunto interconectado de bloques o nodos que 
 * 🔵 **Azul:** Módulo de entrada de archivos y visualización gráfica.
 * 🟢 **Verde:** Configuración de unidades y selección de herramientas de corte.
 * 🟠 **Naranja:** Parámetros de la herramienta, diámetros, número de pasadas y cálculo de trayectorias.
-* 🟣 **Morado:** Control de origen, velocidades de avance
+* 🟣 **Morado:** Control de origen, velocidades de avance.
 * 🔴 **Rojo:** Guardado final del archivo RML.
 
 <p align="center">
@@ -106,7 +106,7 @@ Justo al lado derecho del módulo de entrada, se despliegan distintas vistas e i
 Desplazándonos hacia la esquina inferior izquierda, configuraremos las bases métricas y operativas del trabajo:
 * **Conversión de unidades:** Asegúrate de cambiar las medidas de pulgadas (`in`) a milímetros (`mm`) para trabajar bajo el sistema métrico estándar.
 * **Herramientas predefinidas:** En este apartado podemos seleccionar algunas configuraciones y geometrías de corte ya preestablecidas, dependiendo de si realizaremos un proceso de contorno, trazado de pistas o perforación.
-* **NOTA:** En caso de que se encuentre la herramienta con la que vamos a trabajar, podemos seleccionamos la que más se aproxime a las medidas de nuestra herramienta y que realice la misma función, posteriormente prodremos definir bien el tamaño en la siguiente sección.
+* **NOTA:** En caso de que no se encuentre exactamente la herramienta con la que vamos a trabajar, podemos seleccionar la que más se aproxime a las medidas de nuestra herramienta y que realice la misma función; posteriormente podremos definir bien el tamaño en la siguiente sección.
 
 <p align="center">
   <img src="../recursos/imgs/mods_esquina_inferior_izquierda.png" alt="Configuración de unidades en mm y herramientas predefinidas en la esquina inferior izquierda" width="600"><br>
@@ -154,7 +154,7 @@ Finalmente, desplazándonos hacia la sección derecha de los nodos, controlaremo
 
 Para llevar a cabo la manufactura exitosa de nuestra placa en la Roland MonoFab (SRM-20) utilizando Mods, debemos seguir un orden estricto de procesos. 
 
-**Regla fundamental entre procesos:** Es **indispensable** dar un *refresh* (recargar) a la página web de Mods al finalizar cada etapa. Esto nos garantiza limpiar la memoria caché de los nodos y evitar conflictos al cargar un nuevo archivo vectorial (SVG) con configuraciones de herramientas distintas.
+⚠️ **Regla fundamental entre procesos:** Es **indispensable** dar un *refresh* (recargar) a la página web de Mods al finalizar cada etapa. Esto nos garantiza limpiar la memoria caché de los nodos y evitar conflictos al cargar un nuevo archivo vectorial (SVG) con configuraciones de herramientas distintas.
 
 ### 4.1. Primera Etapa: Contornos
 Comenzaremos procesando el archivo vectorial correspondiente al contorno exterior de nuestra placa.
@@ -202,7 +202,7 @@ Comenzaremos procesando el archivo vectorial correspondiente al contorno exterio
 Una vez recargada la plataforma, procedemos con el circuito y trazado de las pistas de la placa.
 * **Herramienta a utilizar:** Herramienta en V (**V-bit**) de **0.4 mm**.
 * **Configuración en Mods:**
-  * Cargamos el archivo SVG correspondiente a las pistas del circuito.
+  * Cargamos el archivo SVG correspondiente al circuito de pistas.
   * Configuramos el diámetro de la herramienta en **0.4 mm**.
   * Ajustamos los parámetros de pasadas para garantizar el aislamiento eléctrico correcto entre pistas; aquí recomendamos **2 pasadas**.
   * Mantenemos la velocidad de corte en **4 mm/s**.
