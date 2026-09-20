@@ -33,7 +33,7 @@
 - **Edad:** 19
 - **Cumpleaños:** 18 Julio
 - **Contacto:** 204655@iberopuebla.mx
-- [LinkedIn](www.linkedin.com/in/gerardo-esquivel-0b0838438)  
+- [LinkedIn](https://www.linkedin.com/in/gerardo-esquivel-0b0838438)  
 ---
 
 
