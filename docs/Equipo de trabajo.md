@@ -28,12 +28,12 @@
 ---
 
 - **Carrera:** Ing Mecatrónica, 3er semestre 
-- **Cosas que me gustan hacer:** videojuegos, montañismo, ciclismo.
+- **Cosas que me gustan hacer:** videojuegos, música, ciclismo.
 - **Cosas de las que estoy orgulloso:** De ser una persona perseverante, que no se rinde fácilmente, por haber superado momentos difíciles y seguir avanzando y por ser alguien que ayuda a los demás cuando lo necesitan.
 - **Edad:** 19
 - **Cumpleaños:** 18 Julio
 - **Contacto:** 204655@iberopuebla.mx
-  
+- [LinkedIn](www.linkedin.com/in/gerardo-esquivel-0b0838438)  
 ---
 
 
