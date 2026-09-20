@@ -12,4 +12,4 @@ Descubre las diferentes secciones del portafolio:
 
 [<i class="fa-solid fa-users"></i> Equipo de Trabajo](Equipo de trabajo.md){ .md-button }
 [<i class="fa-solid fa-microchip"></i> Primeros pasos con KiCad](Primeros pasos Kicad.md){ .md-button .md-button--primary }
-[<i class="fa-solid fa-bezier-curve"></i> Procesamiento con Mods](Mods CE.md){ .md-button .md-button--primary}
+[<i class="fa-solid fa-bezier-curve"></i> Procesamiento con Mods](Mods CE.md){ .md-button .md-button--primary }
