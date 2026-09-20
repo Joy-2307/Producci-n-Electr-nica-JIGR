@@ -94,3 +94,66 @@ Finalmente, desplazándonos hacia la sección derecha de los nodos, controlaremo
 <img src="../recursos/imgs/mods_descarga.png" alt="Guardado de archivo RML en el panel derecho" width="800">
 
 ---
+---
+
+## 4. Procedimiento de Fabricación y Configuración por Etapas
+
+Para llevar a cabo la manufactura exitosa de nuestra placa en la Roland MonoFab (SRM-20) utilizando Mods, debemos seguir un orden estricto de procesos. 
+
+⚠️ **Regla fundamental entre procesos:** Es **indispensable** dar un *refresh* (recargar) a la página web de Mods al finalizar cada etapa. Esto nos garantiza limpiar la memoria caché de los nodos y evitar conflictos al cargar un nuevo archivo vectorial (SVG) con configuraciones de herramientas distintas.
+
+### 4.1. Primera Etapa: Contornos
+Comenzaremos procesando el archivo vectorial correspondiente al contorno exterior de nuestra placa.
+* **Herramienta a utilizar:** Fresas o cortadores de **2 mm**.
+* **Configuración en Mods:** 
+  * Cargamos el SVG de contornos.
+  * Ajustamos el diámetro de la herramienta a **2 mm**.
+  * Definimos el número de pasadas necesarias según el grosor del material de la tablilla.
+  * Asignamos la velocidad de avance estándar de **4 mm/s**.
+  * Verificamos en la vista 3D que el contorno se realice de forma externa o correcta sin invadir el área útil.
+  * Guardamos el archivo `.rml` resultante.
+
+<img src="../recursos/imgs/proceso_etapa_contornos.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+*(Una vez finalizado este archivo, recuerda dar `F5` o recargar la página web de Mods antes de continuar).*
+
+### 4.2. Segunda Etapa: Pistas (Trazado)
+Una vez recargada la plataforma, procedemos con el circuito y trazado de las pistas de la placa.
+* **Herramienta a utilizar:** Herramienta en V (**V-bit**) de **0.4 mm**.
+* **Configuración en Mods:**
+  * Cargamos el archivo SVG correspondiente a las pistas del circuito.
+  * Configuramos el diámetro de la herramienta en **0.4 mm**.
+  * Ajustamos los parámetros de pasadas para garantizar el aislamiento eléctrico correcto entre pistas, aqui recomendamos 2 pasadas.
+  * Mantenemos la velocidad de corte en **4 mm/s**.
+  * Verificamos la simulación visual (recordando que lo negro será removido por la punta en V).
+  * Generamos y guardamos el archivo `.rml` de pistas.
+
+<img src="../recursos/imgs/proceso_etapa_pistas.png" alt="Configuración y vista previa para la etapa de trazo de pistas con herramienta en V de 0.4mm" width="800">
+
+*(Nuevamente, al terminar la exportación, damos un nuevo `refresh` a la página de Mods para limpiar la interfaz).*
+
+### 4.3. Tercera Etapa: Perforaciones
+Finalmente, procesamos los puntos correspondientes a las perforaciones de pines o componentes que lo requieran.
+* **Herramienta a utilizar:** Broca de **0.8 mm**.
+* **Configuración en Mods:**
+  * Cargamos el archivo SVG o de puntos de perforación.
+  * Ajustamos el diámetro de la herramienta a **0.8 mm**.
+  * **Ajuste crítico de velocidad:** Cambiamos la velocidad de avance a un valor mucho más lento, fijándola entre **0.3 mm/s y 0.4 mm/s**. Esto es fundamental para evitar la tensión excesiva y prevenir la ruptura de la broca debido a su delgadez.
+  * Verificamos los tiempos estimados de este proceso, calculamos trayectorias y abrimos la vista 3D para confirmar los puntos de perforación.
+  * Guardamos el archivo `.rml` final para enviarlo a la MonoFab.
+
+<img src="../recursos/imgs/proceso_etapa_perforaciones.png" alt="Configuración y vista previa para la etapa de perforaciones con broca de 0.8mm y velocidad reducida" width="800">
+
+---
+
+## 5. Resumen de Parámetros Clave para el Maquinado
+
+Para tener una referencia rápida antes de operar la máquina, la siguiente tabla resume las herramientas, velocidades y consideraciones por cada proceso:
+
+| Proceso | Herramienta / Diámetro | Velocidad de Avance | Consideraciones Especiales |
+| :--- | :--- | :--- | :--- |
+| **Contornos** | Fresa de **2 mm** | **4 mm/s** | Revisar que el vector esté dentro del lienzo en Inkscape. |
+| **Pistas** | Herramienta en V de **0.4 mm** | **4 mm/s** | Dar *refresh* a la web antes de cargar; aislar correctamente. |
+| **Perforaciones**| Broca de **0.8 mm** | **0.3 - 0.4 mm/s** | Velocidad reducida obligatoria para evitar ruptura de broca. |
+
+---
