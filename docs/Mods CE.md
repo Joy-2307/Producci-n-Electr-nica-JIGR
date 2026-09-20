@@ -58,9 +58,14 @@ En esta sección inicial se gestiona la entrada de nuestro diseño.
 ### 3.2. Panel de Vistas (Lado Derecho): Previsualización Gráfica
 Justo al lado derecho del módulo de entrada, se despliegan distintas vistas e interpretaciones gráficas de nuestro archivo cargado. 
 * **Regla fundamental:** Lo que se visualiza en color **negro** representa las zonas donde la fresa pasará removiendo material, mientras que las zonas blancas permanecerán intactas.
+* Aquí es importante mencionar, que en caso de que este invertido la sección de corte de nuestras postas o cualquier otro proceso, podemos arreglarlo dando click en la opción "invert".
 * Aquí podemos validar visualmente que las pistas o los contornos se rendericen de manera correcta y sin recortes extraños.
 
 <img src="../recursos/imgs/mods_panel_vistas_derecha.png" alt="Panel de vistas previas mostrando el diseño en negro sobre blanco" width="800">
+
+* Aquí podemos validar visualmente que las pistas o los contornos se rendericen de manera correcta y sin recortes extraños.
+
+<img src="../recursos/imgs/invertido.png" alt="Panel de vistas previas mostrando el diseño invertido" width="800">
 
 ### 3.3. Esquina Inferior Izquierda: Unidades y Herramientas Predefinidas
 Desplazándonos hacia la esquina inferior izquierda, configuraremos las bases métricas y operativas del trabajo:
@@ -77,6 +82,8 @@ En la zona central de los nodos encontraremos los parámetros finos de la herram
 
 <img src="../recursos/imgs/mods_centro_configuracion_herramienta.png" alt="Panel central de nodos para configurar diámetro, pasadas y cálculo de trayectorias" width="800">
 
+* **Simulación visual:** El sistema nos ofrece una estimación gráfica de cómo se comportará la herramienta sobre la superficie de la placa.
+
 <img src="../recursos/imgs/visualizacion3d.png" alt="Vista de la vizualización 3d " width="800">
 
 
@@ -91,9 +98,10 @@ Finalmente, desplazándonos hacia la sección derecha de los nodos, controlaremo
 
 <img src="../recursos/imgs/mods_panel_derecho_origen_velocidad.png" alt="Configuración de origen y velocidades" width="800">
 
+* **Guardado del Archivo:** Por último, encontraremos la opción para generar y guardar el archivo con extensión `.rml` directamente en nuestro equipo, listo para enviarse a la máquina.
+
 <img src="../recursos/imgs/mods_descarga.png" alt="Guardado de archivo RML en el panel derecho" width="800">
 
----
 ---
 
 ## 4. Procedimiento de Fabricación y Configuración por Etapas
@@ -113,8 +121,23 @@ Comenzaremos procesando el archivo vectorial correspondiente al contorno exterio
   * Verificamos en la vista 3D que el contorno se realice de forma externa o correcta sin invadir el área útil.
   * Guardamos el archivo `.rml` resultante.
 
-<img src="../recursos/imgs/proceso_etapa_contornos.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+* visualización de nuestro archivo:
+<img src="../recursos/imgs/proceso_etapa_contornosvis.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
 
+* configuración de herramientas:
+  
+<img src="../recursos/imgs/proceso_etapa_contornosher.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+<img src="../recursos/imgs/proceso_etapa_contornosher1.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+* origenes y velocidad:
+  
+<img src="../recursos/imgs/proceso_etapa_contornosorig.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+* Visualización 3d:
+  
+<img src="../recursos/imgs/proceso_etapa_contornosv3d.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+  
 *(Una vez finalizado este archivo, recuerda dar `F5` o recargar la página web de Mods antes de continuar).*
 
 ### 4.2. Segunda Etapa: Pistas (Trazado)
@@ -128,7 +151,23 @@ Una vez recargada la plataforma, procedemos con el circuito y trazado de las pis
   * Verificamos la simulación visual (recordando que lo negro será removido por la punta en V).
   * Generamos y guardamos el archivo `.rml` de pistas.
 
-<img src="../recursos/imgs/proceso_etapa_pistas.png" alt="Configuración y vista previa para la etapa de trazo de pistas con herramienta en V de 0.4mm" width="800">
+* visualización de nuestro archivo:
+<img src="../recursos/imgs/proceso_etapa_pistasvis.png" alt="Configuración y vista previa para la etapa de pistas con herramienta de 2mm" width="800">
+
+* configuración de herramientas:
+  
+<img src="../recursos/imgs/proceso_etapa_pistasher.png" alt="Configuración y vista previa para la etapa de pistas con herramienta de 2mm" width="800">
+
+<img src="../recursos/imgs/proceso_etapa_pistasher1.png" alt="Configuración y vista previa para la etapa de pistas con herramienta de 2mm" width="800">
+
+* origenes y velocidad:
+  
+<img src="../recursos/imgs/proceso_etapa_pistasorig.png" alt="Configuración y vista previa para la etapa de pistas con herramienta de 2mm" width="800">
+
+* Visualización 3d:
+  
+<img src="../recursos/imgs/proceso_etapa_pistasv3d.png" alt="Configuración y vista previa para la etapa de pistas con herramienta de 2mm" width="800">
+  
 
 *(Nuevamente, al terminar la exportación, damos un nuevo `refresh` a la página de Mods para limpiar la interfaz).*
 
@@ -141,8 +180,24 @@ Finalmente, procesamos los puntos correspondientes a las perforaciones de pines 
   * **Ajuste crítico de velocidad:** Cambiamos la velocidad de avance a un valor mucho más lento, fijándola entre **0.3 mm/s y 0.4 mm/s**. Esto es fundamental para evitar la tensión excesiva y prevenir la ruptura de la broca debido a su delgadez.
   * Verificamos los tiempos estimados de este proceso, calculamos trayectorias y abrimos la vista 3D para confirmar los puntos de perforación.
   * Guardamos el archivo `.rml` final para enviarlo a la MonoFab.
+    
+* visualización de nuestro archivo:
+<img src="../recursos/imgs/proceso_etapa_perfovis.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
 
-<img src="../recursos/imgs/proceso_etapa_perforaciones.png" alt="Configuración y vista previa para la etapa de perforaciones con broca de 0.8mm y velocidad reducida" width="800">
+* configuración de herramientas:
+  
+<img src="../recursos/imgs/proceso_etapa_perfoher.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+<img src="../recursos/imgs/proceso_etapa_perfoher1.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+* origenes y velocidad:
+  
+<img src="../recursos/imgs/proceso_etapa_perfoorig.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+
+* Visualización 3d:
+  
+<img src="../recursos/imgs/proceso_etapa_perfov3d.png" alt="Configuración y vista previa para la etapa de contornos con herramienta de 2mm" width="800">
+  
 
 ---
 
