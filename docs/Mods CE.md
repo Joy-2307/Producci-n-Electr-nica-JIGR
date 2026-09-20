@@ -9,7 +9,7 @@ Este apartado constituye una continuación directa de nuestra documentación de 
 Antes de enviar cualquier diseño a la plataforma de maquinado, es fundamental asegurarnos de que los archivos vectoriales (específicamente el contorno de nuestra placa) cumplan con las condiciones geométricas adecuadas para evitar fallos físicos en el material.
 
 ### 1.1. Descarga y Sitio Oficial
-Si detectas que el contorno de tu placa parece cortado o mal delimitado, se recomienda utilizar un editor de vectores. Para este propósito utilizamos **Inkscape**. Puedes acceder a su plataforma y obtener los instaladores desde su [sitio oficial de Inkscape](https://inkscape.org/). No profundizaremos demasiado en el uso general del software, pero sí en una regla de oro para la manufactura.
+Si detectas que el contorno de tu placa parece cortado o mal delimitado, se recomienda utilizar un editor de vectores. Para este propósito utilizamos **Inkscape**. Puedes acceder a su plataforma y obtener los instaladores desde su [sitio oficial de Inkscape](https://inkscape.org/){: target="_blank" }. No profundizaremos demasiado en el uso general del software, pero sí en una regla de oro para la manufactura.
 
 ### 1.2. Consideraciones Clave de Diseño Vectorial
 * **Todo dentro del lienzo:** Es indispensable verificar que todos los vectores de corte y trazo se encuentren completamente dentro del área del lienzo de trabajo en Inkscape. De lo contrario, la herramienta de exportación podría omitir secciones o generar errores de geometría.
@@ -26,7 +26,7 @@ Si detectas que el contorno de tu placa parece cortado o mal delimitado, se reco
 Una vez que nuestros archivos vectoriales (SVG) están limpios y correctamente acotados, pasamos a **Mods**, una herramienta web basada en nodos ampliamente utilizada en entornos Fab Lab para la manufactura digital.
 
 ### 2.1. Acceso y Selección del Programa
-1. Ingresa al sitio oficial de la herramienta a través de su entorno web en [Mods Community](https://mods.cba.mit.edu/).
+1. Ingresa al sitio oficial de la herramienta a través de su entorno web en [Mods Community](https://mods.cba.mit.edu/){: target="_blank" }.
 2. Haz clic derecho en cualquier parte del espacio de trabajo para abrir el menú contextual, dirígete a la pestaña de **Programs** y dentro del buscador escribe **`srm-20mil`**.
 3. Selecciona la opción correspondiente a **`mill 2d pcb`** para desplegar el diagrama de nodos diseñado específicamente para el fresado de circuitos impresos en la SRM-20.
 
