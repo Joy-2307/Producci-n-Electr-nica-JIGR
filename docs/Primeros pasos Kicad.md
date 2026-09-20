@@ -129,6 +129,9 @@ El ruteo consiste en trazar las conexiones físicas de cobre entre los pines de 
 * Selecciona la herramienta **Ruta de pistas** (o presiona la tecla `X`).
 * Haz clic en el pin de origen y guía la pista hasta el destino respetando las reglas de diseño y el ancho adecuado. 
 * **Recomendaciones:** Evita dejar pistas con ángulos rectos (90°) y trabaja siempre sobre la capa `F.Cu`, ya que ahí quedarán grabadas las pistas sobre el cobre.
+??? tip "Recomendaciones"
+    - Evita dejar pistas con ángulos rectos (90°) y trabaja siempre sobre la capa `F.Cu`, ya que ahí quedarán grabadas las pistas sobre el cobre.
+    - **¿Qué hacer si no se puede completar una conexión?** Puedes implementar un puente regresando al esquemático para añadir una resistencia con valor 0 ohms,      la cuál servirá como puente físico para pasar por encima de otras pistas. Actualiza la placa tras añadirla para importarla al diseño físico.
 
 <img src="../recursos/imgs/pcb_ruteo.png" alt="Pistas ruteadas entre diferentes componentes" width="600">
 
