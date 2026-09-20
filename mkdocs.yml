@@ -44,3 +44,8 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
   - recursos/archivos/custom.css
 
+nav:
+  - Portafolio de documentación: index.md
+  - Equipo de Trabajo: Equipo de trabajo.md
+  - Guía de Inicio Rápido con KiCad: Primeros pasos Kicad.md
+  - Procesamiento de SVG a RML: Mods CE.md
