@@ -1,6 +1,6 @@
 # Guía Completa de Operación y Fabricación con Roland MonoFab SRM-20
 
-A continuación, se presenta la documentación detallada y exhaustiva para la correcta instalación, configuración y operación de la fresadora Roland MonoFab SRM-20, diseñada específicamente para el flujo de trabajo en la fabricación de circuitos impresos (PCBs).
+A continuación, se presenta la documentación para la correcta instalación, configuración y operación de la fresadora Roland MonoFab SRM-20, diseñada específicamente para el flujo de trabajo en la fabricación de circuitos impresos (PCBs).
 
 ---
 
@@ -8,7 +8,8 @@ A continuación, se presenta la documentación detallada y exhaustiva para la co
 
 Para asegurar la correcta comunicación entre la computadora y la máquina, es indispensable contar con los controladores oficiales y el software de control **VPanel**.
 
-* **Drivers de la máquina:** Puedes realizar la descarga directa desde el repositorio o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo.
+* **Drivers de la máquina: ** Puedes realizar la descarga directa desde el siguiente enlace o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo.
+
 * **Instalación del VPanel:** El VPanel es la interfaz gráfica que nos permite manipular los ejes de la máquina, configurar velocidades y enviar los archivos de corte (`.rml`).
 
 ---
