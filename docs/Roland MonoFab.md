@@ -174,6 +174,13 @@ Monitoreo inicial: Es vital mantenernos al pendiente en los primeros segundos de
 8. Galería de Placas Fabricadas
    A continuación se muestra el resultado final del trabajo realizado por el equipo:
 
-Pie de imagen: Vista detallada de la primera placa de circuito impreso fabricada y validada por el equipo.
+     <p align="center">
+  <img src="../recursos/imgs/p1.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+</p>
+     <p align="center">
+  <img src="../recursos/imgs/p2.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
 
-Pie de imagen: Vista detallada de la segunda placa de circuito impreso fabricada y validada por el equipo.
+</p>
+
+
+
