@@ -8,9 +8,28 @@ A continuación, se presenta la documentación para la correcta instalación, co
 
 Para asegurar la correcta comunicación entre la computadora y la máquina, es indispensable contar con los controladores oficiales y el software de control **VPanel**.
 
-* **Drivers de la máquina: ** Puedes realizar la descarga directa desde el siguiente enlace o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo.
+* **Drivers de la máquina: ** Puedes realizar la descarga directa desde  [este sitio](https://teams.microsoft.com/l/entity/77be3f72-7c14-415f-992c-3511dd54a4ae/classwork?context=%7B%22channelId%22%3A%2219%3AwwsdzMOPChqnRLhR8ADccnLuQRaGSE3DsepvFw0p5301%40thread.tacv2%22%2C%22contextType%22%3A%22channel%22%2C%22subEntityId%22%3A%22%7B%5C%22action%5C%22%3A%5C%22navigate%5C%22%2C%5C%22view%5C%22%3A%5C%22classwork-list%5C%22%2C%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%229e32c9c3-03d2-4226-8efb-b7edfa785ee0%5C%22%2C%5C%22moduleIds%5C%22%3A%5B%5C%22af595126-d997-4016-91b2-a875a1c3fa1e%5C%22%5D%7D%5D%7D%2C%5C%22deeplinkType%5C%22%3A4%7D%22%7D&groupId=9e32c9c3-03d2-4226-8efb-b7edfa785ee0&tenantId=32ddf65d-e60f-490d-b6f4-eceeb29d5fd9&openInMeeting=false&isTeamLevelApp=true){: target="_blank" } o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo. Una vez instalado seguimos los siguientes pasos, seleccionando la carpeta correcta para nuestro sistema operativo.
 
-* **Instalación del VPanel:** El VPanel es la interfaz gráfica que nos permite manipular los ejes de la máquina, configurar velocidades y enviar los archivos de corte (`.rml`).
+  <p align="center">
+  <img src="../recursos/imgs/1.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/2.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Selección de la carpeta según nuestro sistema operativo.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/3.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/4.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Ejecución del driver srm-20 como administrador. </sub>
+</p>
+
+* **Instalación del VPanel:** El VPanel es la interfaz gráfica que nos permite manipular los ejes de la máquina, configurar velocidades y enviar los archivos de corte (`.rml`). Puedes descargar el programa desde aquí, una vez instalado descomprimimos y ejecutamos el archivo.
+<a href="../recursos/archivos/VPanel-for-SRM-20_Installer.Zip" target="_blank">[VPanel-for-SRM-20_Installer(Zip)]</a>  
 
 ---
 
@@ -22,15 +41,28 @@ El VPanel cuenta con diferentes secciones clave para el control de movimiento y 
 *Pie de imagen:* Menú principal del VPanel para SRM-20, mostrando las coordenadas, controles de movimiento, pasos del cursor y botones de operación.
 
 ### Controles de Movimiento y Unidades (Cursor Step)
-En la parte central del VPanel encontramos los botones de desplazamiento de los ejes X, Y y Z. Justo debajo se encuentran los selectores de **Cursor Step** (`Continue`, `x100`, `x10`, `x1`):
+🟠 Naranja y 🟢 Verde: En la parte central del VPanel encontramos los botones de desplazamiento de los ejes X, Y y Z.
+* 🔵 Azul: Justo debajo se encuentran los selectores de **Cursor Step** (`Continue`, `x100`, `x10`, `x1`):
 * Entre más pequeño sea el valor seleccionado (como `x1`), menor será el recorrido de la herramienta por cada clic. Esto es **extremadamente útil para la calibración fina** y ajustes de precisión.
 
 ### Orígenes y Sistema de Coordenadas
-* **Guardar Orígenes:** Podemos definir y almacenar nuestros puntos de origen (ceros de trabajo en X, Y y Z) utilizando los botones de configuración de coordenadas en el panel lateral derecho.
-* **Pausa y Cancelar:** En la esquina inferior derecha se encuentran los botones de control de ejecución (`PAUSE`/`RESUME` y `Cancel`), vitales para detener el proceso en caso de cualquier emergencia o imprevisto.
+*🔴Rojo: **Guardar Orígenes** Podemos definir y almacenar nuestros puntos de origen (ceros de trabajo en X, Y y Z) utilizando los botones de configuración de coordenadas en el panel lateral derecho.
+*🟡 Amarillo: **Pausa y Cancelar** En la esquina inferior derecha se encuentran los botones de control de ejecución (`PAUSE`/`RESUME` y `Cancel`), vitales para detener el proceso en caso de cualquier emergencia o imprevisto.
+* 🟤 Café: **Muestra las cordenadas actuales.**
+* 🟣 Morado: **Mueve hacia nuestro origen guardado.**
+* ⚪Rosa: **Comenzar un proceso de corte.**
 
-![Ventana de Carga de Archivos](docs/images/vpanel_cut.png)
-*Pie de imagen:* Ventana de gestión de archivos de corte, donde se utiliza el botón "Add" para cargar el archivo `.rml` y "Output" para iniciar el mecanizado.
+  <p align="center">
+  <img src="../recursos/imgs/5.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Vista del panel con las secciones mencionadas. </sub>
+</p>
+
+Una vez dado clic en el botón de "Cut" se nos desplegara el siguiente menú donde podremos subir un archivo, instantáneamente comenzara a cortar una vez demos click en output, es muy importante antes de empezar haber calibrado correctamente todos nuestros ejes y tener despegada la broca de nuestra placa para evitar rayones o desgastar la punta.
+
+  <p align="center">
+  <img src="../recursos/imgs/6.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Vista del panel para subir archivos. </sub>
+</p>
 
 ---
 
@@ -42,26 +74,57 @@ Para la fabricación exitosa de una placa de circuito impreso (PCB), es fundamen
 2. **Trazado de Pistas:** En esta segunda etapa se generan las trazas del circuito. Utilizaremos un cortador en V (*V-cutter*) con un diámetro de **0.4 mm**.
 3. **Contorno:** Finalmente, se realiza el corte exterior para separar la placa utilizando una herramienta de fresado de **2 mm**.
 
-![Herramientas y Llave Allen](docs/images/tools_allen.png)
-*Pie de imagen:* Herramientas de sujeción, espátulas, brocas y la llave Allen indispensable para aflojar y apretar el mandril que sostiene las herramientas de corte.
+  <p align="center">
+  <img src="../recursos/imgs/tools_allen.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Herramientas de sujeción, espátulas, brocas y la llave Allen indispensable para aflojar y apretar el mandril que sostiene las herramientas de corte. </sub>
+</p>
 
 ---
 
 ## 4. Camas de Sacrificio y Recursos
 
 * **Camas de sacrificio:** Es altamente recomendable utilizar nuestras propias camas de sacrificio (usualmente hechas de MDF o materiales similares) colocadas sobre la base de la máquina. Esto protege la estructura principal de la fresadora de posibles daños accidentales durante el fresado de contornos.
-* **Descarga de Archivos:** Puedes acceder al diseño base y esquemáticos en formato DXF desde el siguiente enlace del repositorio: [Enlace de descarga del archivo DXF](#).
+* **Descarga de Archivos:** Puedes acceder al diseño base en formato DXF.
+<a href="../recursos/archivos/Sacrificio SS.dxf" target="_blank">[Sacrificio SS(DXF)]</a>  
 
 ---
 
 ## 5. Proceso de Fabricación Paso a Paso
 
 1. **Preparación de la Superficie:** Limpiamos la cama de sacrificio y utilizamos **cinta doble cara** para fijar nuestra placa de cobre, procurando pegarla lo más derecha y alineada posible para evitar errores de paralelismo.
-2. **Calibración de Ejes X e Y:** Movemos la máquina mediante el VPanel hasta la esquina inferior izquierda de la placa de cobre y guardamos el origen en X e Y (`X/Y` en *Set Origin Point*).
-3. **Calibración del Eje Z:** Para el eje Z, utilizamos la técnica clásica de colocar un **pequeño trozo de papel** entre la punta de la herramienta y la superficie de la placa, bajando lentamente el eje Z hasta sentir una ligera fricción al mover el papel. Una vez logrado, fijamos el origen en Z.
-4. **Ejecución del Trabajo:** Con los orígenes correctamente fijados, subimos nuestro archivo de perforaciones (`.rml`), verificamos la vista previa y presionamos *Output* para iniciar el proceso.
-5. **Inspección y Cambio de Herramienta:** Una vez finalizado el trabajo de perforación, acercamos la placa hacia nosotros utilizando el VPanel para poder aspirar los residuos y revisar el resultado.
-6. **Precaución Crítica en el Cambio de Herramienta:** Procedemos a cambiar la broca por la siguiente herramienta (por ejemplo, el cortador en V para pistas) y **volvemos a calibrar únicamente en el eje Z**. Es **sumamente importante no mover los ejes X y Y**, ya que cualquier alteración en dichos ejes provocará que las pistas o perforaciones posteriores queden totalmente desfasadas.
+
+     <p align="center">
+  <img src="../recursos/imgs/7.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Placa fenólica con cinta doble cara. </sub>
+</p>
+     <p align="center">
+  <img src="../recursos/imgs/8.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Placa fenólica alineada correctamente en la cama de sacrificio. </sub>
+</p>
+     <p align="center">
+  <img src="../recursos/imgs/9.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Placa con cama de sacrificio colocada dentro de la MonoFab. </sub>
+</p>
+3. **Colocación de la broca:** Usando la herramienta de la llave allen, aflojamos el tornillo y colocamos la broca o cortador y posteriormente volvemos a apretar para continuar con la calibración. 
+     <p align="center">
+  <img src="../recursos/imgs/11.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Colocación de el cortador. </sub>
+</p>
+
+4. **Calibración de Ejes X e Y:** Movemos la máquina mediante el VPanel hasta la esquina inferior izquierda de la placa de cobre y guardamos el origen en X e Y (`X/Y` en *Set Origin Point*).
+5. **Calibración del Eje Z:** Para el eje Z, utilizamos la técnica clásica de colocar un **pequeño trozo de papel** entre la punta de la herramienta y la superficie de la placa, bajando lentamente el eje Z hasta sentir una ligera fricción al mover el papel. Una vez logrado, fijamos el origen en Z.
+        <p align="center">
+  <img src="../recursos/imgs/10.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Calibración de la MonoFab en la esquina inferior. </sub>
+</p>
+
+6. **Ejecución del Trabajo:** Con los orígenes correctamente fijados, subimos nuestro archivo de perforaciones (`.rml`), verificamos la vista previa y presionamos *Output* para iniciar el proceso.
+7. **Inspección y Cambio de Herramienta:** Una vez finalizado el trabajo de perforación, acercamos la placa hacia nosotros utilizando el VPanel para poder aspirar los residuos y revisar el resultado.
+        <p align="center">
+  <img src="../recursos/imgs/12.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Placa fenólica perforada lista para aspirar residuos. </sub>
+</p>
+8. **Precaución Crítica en el Cambio de Herramienta:** Procedemos a cambiar la broca por la siguiente herramienta (por ejemplo, el cortador en V para pistas) y **volvemos a calibrar únicamente en el eje Z**. Es **sumamente importante no mover los ejes X y Y**, ya que cualquier alteración en dichos ejes provocará que las pistas o perforaciones posteriores queden totalmente desfasadas.
 
 ---
 
