@@ -8,7 +8,9 @@ A continuación, se presenta la documentación para la correcta instalación, co
 
 Para asegurar la correcta comunicación entre la computadora y la máquina, es indispensable contar con los controladores oficiales y el software de control **VPanel**.
 
-* **Drivers de la máquina: ** Puedes realizar la descarga directa desde  [este sitio](https://teams.microsoft.com/l/entity/77be3f72-7c14-415f-992c-3511dd54a4ae/classwork?context=%7B%22channelId%22%3A%2219%3AwwsdzMOPChqnRLhR8ADccnLuQRaGSE3DsepvFw0p5301%40thread.tacv2%22%2C%22contextType%22%3A%22channel%22%2C%22subEntityId%22%3A%22%7B%5C%22action%5C%22%3A%5C%22navigate%5C%22%2C%5C%22view%5C%22%3A%5C%22classwork-list%5C%22%2C%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%229e32c9c3-03d2-4226-8efb-b7edfa785ee0%5C%22%2C%5C%22moduleIds%5C%22%3A%5B%5C%22af595126-d997-4016-91b2-a875a1c3fa1e%5C%22%5D%7D%5D%7D%2C%5C%22deeplinkType%5C%22%3A4%7D%22%7D&groupId=9e32c9c3-03d2-4226-8efb-b7edfa785ee0&tenantId=32ddf65d-e60f-490d-b6f4-eceeb29d5fd9&openInMeeting=false&isTeamLevelApp=true){: target="_blank" } o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo. Una vez instalado seguimos los siguientes pasos, seleccionando la carpeta correcta para nuestro sistema operativo.
+* **Drivers de la máquina:** Puedes realizar la descarga directa desde este repositorio en un archivo `.zip` o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo. Una vez instalado seguimos los siguientes pasos, seleccionando la carpeta correcta para nuestro sistema operativo.
+
+<a href="../recursos/archivos/monofabDriver_V180.Zip" target="_blank">[monofabDriver_V180(Zip)]</a>  
 
   <p align="center">
   <img src="../recursos/imgs/1.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
@@ -29,6 +31,7 @@ Para asegurar la correcta comunicación entre la computadora y la máquina, es i
 </p>
 
 * **Instalación del VPanel:** El VPanel es la interfaz gráfica que nos permite manipular los ejes de la máquina, configurar velocidades y enviar los archivos de corte (`.rml`). Puedes descargar el programa desde aquí, una vez instalado descomprimimos y ejecutamos el archivo.
+  
 <a href="../recursos/archivos/VPanel-for-SRM-20_Installer.Zip" target="_blank">[VPanel-for-SRM-20_Installer(Zip)]</a>  
 
 ---
@@ -57,7 +60,7 @@ El VPanel cuenta con diferentes secciones clave para el control de movimiento y 
   <sub>Figura: Vista del panel con las secciones mencionadas. </sub>
 </p>
 
-Una vez dado clic en el botón de "Cut" se nos desplegara el siguiente menú donde podremos subir un archivo, instantáneamente comenzara a cortar una vez demos click en output, es muy importante antes de empezar haber calibrado correctamente todos nuestros ejes y tener despegada la broca de nuestra placa para evitar rayones o desgastar la punta.
+Una vez dado clic en el botón de `Cut` se nos desplegara el siguiente menú donde podremos subir un archivo, instantáneamente comenzara a cortar una vez demos click en output, es muy importante antes de empezar haber calibrado correctamente todos nuestros ejes y tener despegada la broca de nuestra placa para evitar rayones o desgastar la punta.
 
   <p align="center">
   <img src="../recursos/imgs/6.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
