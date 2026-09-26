@@ -10,7 +10,7 @@ Para asegurar la correcta comunicación entre la computadora y la máquina, es i
 
 * **Drivers de la máquina:** Puedes realizar la descarga directa desde este repositorio en un archivo `.zip` o la sección oficial de soporte de Roland para asegurar compatibilidad con tu sistema operativo. Una vez instalado seguimos los siguientes pasos, seleccionando la carpeta correcta para nuestro sistema operativo.
 
-<a href="../recursos/archivos/monofabDriver_V180.Zip" target="_blank">[monofabDriver_V180(Zip)]</a>  
+<a href="../recursos/archivos/monofabDriver_V180.zip" target="_blank">[monofabDriver_V180(Zip)]</a>  
 
   <p align="center">
   <img src="../recursos/imgs/1.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
@@ -32,7 +32,7 @@ Para asegurar la correcta comunicación entre la computadora y la máquina, es i
 
 * **Instalación del VPanel:** El VPanel es la interfaz gráfica que nos permite manipular los ejes de la máquina, configurar velocidades y enviar los archivos de corte (`.rml`). Puedes descargar el programa desde aquí, una vez instalado descomprimimos y ejecutamos el archivo.
   
-<a href="../recursos/archivos/VPanel-for-SRM-20_Installer.Zip" target="_blank">[VPanel-for-SRM-20_Installer(Zip)]</a>  
+<a href="../recursos/archivos/VPanel-for-SRM-20_Installer.zip" target="_blank">[VPanel-for-SRM-20_Installer(Zip)]</a>  
 
 ---
 
