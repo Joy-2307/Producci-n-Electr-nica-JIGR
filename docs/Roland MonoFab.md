@@ -40,8 +40,11 @@ Para asegurar la correcta comunicación entre la computadora y la máquina, es i
 
 El VPanel cuenta con diferentes secciones clave para el control de movimiento y gestión de trabajos.
 
-![Interfaz Principal del VPanel](docs/images/vpanel_main.png)
-*Pie de imagen:* Menú principal del VPanel para SRM-20, mostrando las coordenadas, controles de movimiento, pasos del cursor y botones de operación.
+<p align="center">
+  <img src="../recursos/imgs/vpanel_main.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura:  Menú principal del VPanel para SRM-20, mostrando las coordenadas, controles de movimiento, pasos del cursor y botones de operación.. </sub>
+</p>
+
 
 ### Controles de Movimiento y Unidades (Cursor Step)
 🟠 Naranja y 🟢 Verde: En la parte central del VPanel encontramos los botones de desplazamiento de los ejes X, Y y Z.
