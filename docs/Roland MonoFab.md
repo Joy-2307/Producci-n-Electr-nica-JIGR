@@ -184,7 +184,7 @@ A continuación se muestran los registros en video del comportamiento de la Rola
 
 ## 7. Recomendaciones de Seguridad y Operación
 
-> **Nota de ingeniería:** Se recomienda tener en cuenta las siguientes pautas operativas durante el uso del equipo:
+> **Nota:** Se recomienda tener en cuenta las siguientes pautas operativas durante el uso del equipo:
 > 
 > * **Prevención de suspensión de energía:** Se recomienda que durante cualquier proceso de trabajo se mantenga reproduciendo un video en segundo plano o activo en el equipo de cómputo para evitar que la computadora entre en modo de suspensión o ahorro de energía, lo cual podría interrumpir o apagar la comunicación con el equipo durante un corte o grabado crítico.
 > * **Respaldo energético:** Se recomienda contar con una fuente de alimentación ininterrumpida (UPS / pila) o un contacto cercano de respaldo para mantener energizado el equipo y evitar cortes abruptos por fallas en la red eléctrica.
