@@ -196,12 +196,8 @@ A continuación se muestran los registros en video del comportamiento de la Rola
 
 A continuación se muestra el resultado final del trabajo realizado por el equipo:
 
-<p align="center">
-  <img src="../recursos/imgs/p1.jpeg" alt="Primera placa fabricada" width="500"><br>
-  <sub>Vista general de la primera PCB fabricada.</sub>
-</p>
+| <img src="../recursos/imgs/p1.jpeg" alt="Primera placa fabricada" width="500"><br>
+  <sub>Vista general de la primera PCB fabricada.</sub> |<img src="../recursos/imgs/p2.jpeg" alt="Segunda placa fabricada" width="500"><br>
+  <sub>Vista general de la segunda PCB fabricada.</sub> |
 
-<p align="center">
-  <img src="../recursos/imgs/p2.jpeg" alt="Segunda placa fabricada" width="500"><br>
-  <sub>Vista general de la segunda PCB fabricada.</sub>
-</p>
+
