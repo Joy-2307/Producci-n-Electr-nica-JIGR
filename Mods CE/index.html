@@ -1,0 +1,1136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Primeros%20pasos%20Kicad/">
+      
+      
+        <link rel="next" href="../Roland%20MonoFab/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Procesamiento de SVG a RML - Producción Electrónica.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+      <link rel="stylesheet" href="../recursos/archivos/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#procesamiento-de-svg-a-rml-con-mods" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Producción Electrónica." class="md-header__button md-logo" aria-label="Producción Electrónica." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3zm5 11v3h1v-3zm2 0v3h1v-3zm2 0v3h1v-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Producción Electrónica.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Procesamiento de SVG a RML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Equipo%20de%20trabajo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Equipo de Trabajo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Primeros%20pasos%20Kicad/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guía de Inicio Rápido con KiCad
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Procesamiento de SVG a RML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Roland%20MonoFab/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aplicación con MonoFab
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Producción Electrónica." class="md-nav__button md-logo" aria-label="Producción Electrónica." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3zm5 11v3h1v-3zm2 0v3h1v-3zm2 0v3h1v-3z"/></svg>
+
+    </a>
+    Producción Electrónica.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Equipo%20de%20trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipo de Trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Primeros%20pasos%20Kicad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Inicio Rápido con KiCad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procesamiento de SVG a RML
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procesamiento de SVG a RML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-verificacion-y-preparacion-previa-en-inkscape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Verificación y Preparación previa en Inkscape
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Verificación y Preparación previa en Inkscape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-descarga-y-sitio-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Descarga y Sitio Oficial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-consideraciones-clave-de-diseno-vectorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Consideraciones Clave de Diseño Vectorial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-introduccion-a-la-plataforma-mods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Introducción a la Plataforma Mods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Introducción a la Plataforma Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-acceso-y-seleccion-del-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Acceso y Selección del Programa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-vista-general-de-la-interfaz-de-nodos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Vista General de la Interfaz de Nodos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-recorrido-detallado-por-la-interfaz-de-mods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Recorrido Detallado por la Interfaz de Mods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Recorrido Detallado por la Interfaz de Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-esquina-superior-izquierda-carga-del-archivo-svg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Esquina Superior Izquierda: Carga del Archivo SVG
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-panel-de-vistas-lado-derecho-previsualizacion-grafica-e-inversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Panel de Vistas (Lado Derecho): Previsualización Gráfica e Inversión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-esquina-inferior-izquierda-unidades-y-herramientas-predefinidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Esquina Inferior Izquierda: Unidades y Herramientas Predefinidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-parte-central-configuracion-avanzada-de-herramienta-y-calculo-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Parte Central: Configuración Avanzada de Herramienta y Cálculo 3D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-panel-derecho-origenes-velocidades-y-exportacion-rml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Panel Derecho: Orígenes, Velocidades y Exportación RML
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-procedimiento-de-fabricacion-y-configuracion-por-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Procedimiento de Fabricación y Configuración por Etapas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Procedimiento de Fabricación y Configuración por Etapas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-primera-etapa-contornos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Primera Etapa: Contornos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-segunda-etapa-pistas-trazado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Segunda Etapa: Pistas (Trazado)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-tercera-etapa-perforaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Tercera Etapa: Perforaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-resumen-de-parametros-clave-para-el-maquinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Resumen de Parámetros Clave para el Maquinado
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Roland%20MonoFab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicación con MonoFab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="procesamiento-de-svg-a-rml-con-mods">Procesamiento de SVG a RML con Mods</h1>
+<p>Este apartado constituye una continuación directa de nuestra documentación de diseño en KiCad. Una vez que hemos exportado los archivos necesarios de nuestras placas, el siguiente paso crítico en el proceso de fabricación digital con la fresadora Roland MonoFab (SRM-20) es transformar nuestros vectores en trayectorias de maquinado legibles (archivos <code>.rml</code>) utilizando la herramienta web <strong>Mods</strong>.</p>
+<hr />
+<h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ol>
+<li><a href="#1-verificación-y-preparación-previa-en-inkscape">Verificación y Preparación previa en Inkscape</a></li>
+<li><a href="#11-descarga-y-sitio-oficial">1.1. Descarga y Sitio Oficial</a></li>
+<li><a href="#12-consideraciones-clave-de-diseño-vectorial">1.2. Consideraciones Clave de Diseño Vectorial</a></li>
+<li><a href="#2-introducción-a-la-plataforma-mods">Introducción a la Plataforma Mods</a></li>
+<li><a href="#21-acceso-y-seleccion-del-programa">2.1. Acceso y Selección del Programa</a></li>
+<li><a href="#22-vista-general-de-la-interfaz-de-nodos">2.2. Vista General de la Interfaz de Nodos</a></li>
+<li><a href="#3-recorrido-detallado-por-la-interfaz-de-mods">Recorrido Detallado por la Interfaz de Mods</a></li>
+<li><a href="#31-esquina-superior-izquierda-carga-del-archivo-svg">3.1. Esquina Superior Izquierda: Carga del Archivo SVG</a></li>
+<li><a href="#32-panel-de-vistas-lado-derecho-previsualización-gráfica-e-inversión">3.2. Panel de Vistas (Lado Derecho): Previsualización Gráfica e Inversión</a></li>
+<li><a href="#33-esquina-inferior-izquierda-unidades-y-herramientas-predefinidas">3.3. Esquina Inferior Izquierda: Unidades y Herramientas Predefinidas</a></li>
+<li><a href="#34-parte-central-configuración-avanzada-de-herramienta-y-cálculo-3d">3.4. Parte Central: Configuración Avanzada de Herramienta y Cálculo 3D</a></li>
+<li><a href="#35-panel-derecho-orígenes-velocidades-y-exportación-rml">3.5. Panel Derecho: Orígenes, Velocidades y Exportación RML</a></li>
+<li><a href="#4-procedimiento-de-fabricación-y-configuración-por-etapas">Procedimiento de Fabricación y Configuración por Etapas</a></li>
+<li><a href="#41-primera-etapa-contornos">4.1. Primera Etapa: Contornos</a></li>
+<li><a href="#42-segunda-etapa-pistas-trazado">4.2. Segunda Etapa: Pistas (Trazado)</a></li>
+<li><a href="#43-tercera-etapa-perforaciones">4.3. Tercera Etapa: Perforaciones</a></li>
+<li><a href="#5-resumen-de-parámetros-clave-para-el-maquinado">Resumen de Parámetros Clave para el Maquinado</a></li>
+</ol>
+<hr />
+<h2 id="1-verificacion-y-preparacion-previa-en-inkscape">1. Verificación y Preparación previa en Inkscape</h2>
+<p>Antes de enviar cualquier diseño a la plataforma de maquinado, es fundamental asegurarnos de que los archivos vectoriales (específicamente el contorno de nuestra placa) cumplan con las condiciones geométricas adecuadas para evitar fallos físicos en el material.</p>
+<h3 id="11-descarga-y-sitio-oficial">1.1. Descarga y Sitio Oficial</h3>
+<p>Si detectas que el contorno de tu placa parece cortado o mal delimitado, se recomienda utilizar un editor de vectores. Para este propósito utilizamos <strong>Inkscape</strong>. Puedes acceder a su plataforma y obtener los instaladores desde su <a href="https://inkscape.org/" target="_blank">sitio oficial de Inkscape</a>. No profundizaremos demasiado en el uso general del software, pero sí en una regla de oro para la manufactura.</p>
+<h3 id="12-consideraciones-clave-de-diseno-vectorial">1.2. Consideraciones Clave de Diseño Vectorial</h3>
+<ul>
+<li><strong>Todo dentro del lienzo:</strong> Es indispensable verificar que todos los vectores de corte y trazo se encuentren completamente dentro del área del lienzo de trabajo en Inkscape. De lo contrario, la herramienta de exportación podría omitir secciones o generar errores de geometría.</li>
+<li><strong>Manejo de tolerancias:</strong> Es vital respetar márgenes y tolerancias adecuados en las pistas y contornos de la placa. Si los vectores están mal posicionados o demasiado justos, el cabezal de corte podría invadir zonas críticas y seccionar una pista por error.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Vector Incorrecto (Cortado / Fuera de límites)</th>
+<th style="text-align: center;">Vector Correcto (Alineado y dentro del lienzo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="../recursos/imgs/vector_incorrecto_ejemplo.png" alt="Ejemplo de vector cortado o mal posicionado fuera de los límites del lienzo en Inkscape" width="400"><br><sub>Figura 1.1: Ejemplo de vector cortado o mal posicionado fuera del área de trabajo.</sub></td>
+<td style="text-align: center;"><img src="../recursos/imgs/vector_correcto_ejemplo.png" alt="Ejemplo de vector corregido dentro del lienzo en Inkscape" width="400"><br><sub>Figura 1.2: Ejemplo de vector correctamente alineado y dentro del lienzo.</sub></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-introduccion-a-la-plataforma-mods">2. Introducción a la Plataforma Mods</h2>
+<p>Una vez que nuestros archivos vectoriales (SVG) están limpios y correctamente acotados, pasamos a <strong>Mods</strong>, una herramienta web basada en nodos ampliamente utilizada en entornos Fab Lab para la manufactura digital.</p>
+<h3 id="21-acceso-y-seleccion-del-programa">2.1. Acceso y Selección del Programa</h3>
+<ol>
+<li>Ingresa al sitio oficial de la herramienta a través de su entorno web en <a href="https://mods.cba.mit.edu/" target="_blank">Mods Community</a>.</li>
+<li>Dirígete a la pestaña de <strong>Programs</strong> y dentro del buscador escribe <strong><code>srm-20mil</code></strong>.</li>
+<li>Selecciona la opción correspondiente a <strong><code>mill 2d pcb</code></strong> para desplegar el diagrama de nodos diseñado específicamente para el fresado de circuitos impresos en la SRM-20.</li>
+</ol>
+<p align="center">
+  <img src="../recursos/imgs/mods_seleccion_programa.png" alt="Menú de selección de programas en Mods buscando srm-20mil" width="800"><br>
+  <sub>Figura 2.1: Búsqueda y selección del programa srm-20mil mill 2d pcb en la plataforma Mods.</sub>
+</p>
+
+<h3 id="22-vista-general-de-la-interfaz-de-nodos">2.2. Vista General de la Interfaz de Nodos</h3>
+<p>Al cargar el programa, verás un conjunto interconectado de bloques o nodos que procesan la información de manera secuencial (desde la entrada del archivo hasta la generación del código de la máquina). A continuación, se presenta una vista general destacando con distintos colores las secciones clave en las que debemos enfocar nuestra atención durante el flujo de trabajo:</p>
+<ul>
+<li>🔵 <strong>Azul:</strong> Módulo de entrada de archivos y visualización gráfica.</li>
+<li>🟢 <strong>Verde:</strong> Configuración de unidades y selección de herramientas de corte.</li>
+<li>🟠 <strong>Naranja:</strong> Parámetros de la herramienta, diámetros, número de pasadas y cálculo de trayectorias.</li>
+<li>🟣 <strong>Morado:</strong> Control de origen, velocidades de avance.</li>
+<li>🔴 <strong>Rojo:</strong> Guardado final del archivo RML.</li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/mods_vista_general_nodos.png" alt="Vista general de nodos en Mods con secciones resaltadas por colores" width="800"><br>
+  <sub>Figura 2.2: Mapa general de la interfaz de nodos de Mods organizada por secciones operativas.</sub>
+</p>
+
+<hr />
+<h2 id="3-recorrido-detallado-por-la-interfaz-de-mods">3. Recorrido Detallado por la Interfaz de Mods</h2>
+<p>Una vez que comprendemos la estructura general de los nodos, procederemos a desplazarnos paso a paso por cada una de las secciones operativas de la interfaz para configurar correctamente el maquinado de nuestra placa.</p>
+<h3 id="31-esquina-superior-izquierda-carga-del-archivo-svg">3.1. Esquina Superior Izquierda: Carga del Archivo SVG</h3>
+<p>En esta sección inicial se gestiona la entrada de nuestro diseño.
+<em>Encontraremos el módulo para cargar el archivo vectorial (SVG) que exportamos previamente (ya sea contorno, pistas o perforaciones).
+</em>Es importante verificar que el archivo cargue correctamente antes de continuar con la visualización.</p>
+<p align="center">
+  <img src="../recursos/imgs/mods_esquina_superior_izquierda.png" alt="Módulo de carga de archivos SVG en la esquina superior izquierda de Mods" width="600"><br>
+  <sub>Figura 3.1: Módulo de entrada de archivos vectoriales situado en la esquina superior izquierda.</sub>
+</p>
+
+<h3 id="32-panel-de-vistas-lado-derecho-previsualizacion-grafica-e-inversion">3.2. Panel de Vistas (Lado Derecho): Previsualización Gráfica e Inversión</h3>
+<p>Justo al lado derecho del módulo de entrada, se despliegan distintas vistas e interpretaciones gráficas de nuestro archivo cargado. 
+* <strong>Regla fundamental:</strong> Lo que se visualiza en color <strong>negro</strong> representa las zonas donde la fresa pasará removiendo material, mientras que las zonas blancas permanecerán intactas.
+<em>Aquí es importante mencionar que, en caso de que esté invertida la sección de corte de nuestras pistas o cualquier otro proceso, podemos arreglarlo dando clic en la opción </em><em>"invert"</em><em>.
+</em>Aquí podemos validar visualmente que las pistas o los contornos se rendericen de manera correcta y sin recortes extraños.</p>
+<p align="center">
+  <img src="../recursos/imgs/mods_panel_vistas_derecha.png" alt="Panel de vistas previas mostrando el diseño en negro sobre blanco" width="800"><br>
+  <sub>Figura 3.2: Panel lateral derecho de visualización gráfica del archivo cargado.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/invertido.png" alt="Panel de vistas previas mostrando el diseño invertido tras usar la opción invert" width="800"><br>
+  <sub>Figura 3.3: Vista previa del diseño con la función de inversión aplicada correctamente.</sub>
+</p>
+
+<h3 id="33-esquina-inferior-izquierda-unidades-y-herramientas-predefinidas">3.3. Esquina Inferior Izquierda: Unidades y Herramientas Predefinidas</h3>
+<p>Desplazándonos hacia la esquina inferior izquierda, configuraremos las bases métricas y operativas del trabajo:
+<strong><em>Conversión de unidades:</em>* Asegúrate de cambiar las medidas de pulgadas (<code>in</code>) a milímetros (<code>mm</code>) para trabajar bajo el sistema métrico estándar.
+</strong><em>Herramientas predefinidas:</em><em> En este apartado podemos seleccionar algunas configuraciones y geometrías de corte ya preestablecidas, dependiendo de si realizaremos un proceso de contorno, trazado de pistas o perforación.
+</em><strong>NOTA:</strong> En caso de que no se encuentre exactamente la herramienta con la que vamos a trabajar, podemos seleccionar la que más se aproxime a las medidas de nuestra herramienta y que realice la misma función; posteriormente podremos definir bien el tamaño en la siguiente sección.</p>
+<p align="center">
+  <img src="../recursos/imgs/mods_esquina_inferior_izquierda.png" alt="Configuración de unidades en mm y herramientas predefinidas en la esquina inferior izquierda" width="600"><br>
+  <sub>Figura 3.4: Selector de unidades métricas y herramientas predefinidas.</sub>
+</p>
+
+<h3 id="34-parte-central-configuracion-avanzada-de-herramienta-y-calculo-3d">3.4. Parte Central: Configuración Avanzada de Herramienta y Cálculo 3D</h3>
+<p>En la zona central de los nodos encontraremos los parámetros finos de la herramienta de corte:
+<strong><em>Modificación de parámetros:</em>* Aquí podemos ajustar de forma precisa el diámetro de la herramienta y el número de pasadas que realizará la máquina.
+</strong><em>Simulación visual:</em><em> El sistema nos ofrece una estimación gráfica de cómo se comportará la herramienta sobre la superficie de la placa.
+</em><strong>Cálculo de trayectorias:</strong> Al presionar el botón de <strong>Calculate</strong>, la herramienta procesará las trayectorias y se abrirá automáticamente una pestaña adicional donde podremos inspeccionar la <strong>vista interactiva en 3D</strong> del maquinado.</p>
+<p align="center">
+  <img src="../recursos/imgs/mods_centro_configuracion_herramienta.png" alt="Panel central de nodos para configurar diámetro, pasadas y cálculo de trayectorias" width="800"><br>
+  <sub>Figura 3.5: Bloques centrales de configuración de herramientas y botón de cálculo.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/visualizacion3d.png" alt="Vista detallada de la visualización 3d generada tras el cálculo" width="800"><br>
+  <sub>Figura 3.6: Ventana de simulación e inspección de la vista 3D interactiva del maquinado.</sub>
+</p>
+
+<h3 id="35-panel-derecho-origenes-velocidades-y-exportacion-rml">3.5. Panel Derecho: Orígenes, Velocidades y Exportación RML</h3>
+<p>Finalmente, desplazándonos hacia la sección derecha de los nodos, controlaremos los parámetros finales de posicionamiento y ejecución:
+<strong><em>Fijar el Origen:</em>* Por defecto, estableceremos siempre </strong><code>0</code> en Y<strong> y </strong><code>0</code> en Z<strong>. El único valor que modificaremos es </strong>X<strong> en escenarios específicos donde estemos fabricando dos placas simultáneamente o requiramos un desfase en la cama de la fresadora.
+</strong><em>Control de Velocidades:</em><em> 
+   </em>Para los procesos de <strong>pistas y contornos</strong>, utilizaremos una velocidad de avance de <strong>4 mm/s</strong>.
+   <em>Para los procesos de </em><em>perforaciones</em><em>, la velocidad se reduce drásticamente a </em><em>0.4 o 0.3 mm/s</em><em> para evitar la ruptura de las brocas delgadas.
+</em><strong>Estimación de Tiempo:</strong> En este mismo panel el sistema calculará un estimado del tiempo que le tomará a la MonoFab completar el proceso actual.
+<strong>*Guardado del Archivo:</strong> Por último, encontraremos la opción para generar y guardar el archivo con extensión <code>.rml</code> directamente en nuestro equipo, listo para enviarse a la máquina.</p>
+<p align="center">
+  <img src="../recursos/imgs/mods_panel_derecho_origen_velocidad.png" alt="Configuración de origen y velocidades en el panel derecho" width="800"><br>
+  <sub>Figura 3.7: Configuración de coordenadas de origen y control de velocidades.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/mods_descarga.png" alt="Guardado y descarga de archivo RML en el panel derecho" width="800"><br>
+  <sub>Figura 3.8: Módulo final para la generación y guardado del archivo RML en el equipo.</sub>
+</p>
+
+<hr />
+<h2 id="4-procedimiento-de-fabricacion-y-configuracion-por-etapas">4. Procedimiento de Fabricación y Configuración por Etapas</h2>
+<p>Para llevar a cabo la manufactura exitosa de nuestra placa en la Roland MonoFab (SRM-20) utilizando Mods, debemos seguir un orden estricto de procesos. </p>
+<p>⚠️ <strong>Regla fundamental entre procesos:</strong> Es <strong>indispensable</strong> dar un <em>refresh</em> (recargar) a la página web de Mods al finalizar cada etapa. Esto nos garantiza limpiar la memoria caché de los nodos y evitar conflictos al cargar un nuevo archivo vectorial (SVG) con configuraciones de herramientas distintas.</p>
+<h3 id="41-primera-etapa-contornos">4.1. Primera Etapa: Contornos</h3>
+<p>Comenzaremos procesando el archivo vectorial correspondiente al contorno exterior de nuestra placa.
+* <strong>Herramienta a utilizar:</strong> Fresas o cortadores de <strong>2 mm</strong>.
+* <strong>Configuración en Mods:</strong> 
+  * Cargamos el SVG de contornos.
+  * Ajustamos el diámetro de la herramienta a <strong>2 mm</strong>.
+  * Definimos el número de pasadas necesarias según el grosor del material de la tablilla.
+  * Asignamos la velocidad de avance estándar de <strong>4 mm/s</strong>.
+  * Verificamos en la vista 3D que el contorno se realice de forma externa o correcta sin invadir el área útil.
+  * Guardamos el archivo <code>.rml</code> resultante.</p>
+<ul>
+<li><strong>Visualización de nuestro archivo:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_contornosvis.png" alt="Visualización inicial del archivo SVG de contornos cargado en Mods" width="800"><br>
+  <sub>Figura 4.1: Vista previa del archivo de contornos en el panel de entrada.</sub>
+</p>
+
+<ul>
+<li><strong>Configuración de herramientas:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_contornosher.png" alt="Parámetros de herramienta de 2mm para contornos" width="800"><br>
+  <sub>Figura 4.2: Ajuste del diámetro de la fresa a 2 mm para el contorno.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_contornosher1.png" alt="Configuración detallada de pasadas para contornos" width="800"><br>
+  <sub>Figura 4.3: Configuración avanzada del número de pasadas en la herramienta de corte.</sub>
+</p>
+
+<ul>
+<li><strong>Orígenes y velocidad:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_contornosorig.png" alt="Configuración de origen y velocidad de 4 mm/s para contornos" width="800"><br>
+  <sub>Figura 4.4: Establecimiento de coordenadas de origen y velocidad de avance a 4 mm/s.</sub>
+</p>
+
+<ul>
+<li><strong>Visualización 3D:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_contornosv3d.png" alt="Vista 3D de la trayectoria de contornos" width="800"><br>
+  <sub>Figura 4.5: Inspección en 3D de las trayectorias de corte exterior generadas.</sub>
+</p>
+
+<p><em>(Una vez finalizado este archivo, recuerda dar <code>F5</code> o recargar la página web de Mods antes de continuar).</em></p>
+<h3 id="42-segunda-etapa-pistas-trazado">4.2. Segunda Etapa: Pistas (Trazado)</h3>
+<p>Una vez recargada la plataforma, procedemos con el circuito y trazado de las pistas de la placa.
+* <strong>Herramienta a utilizar:</strong> Herramienta en V (<strong>V-bit</strong>) de <strong>0.4 mm</strong>.
+* <strong>Configuración en Mods:</strong>
+  * Cargamos el archivo SVG correspondiente al circuito de pistas.
+  * Configuramos el diámetro de la herramienta en <strong>0.4 mm</strong>.
+  * Ajustamos los parámetros de pasadas para garantizar el aislamiento eléctrico correcto entre pistas; aquí recomendamos <strong>2 pasadas</strong>.
+  * Mantenemos la velocidad de corte en <strong>4 mm/s</strong>.
+  * Verificamos la simulación visual (recordando que lo negro será removido por la punta en V).
+  * Generamos y guardamos el archivo <code>.rml</code> de pistas.</p>
+<ul>
+<li><strong>Visualización de nuestro archivo:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_pistasvis.png" alt="Visualización del archivo SVG de pistas cargado en Mods" width="800"><br>
+  <sub>Figura 4.6: Carga y previsualización gráfica del circuito de pistas.</sub>
+</p>
+
+<ul>
+<li><strong>Configuración de herramientas:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_pistasher.png" alt="Parámetros de herramienta V-bit de 0.4mm para pistas" width="800"><br>
+  <sub>Figura 4.7: Configuración de la herramienta en V con diámetro de 0.4 mm.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_pistasher1.png" alt="Configuración de múltiples pasadas para aislamiento de pistas" width="800"><br>
+  <sub>Figura 4.8: Ajuste de las 2 pasadas recomendadas para el aislamiento correcto de las pistas.</sub>
+</p>
+
+<ul>
+<li><strong>Orígenes y velocidad:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_pistasorig.png" alt="Orígenes y velocidad de avance para el trazado de pistas" width="800"><br>
+  <sub>Figura 4.9: Configuración de origen y velocidad estándar de 4 mm/s para pistas.</sub>
+</p>
+
+<ul>
+<li><strong>Visualización 3D:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_pistasv3d.png" alt="Vista 3D de las trayectorias de pistas" width="800"><br>
+  <sub>Figura 4.10: Simulación tridimensional del aislamiento de pistas de cobre.</sub>
+</p>
+
+<p><em>(Nuevamente, al terminar la exportación, damos un nuevo <code>refresh</code> a la página de Mods para limpiar la interfaz).</em></p>
+<h3 id="43-tercera-etapa-perforaciones">4.3. Tercera Etapa: Perforaciones</h3>
+<p>Finalmente, procesamos los puntos correspondientes al aislamiento o barrenado para las perforaciones de pines o componentes que lo requieran.
+* <strong>Herramienta a utilizar:</strong> Broca de <strong>0.8 mm</strong>.
+* <strong>Configuración en Mods:</strong>
+  * Cargamos el archivo SVG o de puntos de perforación.
+  * Ajustamos el diámetro de la herramienta a <strong>0.8 mm</strong>.
+  * <strong>Ajuste crítico de velocidad:</strong> Cambiamos la velocidad de avance a un valor mucho más lento, fijándola entre <strong>0.3 mm/s y 0.4 mm/s</strong>. Esto es fundamental para evitar la tensión excesiva y prevenir la ruptura de la broca debido a su delgadez.
+  * Verificamos los tiempos estimados de este proceso, calculamos trayectorias y abrimos la vista 3D para confirmar los puntos de perforación.
+  * Guardamos el archivo <code>.rml</code> final para enviarlo a la MonoFab.</p>
+<ul>
+<li><strong>Visualización de nuestro archivo:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_perfovis.png" alt="Visualización del archivo SVG de perforaciones en Mods" width="800"><br>
+  <sub>Figura 4.11: Carga y previsualización de los puntos de perforación.</sub>
+</p>
+
+<ul>
+<li><strong>Configuración de herramientas:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_perfoher.png" alt="Configuración de broca de 0.8mm para perforaciones" width="800"><br>
+  <sub>Figura 4.12: Establecimiento del diámetro de la broca a 0.8 mm.</sub>
+</p>
+
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_perfoher1.png" alt="Parámetros complementarios de perforación" width="800"><br>
+  <sub>Figura 4.13: Configuración fina de profundidad para los puntos de perforación.</sub>
+</p>
+
+<ul>
+<li><strong>Orígenes y velocidad:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_perfoorig.png" alt="Velocidad reducida para perforaciones en el panel derecho" width="800"><br>
+  <sub>Figura 4.14: Ajuste crítico de velocidad reducida (0.3 - 0.4 mm/s) para evitar ruptura de broca.</sub>
+</p>
+
+<ul>
+<li><strong>Visualización 3D:</strong></li>
+</ul>
+<p align="center">
+  <img src="../recursos/imgs/proceso_etapa_perfov3d.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura 4.15: Inspección en 3D de las trayectorias correspondientes a las perforaciones.</sub>
+</p>
+
+<hr />
+<h2 id="5-resumen-de-parametros-clave-para-el-maquinado">5. Resumen de Parámetros Clave para el Maquinado</h2>
+<p>Para tener una referencia rápida antes de operar la máquina, la siguiente tabla resume las herramientas, velocidades y consideraciones por cada proceso:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Proceso</th>
+<th style="text-align: left;">Herramienta / Diámetro</th>
+<th style="text-align: left;">Velocidad de Avance</th>
+<th style="text-align: left;">Consideraciones Especiales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Contornos</strong></td>
+<td style="text-align: left;">Fresa de <strong>2 mm</strong></td>
+<td style="text-align: left;"><strong>4 mm/s</strong></td>
+<td style="text-align: left;">Revisar que el vector esté dentro del lienzo en Inkscape.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pistas</strong></td>
+<td style="text-align: left;">Herramienta en V de <strong>0.4 mm</strong></td>
+<td style="text-align: left;"><strong>4 mm/s</strong></td>
+<td style="text-align: left;">Dar <em>refresh</em> a la web antes de cargar; usar 2 pasadas para aislar correctamente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perforaciones</strong></td>
+<td style="text-align: left;">Broca de <strong>0.8 mm</strong></td>
+<td style="text-align: left;"><strong>0.3 - 0.4 mm/s</strong></td>
+<td style="text-align: left;">Velocidad reducida obligatoria para evitar la ruptura de la broca.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips", "navigation.tabs", "navigation.top", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
