@@ -78,7 +78,7 @@ Para la fabricación exitosa de una placa de circuito impreso (PCB), es fundamen
 3. **Contorno:** Finalmente, se realiza el corte exterior para separar la placa utilizando una herramienta de fresado de **2 mm**.
 
   <p align="center">
-  <img src="../recursos/imgs/tools_allen.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/tools_allen.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
   <sub>Figura: Herramientas de sujeción, espátulas, brocas y la llave Allen indispensable para aflojar y apretar el mandril que sostiene las herramientas de corte. </sub>
 </p>
 
@@ -88,7 +88,7 @@ Para la fabricación exitosa de una placa de circuito impreso (PCB), es fundamen
 
 * **Camas de sacrificio:** Es altamente recomendable utilizar nuestras propias camas de sacrificio (usualmente hechas de MDF o materiales similares) colocadas sobre la base de la máquina. Esto protege la estructura principal de la fresadora de posibles daños accidentales durante el fresado de contornos.
 * **Descarga de Archivos:** Puedes acceder al diseño base en formato DXF.
-<a href="../recursos/archivos/Sacrificio SS.dxf" target="_blank">[Sacrificio SS(DXF)]</a>  
+<a href="../recursos/archivos/Sacrificio-SS.dxf" target="_blank">[Sacrificio SS(DXF)]</a>  
 
 ---
 
@@ -97,34 +97,34 @@ Para la fabricación exitosa de una placa de circuito impreso (PCB), es fundamen
 1. **Preparación de la Superficie:** Limpiamos la cama de sacrificio y utilizamos **cinta doble cara** para fijar nuestra placa de cobre, procurando pegarla lo más derecha y alineada posible para evitar errores de paralelismo.
 
      <p align="center">
-  <img src="../recursos/imgs/7.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/7.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
   <sub>Figura: Placa fenólica con cinta doble cara. </sub>
 </p>
      <p align="center">
-  <img src="../recursos/imgs/8.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/8.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
   <sub>Figura: Placa fenólica alineada correctamente en la cama de sacrificio. </sub>
 </p>
      <p align="center">
-  <img src="../recursos/imgs/9.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/9.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
   <sub>Figura: Placa con cama de sacrificio colocada dentro de la MonoFab. </sub>
 </p>
 3. **Colocación de la broca:** Usando la herramienta de la llave allen, aflojamos el tornillo y colocamos la broca o cortador y posteriormente volvemos a apretar para continuar con la calibración. 
      <p align="center">
-  <img src="../recursos/imgs/11.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/11.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
   <sub>Figura: Colocación de el cortador. </sub>
 </p>
 
 4. **Calibración de Ejes X e Y:** Movemos la máquina mediante el VPanel hasta la esquina inferior izquierda de la placa de cobre y guardamos el origen en X e Y (`X/Y` en *Set Origin Point*).
 5. **Calibración del Eje Z:** Para el eje Z, utilizamos la técnica clásica de colocar un **pequeño trozo de papel** entre la punta de la herramienta y la superficie de la placa, bajando lentamente el eje Z hasta sentir una ligera fricción al mover el papel. Una vez logrado, fijamos el origen en Z.
         <p align="center">
-  <img src="../recursos/imgs/10.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
-  <sub>Figura: Calibración de la MonoFab en la esquina inferior. </sub>
+  <img src="../recursos/imgs/10.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <sub>Figura: Calibración de la MonoFab en la esquina inferior izquierda. </sub>
 </p>
 
 6. **Ejecución del Trabajo:** Con los orígenes correctamente fijados, subimos nuestro archivo de perforaciones (`.rml`), verificamos la vista previa y presionamos *Output* para iniciar el proceso.
 7. **Inspección y Cambio de Herramienta:** Una vez finalizado el trabajo de perforación, acercamos la placa hacia nosotros utilizando el VPanel para poder aspirar los residuos y revisar el resultado.
         <p align="center">
-  <img src="../recursos/imgs/12.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/12.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
   <sub>Figura: Placa fenólica perforada lista para aspirar residuos. </sub>
 </p>
 8. **Precaución Crítica en el Cambio de Herramienta:** Procedemos a cambiar la broca por la siguiente herramienta (por ejemplo, el cortador en V para pistas) y **volvemos a calibrar únicamente en el eje Z**. Es **sumamente importante no mover los ejes X y Y**, ya que cualquier alteración en dichos ejes provocará que las pistas o perforaciones posteriores queden totalmente desfasadas.
@@ -178,10 +178,10 @@ Monitoreo inicial: Es vital mantenernos al pendiente en los primeros segundos de
    A continuación se muestra el resultado final del trabajo realizado por el equipo:
 
      <p align="center">
-  <img src="../recursos/imgs/p1.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/p1.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
 </p>
      <p align="center">
-  <img src="../recursos/imgs/p2.png" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/p2.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
 
 </p>
 
