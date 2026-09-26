@@ -141,7 +141,7 @@ A continuación se muestran los registros en video del comportamiento de la Rola
 * **Proceso de Perforaciones:**
 
   <video controls width="100%">
-    <source src="docs/videos/perforaciones.mp4" type="video/mp4">
+    <source src="../recursos/imgs/perforaciones.mp4" type="video/mp4">
     Tu navegador no soporta la reproducción de video.
   </video>
 
@@ -150,7 +150,7 @@ A continuación se muestran los registros en video del comportamiento de la Rola
 * **Proceso de Trazado de Pistas:**
   
 <video controls width="100%">
-  <source src="docs/videos/pistas.mp4" type="video/mp4">
+  <source src="../recursos/imgs/pistas.mp4" type="video/mp4">
   Tu navegador no soporta la reproducción de video.
 </video>
 
@@ -159,7 +159,7 @@ Mecanizado y aislamiento de las pistas del circuito con el cortador en V de 0.4 
 * **Proceso de Contorno:**
 
 <video controls width="100%">
-  <source src="docs/videos/contorno.mp4" type="video/mp4">
+  <source src="../recursos/imgs/contorno.mp4" type="video/mp4">
   Tu navegador no soporta la reproducción de video.
 </video>
 
@@ -181,10 +181,10 @@ Monitoreo inicial: Es vital mantenernos al pendiente en los primeros segundos de
    A continuación se muestra el resultado final del trabajo realizado por el equipo:
 
      <p align="center">
-  <img src="../recursos/imgs/p1.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/p1.jpeg" alt="Vista 3D final de los puntos perforados" width="650"><br>
 </p>
      <p align="center">
-  <img src="../recursos/imgs/p2.jpeg" alt="Vista 3D final de los puntos perforados" width="800"><br>
+  <img src="../recursos/imgs/p2.jpeg" alt="Vista 3D final de los puntos perforados" width="650"><br>
 
 </p>
 
