@@ -181,10 +181,10 @@ Monitoreo inicial: Es vital mantenernos al pendiente en los primeros segundos de
    A continuación se muestra el resultado final del trabajo realizado por el equipo:
 
      <p align="center">
-  <img src="../recursos/imgs/p1.jpeg" alt="Vista 3D final de los puntos perforados" width="650"><br>
+  <img src="../recursos/imgs/p1.jpeg" alt="Vista 3D final de los puntos perforados" width="500"><br>
 </p>
      <p align="center">
-  <img src="../recursos/imgs/p2.jpeg" alt="Vista 3D final de los puntos perforados" width="650"><br>
+  <img src="../recursos/imgs/p2.jpeg" alt="Vista 3D final de los puntos perforados" width="500"><br>
 
 </p>
 
