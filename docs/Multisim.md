@@ -1,6 +1,6 @@
 # Guía de Inicio Rápido: Manual Completo de Uso y Simulación en NI Multisim
 
-Bienvenido a esta guía completa y detallada sobre el uso de **NI Multisim** para el diseño, simulación y validación de circuitos electrónicos analógicos, digitales y mixtos. Este documento está diseñado para guiarte desde los conceptos fundamentales de la interfaz hasta la configuración experta de motores de análisis SPICE, instrumentación virtual de laboratorio y síntesis de lógica digital de nivel universitario.
+Bienvenido a esta guía completa y detallada sobre el uso de **Multisim** para el diseño, simulación y validación de circuitos electrónicos analógicos, digitales y mixtos. Este documento está diseñado para guiarte desde los conceptos fundamentales de la interfaz hasta la configuración experta de motores de análisis SPICE, instrumentación virtual de laboratorio y síntesis de lógica digital de nivel universitario.
 
 ---
 
@@ -53,7 +53,7 @@ El diseño de sistemas digitales dentro de Multisim permite evaluar funciones bo
 ### Entendiendo las Sub-compuertas (`A`, `B`, `C`, `D`)
 Al hacer clic en **OK** para colocar un componente como el `74LS08`, notarás que la ventana no se cierra inmediatamente, sino que te muestra una pequeña sub-lista con las letras `A`, `B`, `C` y `D`:
 
-> 🔍 **Explicación técnica de la estructura física del CI:**
+> **Explicación técnica de la estructura física del CI:**
 > Un circuito integrado real de 14 pines (como el `74LS08`) alberga internamente 4 compuertas AND independientes que comparten las mismas terminales de alimentación ($V_{CC}$ y $GND$). 
 > * Al seleccionar `A`, Multisim colocará la primera compuerta del chip (pines 1, 2 y 3).
 > * Si vuelves a colocar otra compuerta del mismo grupo y seleccionas `B`, el programa entenderá que estás utilizando la segunda compuerta dentro del **mismo chip físico** (designado como `U1B`).
@@ -203,7 +203,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
    - Conecta el **Canal B ($CH2$)** al nodo de interés donde deseas medir la respuesta (por ejemplo, la salida del circuito tras pasar por un diodo rectificador o filtro).
    - Asegúrate de interconectar las terminales de tierra de los canales o utilizar el nodo de referencia común (`GND`) del circuito esquemático.
 
-> 🎨 **Recomendación crítica de ruteo visual (Cambio de color de cables):**
+> **Recomendación crítica de ruteo visual (Cambio de color de cables):**
 > Por defecto, Multisim dibuja todas las líneas de conexión en color rojo. Para evitar confusiones al analizar múltiples señales superpuestas en la pantalla del osciloscopio:
 > 1. Haz **clic derecho sobre el cable** que se conecta al Canal B.
 > 2. En el menú contextual, selecciona **Properties** (Propiedades) o **Net Color** (Color de red).
