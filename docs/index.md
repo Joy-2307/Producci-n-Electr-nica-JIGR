@@ -14,3 +14,4 @@ Descubre las diferentes secciones del portafolio:
 [<i class="fa-solid fa-microchip"></i> Primeros pasos con KiCad](Primeros pasos Kicad.md){ .md-button .md-button--primary }
 [<i class="fa-solid fa-bezier-curve"></i> Procesamiento con Mods](Mods CE.md){ .md-button .md-button--primary }
 [<i class="fa-solid fa-gear"></i> Aplicación con MonoFab](Roland MonoFab.md){ .md-button .md-button--primary }
+[<i class="fa-solid fa-gear"></i> Primeros pasos Multisim](Multisim.md){ .md-button .md-button--primary 
