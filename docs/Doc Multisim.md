@@ -1,6 +1,6 @@
-# Guía de Inicio Rápido: Manual Completo de Uso y Simulación en NI Multisim
+# Guía Maestra de Inicio Rápido: Manual Completo de Uso y Simulación en NI Multisim
 
-Bienvenido a esta guía completa y detallada sobre el uso de **Multisim** para el diseño, simulación y validación de circuitos electrónicos analógicos, digitales y mixtos. Este documento está diseñado para guiarte desde los conceptos fundamentales de la interfaz hasta la configuración experta de motores de análisis SPICE, instrumentación virtual de laboratorio y síntesis de lógica digital de nivel universitario.
+Bienvenido a esta guía completa y detallada sobre el uso de **NI Multisim** para el diseño, simulación y validación de circuitos electrónicos analógicos, digitales y mixtos. Este documento está diseñado para guiarte desde los conceptos fundamentales de la interfaz hasta la configuración experta de motores de análisis SPICE, instrumentación virtual de laboratorio y síntesis de lógica digital de nivel universitario.
 
 ---
 
@@ -9,7 +9,7 @@ Bienvenido a esta guía completa y detallada sobre el uso de **Multisim** para e
 - [2. Simulación de Lógica Digital y Compuertas TTL Paso a Paso](#2-simulación-de-lógica-digital-y-compuertas-ttl-paso-a-paso)
 - [3. Gestión Avanzada de Nodos, Etiquetas de Red e Indicadores](#3-gestión-avanzada-de-nodos-etiquetas-de-red-e-indicadores)
 - [4. El Convertidor Lógico (Logic Converter) a Detalle](#4-el-convertidor-lógico-logic-converter-a-detalle)
-- [5. Motores de Análisis y Simulación Avanzada (Transitorio, DC Sweep y Temperatura)](#5-motores-de-análisis-y-simulación-avanzada-transitorio-dc-sweep-y-temperatura)
+- [5. Motores de Análisis y Simulación Avanzada (Transitorio, DC Sweep y Temperatura)](#5-motores-de-analisis-y-simulación-avanzada-transitorio-dc-sweep-y-temperatura)
 - [6. Instrumentación Virtual de Laboratorio: Generadores y Osciloscopios](#6-instrumentación-virtual-de-laboratorio-generadores-y-osciloscopios)
 
 ---
@@ -18,17 +18,25 @@ Bienvenido a esta guía completa y detallada sobre el uso de **Multisim** para e
 
 Para comenzar a desarrollar simulaciones electrónicas de forma estructurada, es fundamental conocer la arquitectura del software y la navegación dentro del espacio de trabajo.
 
+### Apertura y Localización del Software
+1. En el sistema operativo de tu equipo de trabajo, dirígete a la barra de tareas o presiona la tecla `Windows` para abrir el buscador principal.
+2. Escribe **Multisim**. El acceso directo al programa se identifica con un icono característico formado por líneas esquemáticas e intersecciones de red.
+3. Haz clic sobre el ejecutable para abrir la pantalla principal.
+
+<img src="../recursos/imgs/multisim_inicio_buscador.png" alt="Búsqueda de NI Multisim en el sistema operativo" width="600">
+
+### Distribución del Espacio de Trabajo
 Al cargar el software, te encontrarás con una interfaz dividida en cuatro áreas operativas clave:
 
 * **Lienzo de Diseño Esquemático (Worksheet):** Corresponde al área central cuadriculada. Aquí se colocan los componentes físicos y lógicos, se trazan las líneas de conexión eléctrica y se conectan las referencias a tierra.
 * **Barra de Menús y Herramientas Superiores:** Ubicada en la parte alta de la pantalla. Proporciona acceso a la gestión de archivos (`File`), edición (`Edit`), opciones de visualización (`View`), colocación de elementos (`Place`), configuración de simulación (`Simulate`) y ventanas emergentes (`Window`).
 * **Barra de Selección de Componentes:** Posicionada justo debajo de la barra de menús. Agrupa los dispositivos electrónicos en familias lógicas y analógicas mediante botones de acceso rápido:
-  - *Place Source:* Fuentes de alimentación CA, CC y señales digitales.
-  - *Place Basic:* Resistencias, capacitores, inductores y de switches.
-  - *Place Diodes:* Diodos rectificadores, Zener y LEDs.
-  - *Place Transistors:* Transistores BJT (NPN/PNP), MOSFETs y JFETs.
-  - *Place Analog:* Amplificadores operacionales y comparadores.
-  - *Place TTL:* Circuitos integrados digitales de la familia 7400.
+  - **Place Source:** Fuentes de alimentación CA, CC y señales digitales.
+  - **Place Basic:** Resistencias, capacitores, inductores y switches.
+  - **Place Diodes:** Diodos rectificadores, Zener y LEDs.
+  - **Place Transistors:** Transistores BJT (NPN/PNP), MOSFETs y JFETs.
+  - **Place Analog:** Amplificadores operacionales y comparadores.
+  - **Place TTL:** Circuitos integrados digitales de la familia 7400.
 * **Barra Lateral Derecha (Instrumentos Virtuales):** Un banco de medición interactivo que incluye multímetros digitales, generadores de funciones, wattímetros, osciloscopios de dos y cuatro canales, trazadores de Bode, frecuencímetros y el convertidor lógico.
 
 <img src="../recursos/imgs/multisim_pantalla_completa.png" alt="Vista general del entorno de trabajo de NI Multisim a pantalla completa" width="800">
@@ -42,8 +50,8 @@ El diseño de sistemas digitales dentro de Multisim permite evaluar funciones bo
 ### Búsqueda e Inserción de Compuertas Lógicas
 1. Dirígete a la barra superior de componentes y haz clic en el botón **Place TTL** (o presiona la combinación de teclas `Ctrl + W` y selecciona el grupo `TTL`).
 2. Se desplegará la ventana emergente **Select a Component** (Seleccionar Componente).
-3. En la esquina superior izquierda, dentro del desplegable *Family*, selecciona la subfamilia correspondiente (por ejemplo, `74LS` para tecnología Low-Power Schottky).
-4. En el cuadro de texto *Component*, escribe la matrícula específica del circuito integrado:
+3. En la esquina superior izquierda, dentro del desplegable **Family**, selecciona la subfamilia correspondiente (por ejemplo, `74LS` para tecnología Low-Power Schottky).
+4. En el cuadro de texto **Component**, escribe la matrícula específica del circuito integrado:
    - Para compuertas **AND** de dos entradas: Escribe `74LS08`.
    - Para compuertas **OR** de dos entradas: Escribe `74LS32`.
    - Para compuertas **NOT** (Inversores): Escribe `74LS04`.
@@ -53,7 +61,7 @@ El diseño de sistemas digitales dentro de Multisim permite evaluar funciones bo
 ### Entendiendo las Sub-compuertas (`A`, `B`, `C`, `D`)
 Al hacer clic en **OK** para colocar un componente como el `74LS08`, notarás que la ventana no se cierra inmediatamente, sino que te muestra una pequeña sub-lista con las letras `A`, `B`, `C` y `D`:
 
-> **Explicación técnica de la estructura física del CI:**
+>  **Explicación técnica de la estructura física del CI:**
 > Un circuito integrado real de 14 pines (como el `74LS08`) alberga internamente 4 compuertas AND independientes que comparten las mismas terminales de alimentación ($V_{CC}$ y $GND$). 
 > * Al seleccionar `A`, Multisim colocará la primera compuerta del chip (pines 1, 2 y 3).
 > * Si vuelves a colocar otra compuerta del mismo grupo y seleccionas `B`, el programa entenderá que estás utilizando la segunda compuerta dentro del **mismo chip físico** (designado como `U1B`).
@@ -68,7 +76,7 @@ Para simular las entradas de una tabla de verdad e inyectar estados lógicos baj
 2. En la columna de la izquierda, selecciona la categoría **DIGITAL_SOURCES**.
 3. En la lista de componentes, haz clic sobre **INTERACTIVE_DIGITAL_CONSTANT**.
 4. Haz clic en **OK** y coloca tantas fuentes interactivas como entradas tenga tu función booleana (por ejemplo, cuatro fuentes para las entradas $A, B, C, D$).
-5. Por defecto, cada fuente interactiva muestra una tecla de acceso rápido (como `Space`). Si deseas cambiar la tecla que conmuta la señal de $0\text{ V}$ (`0`) a $5\text{ V}$ (`1`), haz doble clic sobre el componente, ve a la pestaña **Value** y asigna una tecla específica del teclado (por ejemplo, la tecla `A` para la entrada A).
+5. Por defecto, cada fuente interactiva muestra una tecla de acceso rápido (como `Space`). Si deseas cambiar la tecla que conmuta la señal de $0\text{ V}$ a $5\text{ V}$, haz doble clic sobre el componente, ve a la pestaña **Value** y asigna una tecla específica del teclado (por ejemplo, la tecla `A` para la entrada A).
 
 <img src="../recursos/imgs/multisim_fuente_digital_interactiva.png" alt="Colocación y configuración de fuentes digitales interactivas" width="600">
 
@@ -97,12 +105,13 @@ Para verificar las salidas lógicas sin agregar un circuito físico con diodos L
 2. Selecciona la categoría **PROBE**.
 3. Elige el color del indicador visual (`PROBE_DIGITAL_RED`, `PROBE_DIGITAL_GREEN`, `PROBE_DIGITAL_BLUE`, etc.) y haz clic en **OK**.
 4. Conecta el terminal de la punta de prueba directamente al nodo o pin de salida de tu última compuerta lógica.
-5. Al iniciar la simulación (`F5` o botón verde **Play**), la punta se iluminará intensamente cuando la combinación lógica entregue un nivel alto (`1` / $5\text{ V}$) y permanecerá apagada en nivel bajo (`0` / $0\text{ V}$).
+5. Al iniciar la simulación (`F5` o botón verde **Play**), la punta se iluminará intensamente cuando la combinación lógica entregue un nivel alto ($5\text{ V}$) y permanecerá apagada en nivel bajo ($0\text{ V}$).
 
 <img src="../recursos/imgs/multisim_puntas_prueba.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
+
 ---
 
-## 4. El Convertidor Lógico (*Logic Converter*) a Detalle
+## 4. El Convertidor Lógico (Logic Converter) a Detalle
 
 El **Convertidor Lógico** es uno de los instrumentos virtuales más potentes y versátiles integrados en Multisim. Su propósito principal es servir como un puente matemático automatizado capaz de interconectar tablas de verdad, expresiones algebraicas booleanas y diagramas esquemáticos en cuestión de segundos.
 
@@ -116,12 +125,9 @@ El **Convertidor Lógico** es uno de los instrumentos virtuales más potentes y 
 ### Operación Interactiva del Panel de Control
 Haz **doble clic** sobre el icono del instrumento en el esquemático para desplegar su ventana de control flotante. En su interfaz encontrarás un panel izquierdo con la tabla de verdad y una botonera inferior de conversión directa:
 
-* **Extracción de la Tabla de Verdad desde el Esquema (`Circuito -> Tabla`):**
-  Si ya terminaste de cablear un circuito digital en el lienzo y deseas comprobar su comportamiento matemático, haz clic en este primer botón (representado por una flecha que va de un circuito hacia una matriz). El instrumento simulará automáticamente todas las combinaciones posibles de las entradas y rellenará la tabla con los estados binarios de salida correspondientes.
-* **Simplificación y Obtención de la Función Booleana (`Tabla -> Función`):**
-  Si introduces ceros y unos de forma manual en la tabla de verdad (haciendo clic sobre las celdas), o si el instrumento acaba de leer tu circuito, haz clic en el segundo botón. Multisim resolverá el mapa algebraico y te arrojará la función booleana simplificada en formato de suma de productos (minitérminos) de forma instantánea.
-* **Síntesis Automática de Esquemáticos (De Función o Tabla a Circuito):**
-  En la sección superior del panel puedes escribir directamente una expresión algebraica booleana utilizando operadores lógicos estándar. Al hacer clic en los botones de conversión hacia el esquemático, el programa generará automáticamente todas las compuertas y conexiones necesarias y las dibujará por ti en una nueva hoja de trabajo.
+* **Extracción de la Tabla de Verdad desde el Esquema (`Circuito -> Tabla`):** Si ya terminaste de cablear un circuito digital en el lienzo y deseas comprobar su comportamiento matemático, haz clic en este primer botón (representado por una flecha que va de un circuito hacia una matriz). El instrumento simulará automáticamente todas las combinaciones posibles de las entradas y rellenará la tabla con los estados binarios de salida correspondientes.
+* **Simplificación y Obtención de la Función Booleana (`Tabla -> Función`):** Si introduces ceros y unos de forma manual en la tabla de verdad (haciendo clic sobre las celdas), o si el instrumento acaba de leer tu circuito, haz clic en el segundo botón. Multisim resolverá el mapa algebraico y te arrojará la función booleana simplificada en formato de suma de productos (minitérminos) de forma instantánea.
+* **Síntesis Automática de Esquemáticos (De Función o Tabla a Circuito):** En la sección superior del panel puedes escribir directamente una expresión algebraica booleana utilizando operadores lógicos estándar. Al hacer clic en los botones de conversión hacia el esquemático, el programa generará automáticamente todas las compuertas y conexiones necesarias y las dibujará por ti en una nueva hoja de trabajo.
 
 <img src="../recursos/imgs/multisim_logic_converter_panel.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
 
@@ -140,10 +146,10 @@ Para configurar cualquiera de estas pruebas avanzadas, dirígete a la barra de m
 * **Propósito y Aplicación:** Estudia cómo evolucionan las variables del circuito (voltajes y corrientes) en función del tiempo real. Es el análisis fundamental para observar fenómenos dinámicos y transitorios, tales como los procesos de carga y descarga exponencial en capacitores e inductores, o el comportamiento temporal de circuitos osciladores y fuentes conmutadas.
 * **Pasos de Configuración:**
   1. En la ventana de análisis, selecciona la pestaña **Transient**.
-  2. En el apartado de parámetros temporales, define el tiempo inicial (`Start time`, normalmente configurado en `0 s`) y el tiempo de parada (`Stop time`, por ejemplo, `5 ms` o `1 s` dependiendo de la constante de tiempo $\tau = RC$ de tu circuito).
-  3. En la sección de condiciones iniciales, puedes optar por calcular el punto de operación de polarización automática (*Automatically determine initial conditions*).
+  2. En el apartado de parámetros temporales, define el tiempo inicial (**Start time**, normalmente configurado en `0 s`) y el tiempo de parada (**Stop time**, por ejemplo, `5 ms` o `1 s` dependiendo de la constante de tiempo $\tau = RC$ de tu circuito).
+  3. En la sección de condiciones iniciales, puedes optar por calcular el punto de operación de polarización automática (**Automatically determine initial conditions**).
   4. Dirígete a la pestaña **Output** (Salida) en la misma ventana, busca en la lista de variables del circuito el nodo o componente que deseas medir (por ejemplo, el voltaje en las terminales del capacitor `V(capacitor)`) y haz clic en el botón **Add** para pasarlo a las variables activas a graficar.
-  5. Haz clic en el botón **Simulate** (o *Run*) ubicado en la parte inferior derecha de la ventana para desplegar la gráfica de respuesta temporal.
+  5. Haz clic en el botón **Simulate** (o **Run**) ubicado en la parte inferior derecha de la ventana para desplegar la gráfica de respuesta temporal.
 
 <img src="../recursos/imgs/multisim_analisis_transitorio.png" alt="Ventana de configuración del análisis transitorio y gráfica de respuesta exponencial" width="800">
 
@@ -152,8 +158,8 @@ Para configurar cualquiera de estas pruebas avanzadas, dirígete a la barra de m
 * **Pasos de Configuración:**
   1. Coloca un transistor (como el modelo clásico `2N2222`) y asegúrate de conectar fuentes de alimentación independientes en la base y en el colector.
   2. Abre el menú **Analyses and Simulation** y selecciona la pestaña **DC Sweep**.
-  3. Define la fuente principal de barrido (*Primary source*) que fungirá como el eje X de tu gráfica (por ejemplo, la fuente de voltaje del colector, nombrada como `VCE`). Establece el valor inicial, el valor final y el tamaño del incremento de paso (*Voltage step*).
-  4. Si deseas generar una familia de curvas múltiples, habilita la opción de fuente secundaria (*Secondary source*), selecciona la fuente de la base (`IB`) y configura sus valores de incremento escalonado.
+  3. Define la fuente principal de barrido (**Primary source**) que fungirá como el eje X de tu gráfica (por ejemplo, la fuente de voltaje del colector, nombrada como `VCE`). Establece el valor inicial, el valor final y el tamaño del incremento de paso (**Voltage step**).
+  4. Si deseas generar una familia de curvas múltiples, habilita la opción de fuente secundaria (**Secondary source**), selecciona la fuente de la base (`IB`) y configura sus valores de incremento escalonado.
   5. En la pestaña **Output**, selecciona la variable dependiente de salida (por ejemplo, la corriente que atraviesa el pin de colector del transistor, `I(Q1)`) y haz clic en **Add**.
   6. Presiona **Simulate** para trazar la familia de curvas características.
 
@@ -167,6 +173,7 @@ Para configurar cualquiera de estas pruebas avanzadas, dirígete a la barra de m
   3. Vincula este análisis a una simulación transitoria o de barrido DC para observar cómo se desplazan o deforman las curvas características del circuito conforme aumenta la temperatura de los semiconductores.
 
 <img src="../recursos/imgs/multisim_analisis_temperatura.png" alt="Panel de configuración del análisis de temperatura en Multisim" width="600">
+
 ---
 
 ## 6. Instrumentación Virtual de Laboratorio: Generadores y Osciloscopios
@@ -176,34 +183,34 @@ Para el diseño, medición, filtrado y validación de circuitos analógicos que 
 ### El Generador de Funciones (*Function Generator*)
 El generador de funciones es el instrumento encargado de inyectar señales de estímulo de CA personalizables hacia nuestro circuito:
 
-1. **Ubicación y Colocación:** Dirígete a la barra lateral derecha de instrumentos virtuales y haz clic sobre el icono del **Function Generator**. Colócalo en el lienzo de trabajo.
-2. **Terminales de Conexión:**
-   - **Terminal Positiva (`+`):** Suministra la señal de salida respecto a la referencia de tierra.
-   - **Terminal Negativa (`-`):** Suministra la señal con una inversión de fase de $180^\circ$.
-   - **Terminal Común (`COM`):** Referencia central de tierra del generador.
-3. **Ajuste de Parámetros en el Panel de Control:** Haz **doble clic** sobre el icono del generador para abrir su carátula virtual. Desde aquí podrás configurar:
-   - **Forma de onda:** Selecciona entre onda **senoidal** (pura para pruebas de audio y CA), **triangular** (para rampas de barrido) o **cuadrada** (para pulsos y modulación).
-   - **Frecuencia (*Frequency*):** Define el valor numérico y la unidad de medida (Hertz, kHz o MHz) mediante el selector flotante o cuadro de texto.
-   - **Amplitud (*Amplitude*):** Configura la amplitud pico-pico ($V_{pp}$), pico ($V_p$) o valor eficaz ($V_{RMS}$).
-   - **Offset de CD:** Permite desplazar el nivel de continua de la señal hacia arriba o hacia abajo respecto al eje de cero voltios.
+* **Ubicación y Colocación:** Dirígete a la barra lateral derecha de instrumentos virtuales y haz clic sobre el icono del **Function Generator**. Colócalo en el lienzo de trabajo.
+* **Terminales de Conexión:**
+  - **Terminal Positiva (`+`):** Suministra la señal de salida respecto a la referencia de tierra.
+  - **Terminal Negativa (`-`):** Suministra la señal con una inversión de fase de $180^\circ$.
+  - **Terminal Común (`COM`):** Referencia central de tierra del generador.
+* **Ajuste de Parámetros en el Panel de Control:** Haz doble clic sobre el icono del generador para abrir su carátula virtual. Desde aquí podrás configurar:
+  - **Forma de onda:** Selecciona entre onda senoidal (pura para pruebas de audio y CA), triangular (para rampas de barrido) o cuadrada (para pulsos y modulación).
+  - **Frecuencia (Frequency):** Define el valor numérico y la unidad de medida (Hertz, kHz o MHz) mediante el selector flotante o cuadro de texto.
+  - **Amplitud (Amplitude):** Configura la amplitud pico-pico ($V_{pp}$), pico ($V_p$) o valor eficaz ($V_{RMS}$).
+  - **Offset de CD:** Permite desplazar el nivel de continua de la señal hacia arriba o hacia abajo respecto al eje de cero voltios.
 
 <img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
 
 #### Inyección de Señales Personalizadas mediante Archivos Externos
-Además de las ondas periódicas estándar, Multisim permite utilizar fuentes controladas (*Piecewise Linear Sources* o fuentes de voltaje por archivos de datos) para reproducir señales complejas del mundo real (por ejemplo, electrocardióogramas biomédicos, pulsos de sensores automotrices o transitorios de motores). Basta con cargar un archivo de texto con pares de datos de tiempo y voltaje (`t, V`) para que la fuente reproduzca el perfil dinámico de la señal sobre tu circuito.
+Además de las ondas periódicas estándar, Multisim permite utilizar fuentes controladas (*Piecewise Linear Sources* o fuentes de voltaje por archivos de datos) para reproducir señales complejas del mundo real (por ejemplo, electrocardiogramas biomédicos, pulsos de sensores automotrices o transitorios de motores). Basta con cargar un archivo de texto con pares de datos de tiempo y voltaje (`t, V`) para que la fuente reproduzca el perfil dinámico de la señal sobre tu circuito.
 
 ---
 
 ### El Osciloscopio Virtual y la Configuración de Canales
 Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconductores (como la rectificación mediante diodos), se utiliza el osciloscopio:
 
-1. **Selección del Instrumento:** Puedes seleccionar el osciloscopio estándar de dos canales, el osciloscopio de cuatro canales, o réplicas de instrumentos comerciales de laboratorio como el **Osciloscopio Tektronix**.
-2. **Conexión de Canales y Tierras:**
-   - Conecta el **Canal A ($CH1$)** al nodo donde ingresa la señal de estímulo (por ejemplo, a la salida del generador de funciones).
-   - Conecta el **Canal B ($CH2$)** al nodo de interés donde deseas medir la respuesta (por ejemplo, la salida del circuito tras pasar por un diodo rectificador o filtro).
-   - Asegúrate de interconectar las terminales de tierra de los canales o utilizar el nodo de referencia común (`GND`) del circuito esquemático.
+* **Selección del Instrumento:** Puedes seleccionar el osciloscopio estándar de dos canales, el osciloscopio de cuatro canales, o réplicas de instrumentos comerciales de laboratorio como el **Osciloscopio Tektronix**.
+* **Conexión de Canales y Tierras:**
+  - Conecta el **Canal A ($CH1$)** al nodo donde ingresa la señal de estímulo (por ejemplo, a la salida del generador de funciones).
+  - Conecta el **Canal B ($CH2$)** al nodo de interés donde deseas medir la respuesta (por ejemplo, la salida del circuito tras pasar por un diodo rectificador o filtro).
+  - Asegúrate de interconectar las terminales de tierra de los canales o utilizar el nodo de referencia común (`GND`) del circuito esquemático.
 
-> **Recomendación crítica de ruteo visual (Cambio de color de cables):**
+>  **Recomendación crítica de ruteo visual (Cambio de color de cables):**
 > Por defecto, Multisim dibuja todas las líneas de conexión en color rojo. Para evitar confusiones al analizar múltiples señales superpuestas en la pantalla del osciloscopio:
 > 1. Haz **clic derecho sobre el cable** que se conecta al Canal B.
 > 2. En el menú contextual, selecciona **Properties** (Propiedades) o **Net Color** (Color de red).
@@ -213,7 +220,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 <img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
 
 ### Operación y Uso de la Función Auto-set
-1. Haz clic en el botón verde **Correr** (*Run*) o presiona `F5` para iniciar el motor de simulación.
+1. Haz clic en el botón verde **Correr** (`Run`) o presiona `F5` para iniciar el motor de simulación.
 2. Haz **doble clic** sobre el icono del osciloscopio para desplegar la pantalla principal del equipo.
 3. Si utilizas el modelo Tektronix, presiona el botón de encendido (**Power**).
 4. Presiona el botón de ajuste automático (**Auto-set**). El osciloscopio analizará de inmediato las señales presentes en las entradas y recalibrará automáticamente la base de tiempo ($Time/Div$) y la escala de amplitud vertical ($Volts/Div$) de cada canal, mostrando las formas de onda perfectamente centradas, estables y sincronizadas.
@@ -223,8 +230,8 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 
 ---
 
-##  Consejos Prácticos y Resolución de Problemas
+##  Consejos Prácticos de Ingeniería y Resolución de Problemas
 
 - **Conflicto de Modos de Simulación:** Si al presionar el botón de inicio el programa muestra una advertencia de error o la simulación se congela, verifica el menú desplegable de la esquina superior derecha. Asegúrate de que el modo activo corresponda a **Interactive** para pruebas dinámicas con instrumentos o a **Analyses and Simulation** si ejecutas barridos matemáticos.
-- **Importancia de la Tierra (`GND`):** Todos los circuitos analógicos y mixtos en Multisim requieren al menos una referencia a tierra física (`0 V`). Si olvidas colocarla, el motor de cálculo SPICE no podrá resolver la matriz nodal y arrojará un error de convergencia.
+- **Importancia de la Tierra (`GND`):** Todos los circuitos analógicos y mixtos en Multisim requieren al menos una referencia a tierra física ($0\text{ V}$). Si olvidas colocarla, el motor de cálculo SPICE no podrá resolver la matriz nodal y arrojará un error de convergencia.
 - **Validación previa a la manufactura:** La implementación metódica de esta guía y el dominio de las herramientas de Multisim te permitirán optimizar diseños, prevenir daños en componentes reales por sobrecorrientes y garantizar la funcionalidad de tus tarjetas de circuito impreso (PCB) desde la etapa teórica.
