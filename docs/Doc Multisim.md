@@ -1,6 +1,6 @@
 # Guía  de Inicio Rápido: Manual Completo de Uso y Simulación en NI Multisim
 
-Bienvenido a esta guía completa y detallada sobre el uso de **NI Multisim** para el diseño, simulación y validación de circuitos electrónicos analógicos, digitales y mixtos. Este documento está diseñado para guiarte desde los conceptos fundamentales de la interfaz hasta la configuración experta de motores de análisis SPICE, instrumentación virtual de laboratorio y síntesis de lógica digital.
+Bienvenido a esta guía sobre el uso de **Multisim** para el diseño, simulación y validación de circuitos electrónicos analógicos, digitales y mixtos. Este documento está diseñado para guiarte desde los conceptos fundamentales de la interfaz hasta la instrumentación virtual de laboratorio.
 
 ---
 
@@ -34,7 +34,7 @@ Al cargar el software, te encontrarás con una interfaz dividida en cuatro área
 
 ---
 
-## 2. Simulación de Lógica Digital y Compuertas TTL Paso a Paso
+## 2. Simulación de Lógica Digital y Compuertas TTL
 
 El diseño de sistemas digitales dentro de Multisim permite evaluar funciones booleanas mediante componentes estándar de tecnología **TTL** (*Transistor-Transistor Logic*).
 
@@ -89,6 +89,8 @@ Para mantener un esquemático limpio, legible y profesional, Multisim permite co
 
 <img src="../recursos/imgs/multisim_propiedades_red_nodo.png" alt="Ventana emergente Net Properties para asignación y visibilidad de etiquetas de red" width="600">
 
+<img src="../recursos/imgs/multisim_propiedades_red_nodo1.png" alt="Ventana emergente Net Properties para asignación y visibilidad de etiquetas de red" width="600">
+
 ### Uso de Puntas de Prueba Lógicas (*Probes*)
 Para verificar las salidas lógicas sin agregar un circuito físico con diodos LED, resistencia limitadora y tierra:
 
@@ -99,6 +101,10 @@ Para verificar las salidas lógicas sin agregar un circuito físico con diodos L
 5. Al iniciar la simulación (`F5` o botón verde **Play**), la punta se iluminará intensamente cuando la combinación lógica entregue un nivel alto (5 V) y permanecerá apagada en nivel bajo (0 V).
 
 <img src="../recursos/imgs/multisim_puntas_prueba.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
+
+<img src="../recursos/imgs/multisim_puntas_prueba1.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
+
+<img src="../recursos/imgs/multisim_puntas_prueba2.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
 
 ---
 
@@ -113,14 +119,27 @@ El **Convertidor Lógico** es uno de los instrumentos virtuales más potentes y 
 
 <img src="../recursos/imgs/multisim_logic_converter_conexion.png" alt="Conexión correcta de las entradas y salidas del convertidor lógico en Multisim" width="600">
 
+<img src="../recursos/imgs/multisim_logic_converter_conexion1.png" alt="Conexión correcta de las entradas y salidas del convertidor lógico en Multisim" width="600">
+
 ### Operación Interactiva del Panel de Control
 Haz **doble clic** sobre el icono del instrumento en el esquemático para desplegar su ventana de control flotante. En su interfaz encontrarás un panel izquierdo con la tabla de verdad y una botonera inferior de conversión directa:
 
+<img src="../recursos/imgs/multisim_logic_converter_panel.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
+
+
 * **Extracción de la Tabla de Verdad desde el Esquema (`Circuito -> Tabla`):** Si ya terminaste de cablear un circuito digital en el lienzo y deseas comprobar su comportamiento matemático, haz clic en este primer botón (representado por una flecha que va de un circuito hacia una matriz). El instrumento simulará automáticamente todas las combinaciones posibles de las entradas y rellenará la tabla con los estados binarios de salida correspondientes.
+* 
+<img src="../recursos/imgs/multisim_logic_converter_panel1.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
+  
 * **Simplificación y Obtención de la Función Booleana (`Tabla -> Función`):** Si introduces ceros y unos de forma manual en la tabla de verdad (haciendo clic sobre las celdas), o si el instrumento acaba de leer tu circuito, haz clic en el segundo botón. Multisim resolverá el mapa algebraico y te arrojará la función booleana simplificada en formato de suma de productos (minitérminos) de forma instantánea.
+
+<img src="../recursos/imgs/multisim_logic_converter_panel2.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
+  
 * **Síntesis Automática de Esquemáticos (De Función o Tabla a Circuito):** En la sección superior del panel puedes escribir directamente una expresión algebraica booleana utilizando operadores lógicos estándar. Al hacer clic en los botones de conversión hacia el esquemático, el programa generará automáticamente todas las compuertas y conexiones necesarias y las dibujará por ti en una nueva hoja de trabajo.
 
-<img src="../recursos/imgs/multisim_logic_converter_panel.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
+<img src="../recursos/imgs/multisim_logic_converter_panel3.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
+
+<img src="../recursos/imgs/multisim_logic_converter_panel4.png" alt="Panel de control detallado del Logic Converter mostrando la tabla de verdad y funciones" width="600">
 
 ---
 
@@ -137,34 +156,53 @@ Para configurar cualquiera de estas pruebas avanzadas, dirígete a la barra de m
 * **Propósito y Aplicación:** Estudia cómo evolucionan las variables del circuito (voltajes y corrientes) en función del tiempo real. Es el análisis fundamental para observar fenómenos dinámicos y transitorios, tales como los procesos de carga y descarga exponencial en capacitores e inductores, o el comportamiento temporal de circuitos osciladores y fuentes conmutadas.
 * **Pasos de Configuración:**
   1. En la ventana de análisis, selecciona la pestaña **Transient**.
+     
+<img src="../recursos/imgs/multisim_analisis_transitorio.png" alt="Ventana de configuración del análisis transitorio y gráfica de respuesta exponencial" width="800">
+  
   2. En el apartado de parámetros temporales, define el tiempo inicial (**Start time**, normalmente configurado en `0 s`) y el tiempo de parada (**Stop time**, por ejemplo, `5 ms` o `1 s` dependiendo de la constante de tiempo τ = RC de tu circuito).
+
+<img src="../recursos/imgs/multisim_analisis_transitorio1.png" alt="Ventana de configuración del análisis transitorio y gráfica de respuesta exponencial" width="800">
+     
   3. En la sección de condiciones iniciales, puedes optar por calcular el punto de operación de polarización automática (**Automatically determine initial conditions**).
   4. Dirígete a la pestaña **Output** (Salida) en la misma ventana, busca en la lista de variables del circuito el nodo o componente que deseas medir (por ejemplo, el voltaje en las terminales del capacitor `V(capacitor)`) y haz clic en el botón **Add** para pasarlo a las variables activas a graficar.
-  5. Haz clic en el botón **Simulate** (o **Run**) ubicado en la parte inferior derecha de la ventana para desplegar la gráfica de respuesta temporal.
 
-<img src="../recursos/imgs/multisim_analisis_transitorio.png" alt="Ventana de configuración del análisis transitorio y gráfica de respuesta exponencial" width="800">
+<img src="../recursos/imgs/multisim_analisis_transitorio2.png" alt="Ventana de configuración del análisis transitorio y gráfica de respuesta exponencial" width="800">
+
+  5. Haz clic en el botón **Simulate** (o **Run**) ubicado en la parte inferior derecha de la ventana para desplegar la gráfica de respuesta temporal.
+     
+<img src="../recursos/imgs/multisim_analisis_transitorio3.png" alt="Ventana de configuración del análisis transitorio y gráfica de respuesta exponencial" width="800">
 
 ### 2. Análisis de Barrido DC (*DC Sweep Analysis*)
 * **Propósito y Aplicación:** Realiza variaciones incrementales de voltaje o corriente punto a punto en condiciones de estado estacionario. Es la herramienta estándar en electrónica analógica para caracterizar dispositivos semiconductores no lineales, como la obtención de las curvas características de salida de un transistor bipolar (BJT en configuración de emisor común), relacionando el voltaje colector-emisor (VCE) frente a la corriente de colector (IC) ante distintos escalones de corriente de base (IB).
 * **Pasos de Configuración:**
   1. Coloca un transistor (como el modelo clásico `2N2222`) y asegúrate de conectar fuentes de alimentación independientes en la base y en el colector.
   2. Abre el menú **Analyses and Simulation** y selecciona la pestaña **DC Sweep**.
-  3. Define la fuente principal de barrido (**Primary source**) que fungirá como el eje X de tu gráfica (por ejemplo, la fuente de voltaje del colector, nombrada como `VCE`). Establece el valor inicial, el valor final y el tamaño del incremento de paso (**Voltage step**).
-  4. Si deseas generar una familia de curvas múltiples, habilita la opción de fuente secundaria (**Secondary source**), selecciona la fuente de la base (`IB`) y configura sus valores de incremento escalonado.
-  5. En la pestaña **Output**, selecciona la variable dependiente de salida (por ejemplo, la corriente que atraviesa el pin de colector del transistor, `I(Q1)`) y haz clic en **Add**.
-  6. Presiona **Simulate** para trazar la familia de curvas características.
-
+     
 <img src="../recursos/imgs/multisim_analisis_dc_sweep.png" alt="Configuración de barrido DC para curvas características de transistores en Multisim" width="800">
+
+  2. Define la fuente principal de barrido (**Primary source**) que fungirá como el eje X de tu gráfica (por ejemplo, la fuente de voltaje del colector, nombrada como `VCE`). Establece el valor inicial, el valor final y el tamaño del incremento de paso (**Voltage step**).
+  3. Si deseas generar una familia de curvas múltiples, habilita la opción de fuente secundaria (**Secondary source**), selecciona la fuente de la base (`IB`) y configura sus valores de incremento escalonado.
+  4. En la pestaña **Output**, selecciona la variable dependiente de salida (por ejemplo, la corriente que atraviesa el pin de colector del transistor, `I(Q1)`) y haz clic en **Add**.
+     
+<img src="../recursos/imgs/multisim_analisis_dc_sweep1.png" alt="Configuración de barrido DC para curvas características de transistores en Multisim" width="800">
+
+  5. Presiona **Simulate** para trazar la familia de curvas características.
+
+<img src="../recursos/imgs/multisim_analisis_dc_sweep2.png" alt="Configuración de barrido DC para curvas características de transistores en Multisim" width="800">
 
 ### 3. Análisis de Temperatura (*Temperature Analysis*)
 * **Propósito y Aplicación:** Permite evaluar la estabilidad térmica y la sensibilidad de un circuito ante variaciones drásticas en la temperatura ambiental o de operación de los componentes. Es indispensable en diseños industriales, automotrices o aeroespaciales donde los transistores y diodos sufren derivas en sus parámetros físicos por calentamiento.
 * **Pasos de Configuración:**
   1. Selecciona la pestaña **Temperature Analysis** dentro del menú de simulaciones avanzadas.
+     
+<img src="../recursos/imgs/multisim_analisis_temperatura.png" alt="Panel de configuración del análisis de temperatura en Multisim" width="600">
+
   2. Configura el rango térmico de estudio especificando la temperatura inicial y la temperatura final en grados centígrados (por ejemplo, desde los 0 °C hasta los 150 °C) junto con el número de puntos de muestreo o incremento lineal.
   3. Vincula este análisis a una simulación transitoria o de barrido DC para observar cómo se desplazan o deforman las curvas características del circuito conforme aumenta la temperatura de los semiconductores.
 
-<img src="../recursos/imgs/multisim_analisis_temperatura.png" alt="Panel de configuración del análisis de temperatura en Multisim" width="600">
+<img src="../recursos/imgs/multisim_analisis_temperatura1.png" alt="Panel de configuración del análisis de temperatura en Multisim" width="600">
 
+<img src="../recursos/imgs/multisim_analisis_temperatura2.png" alt="Panel de configuración del análisis de temperatura en Multisim" width="600">
 ---
 
 ## 6. Instrumentación Virtual de Laboratorio: Generadores y Osciloscopios
@@ -187,6 +225,8 @@ El generador de funciones es el instrumento encargado de inyectar señales de es
 
 <img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
 
+<img src="../recursos/imgs/multisim_generador_funciones_panel1.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
+
 #### Inyección de Señales Personalizadas mediante Archivos Externos
 Además de las ondas periódicas estándar, Multisim permite utilizar fuentes controladas (*Piecewise Linear Sources* o fuentes de voltaje por archivos de datos) para reproducir señales complejas del mundo real (por ejemplo, electrocardiogramas biomédicos, pulsos de sensores automotrices o transitorios de motores). Basta con cargar un archivo de texto con pares de datos de tiempo y voltaje (`t, V`) para que la fuente reproduzca el perfil dinámico de la señal sobre tu circuito.
 
@@ -196,10 +236,15 @@ Además de las ondas periódicas estándar, Multisim permite utilizar fuentes co
 Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconductores (como la rectificación mediante diodos), se utiliza el osciloscopio:
 
 * **Selección del Instrumento:** Puedes seleccionar el osciloscopio estándar de dos canales, el osciloscopio de cuatro canales, o réplicas de instrumentos comerciales de laboratorio como el **Osciloscopio Tektronix**.
+
+<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
+
 * **Conexión de Canales y Tierras:**
   - Conecta el **Canal A (CH1)** al nodo donde ingresa la señal de estímulo (por ejemplo, a la salida del generador de funciones).
   - Conecta el **Canal B (CH2)** al nodo de interés donde deseas medir la respuesta (por ejemplo, la salida del circuito tras pasar por un diodo rectificador o filtro).
   - Asegúrate de interconectar las terminales de tierra de los canales o utilizar el nodo de referencia común (`GND`) del circuito esquemático.
+
+<img src="../recursos/imgs/multisim_conexion_osciloscopio1.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
 
 >  **Recomendación crítica de ruteo visual (Cambio de color de cables):**
 > Por defecto, Multisim dibuja todas las líneas de conexión en color rojo. Para evitar confusiones al analizar múltiples señales superpuestas en la pantalla del osciloscopio:
@@ -208,7 +253,9 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 > 3. Elige un color contrastante (por ejemplo, azul, amarillo o cian) y presiona **Aceptar**.
 > 4. De esta manera, el trazo en la pantalla del osciloscopio coincidirá de forma exacta con el color asignado a cada cable.
 
-<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
+<img src="../recursos/imgs/multisim_conexion_osciloscopio2.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
+
+<img src="../recursos/imgs/multisim_conexion_osciloscopio3.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
 
 ### Operación y Uso de la Función Auto-set
 1. Haz clic en el botón verde **Correr** (`Run`) o presiona `F5` para iniciar el motor de simulación.
@@ -219,6 +266,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 
 <img src="../recursos/imgs/multisim_osciloscopio_pantalla.png" alt="Pantalla del osciloscopio virtual mostrando señales superpuestas tras la función Auto-set" width="800">
 
+<img src="../recursos/imgs/multisim_osciloscopio_pantalla1.png" alt="Pantalla del osciloscopio virtual mostrando señales superpuestas tras la función Auto-set" width="800">
 ---
 
 ##  Consejos Prácticos de Ingeniería y Resolución de Problemas
