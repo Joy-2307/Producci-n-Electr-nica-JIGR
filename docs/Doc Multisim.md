@@ -223,7 +223,7 @@ El generador de funciones es el instrumento encargado de inyectar señales de es
   - **Amplitud (Amplitude):** Configura la amplitud pico-pico (Vpp), pico (Vp) o valor eficaz (VRMS).
   - **Offset de CD:** Permite desplazar el nivel de continua de la señal hacia arriba o hacia abajo respecto al eje de cero voltios.
 
-<img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="550">
+<img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="400">
 
 <img src="../recursos/imgs/multisim_generador_funciones_panel1.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
 
@@ -237,7 +237,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 
 * **Selección del Instrumento:** Puedes seleccionar el osciloscopio estándar de dos canales, el osciloscopio de cuatro canales, o réplicas de instrumentos comerciales de laboratorio como el **Osciloscopio Tektronix**.
 
-<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="550">
+<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="400">
 
 * **Conexión de Canales y Tierras:**
   - Conecta el **Canal A (CH1)** al nodo donde ingresa la señal de estímulo (por ejemplo, a la salida del generador de funciones).
