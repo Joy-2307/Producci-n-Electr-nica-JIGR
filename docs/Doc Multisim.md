@@ -47,7 +47,7 @@ El diseño de sistemas digitales dentro de Multisim permite evaluar funciones bo
    - Para compuertas **OR** de dos entradas: Escribe `74LS32`.
    - Para compuertas **NOT** (Inversores): Escribe `74LS04`.
 
-<img src="../recursos/imgs/multisim_busqueda_74ls08.png" alt="Ventana emergente Select a Component buscando el circuito integrado 74LS08" width="600">
+<img src="../recursos/imgs/multisim_busqueda_74ls08.png" alt="Ventana emergente Select a Component buscando el circuito integrado 74LS08" width="800">
 
 ### Entendiendo las Sub-compuertas (`A`, `B`, `C`, `D`)
 Al hacer clic en **OK** para colocar un componente como el `74LS08`, notarás que la ventana no se cierra inmediatamente, sino que te muestra una pequeña sub-lista con las letras `A`, `B`, `C` y `D`:
@@ -69,7 +69,7 @@ Para simular las entradas de una tabla de verdad e inyectar estados lógicos baj
 4. Haz clic en **OK** y coloca tantas fuentes interactivas como entradas tenga tu función booleana (por ejemplo, cuatro fuentes para las entradas A, B, C y D).
 5. Por defecto, cada fuente interactiva muestra una tecla de acceso rápido (como `Space`). Si deseas cambiar la tecla que conmuta la señal de 0 V a 5 V, haz doble clic sobre el componente, ve a la pestaña **Value** y asigna una tecla específica del teclado (por ejemplo, la tecla `A` para la entrada A).
 
-<img src="../recursos/imgs/multisim_fuente_digital_interactiva.png" alt="Colocación y configuración de fuentes digitales interactivas" width="600">
+<img src="../recursos/imgs/multisim_fuente_digital_interactiva.png" alt="Colocación y configuración de fuentes digitales interactivas" width="800">
 
 ---
 
@@ -87,9 +87,9 @@ Para mantener un esquemático limpio, legible y profesional, Multisim permite co
 7. Ahora, dirígete a la entrada de la compuerta lógica donde debe llegar esa señal, traza un pequeño segmento de cable y haz doble clic sobre él. Renómbralo con exactamente el mismo texto (`A`).
 8. Al presionar **Aceptar**, Multisim desplegará un cuadro de diálogo notificando que la red `A` ya existe y preguntará si deseas unir ambos segmentos. Haz clic en **Yes**. Ambos puntos quedarán unidos eléctricamente sin necesidad de trazar una línea continua entre ellos.
 
-<img src="../recursos/imgs/multisim_propiedades_red_nodo.png" alt="Ventana emergente Net Properties para asignación y visibilidad de etiquetas de red" width="600">
+<img src="../recursos/imgs/multisim_propiedades_red_nodo.png" alt="Ventana emergente Net Properties para asignación y visibilidad de etiquetas de red" width="650">
 
-<img src="../recursos/imgs/multisim_propiedades_red_nodo1.png" alt="Ventana emergente Net Properties para asignación y visibilidad de etiquetas de red" width="600">
+<img src="../recursos/imgs/multisim_propiedades_red_nodo1.png" alt="Ventana emergente Net Properties para asignación y visibilidad de etiquetas de red" width="650">
 
 ### Uso de Puntas de Prueba Lógicas (*Probes*)
 Para verificar las salidas lógicas sin agregar un circuito físico con diodos LED, resistencia limitadora y tierra:
@@ -100,11 +100,11 @@ Para verificar las salidas lógicas sin agregar un circuito físico con diodos L
 4. Conecta el terminal de la punta de prueba directamente al nodo o pin de salida de tu última compuerta lógica.
 5. Al iniciar la simulación (`F5` o botón verde **Play**), la punta se iluminará intensamente cuando la combinación lógica entregue un nivel alto (5 V) y permanecerá apagada en nivel bajo (0 V).
 
-<img src="../recursos/imgs/multisim_puntas_prueba.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
+<img src="../recursos/imgs/multisim_puntas_prueba.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="700">
 
-<img src="../recursos/imgs/multisim_puntas_prueba1.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
+<img src="../recursos/imgs/multisim_puntas_prueba1.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="700">
 
-<img src="../recursos/imgs/multisim_puntas_prueba2.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="600">
+<img src="../recursos/imgs/multisim_puntas_prueba2.png" alt="Puntas de prueba lógicas conectadas a las salidas del circuito" width="700">
 
 ---
 
@@ -117,9 +117,9 @@ El **Convertidor Lógico** es uno de los instrumentos virtuales más potentes y 
 2. **Terminales de Entrada (A, B, C, etc.):** Debes conectar estas terminales desde la parte superior izquierda del instrumento hacia las líneas o nodos de entrada de tu circuito lógico. Es una buena práctica respetar el orden alfabético, conectando el bit más significativo (MSB) en la entrada superior y descendiendo secuencialmente hasta el bit menos significativo (LSB).
 3. **Terminal de Salida (`S`):** Conecta esta terminal (ubicada en la parte derecha del instrumento) directamente hacia la salida o nodo principal de tu red lógica.
 
-<img src="../recursos/imgs/multisim_logic_converter_conexion.png" alt="Conexión correcta de las entradas y salidas del convertidor lógico en Multisim" width="600">
+<img src="../recursos/imgs/multisim_logic_converter_conexion.png" alt="Conexión correcta de las entradas y salidas del convertidor lógico en Multisim" width="550">
 
-<img src="../recursos/imgs/multisim_logic_converter_conexion1.png" alt="Conexión correcta de las entradas y salidas del convertidor lógico en Multisim" width="600">
+<img src="../recursos/imgs/multisim_logic_converter_conexion1.png" alt="Conexión correcta de las entradas y salidas del convertidor lógico en Multisim" width="700">
 
 ### Operación Interactiva del Panel de Control
 Haz **doble clic** sobre el icono del instrumento en el esquemático para desplegar su ventana de control flotante. En su interfaz encontrarás un panel izquierdo con la tabla de verdad y una botonera inferior de conversión directa:
@@ -150,7 +150,7 @@ Además de la simulación interactiva en tiempo real, Multisim integra potentes 
 ### Ruta de Acceso a los Motores de Análisis
 Para configurar cualquiera de estas pruebas avanzadas, dirígete a la barra de menús superior, haz clic en **Simulate** y selecciona la opción **Analyses and Simulation** (o presiona la combinación de teclas correspondiente si está configurada). Se abrirá un menú principal con pestañas desplegables para cada tipo de estudio.
 
-<img src="../recursos/imgs/multisim_menu_analisis.png" alt="Menú superior de análisis y simulación en NI Multisim" width="600">
+<img src="../recursos/imgs/multisim_menu_analisis.png" alt="Menú superior de análisis y simulación en NI Multisim" width="700">
 
 ### 1. Análisis Transitorio (*Transient Analysis*)
 * **Propósito y Aplicación:** Estudia cómo evolucionan las variables del circuito (voltajes y corrientes) en función del tiempo real. Es el análisis fundamental para observar fenómenos dinámicos y transitorios, tales como los procesos de carga y descarga exponencial en capacitores e inductores, o el comportamiento temporal de circuitos osciladores y fuentes conmutadas.
@@ -223,7 +223,7 @@ El generador de funciones es el instrumento encargado de inyectar señales de es
   - **Amplitud (Amplitude):** Configura la amplitud pico-pico (Vpp), pico (Vp) o valor eficaz (VRMS).
   - **Offset de CD:** Permite desplazar el nivel de continua de la señal hacia arriba o hacia abajo respecto al eje de cero voltios.
 
-<img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
+<img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="550">
 
 <img src="../recursos/imgs/multisim_generador_funciones_panel1.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
 
@@ -237,7 +237,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 
 * **Selección del Instrumento:** Puedes seleccionar el osciloscopio estándar de dos canales, el osciloscopio de cuatro canales, o réplicas de instrumentos comerciales de laboratorio como el **Osciloscopio Tektronix**.
 
-<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
+<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="550">
 
 * **Conexión de Canales y Tierras:**
   - Conecta el **Canal A (CH1)** al nodo donde ingresa la señal de estímulo (por ejemplo, a la salida del generador de funciones).
@@ -253,7 +253,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 > 3. Elige un color contrastante (por ejemplo, azul, amarillo o cian) y presiona **Aceptar**.
 > 4. De esta manera, el trazo en la pantalla del osciloscopio coincidirá de forma exacta con el color asignado a cada cable.
 
-<img src="../recursos/imgs/multisim_conexion_osciloscopio2.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
+<img src="../recursos/imgs/multisim_conexion_osciloscopio2.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="600">
 
 <img src="../recursos/imgs/multisim_conexion_osciloscopio3.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="800">
 
@@ -266,7 +266,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 
 <img src="../recursos/imgs/multisim_osciloscopio_pantalla.png" alt="Pantalla del osciloscopio virtual mostrando señales superpuestas tras la función Auto-set" width="800">
 
-<img src="../recursos/imgs/multisim_osciloscopio_pantalla1.png" alt="Pantalla del osciloscopio virtual mostrando señales superpuestas tras la función Auto-set" width="800">
+<img src="../recursos/imgs/multisim_osciloscopio_pantalla1.png" alt="Pantalla del osciloscopio virtual mostrando señales superpuestas tras la función Auto-set" width="700">
 ---
 
 ##  Consejos Prácticos de Ingeniería y Resolución de Problemas
