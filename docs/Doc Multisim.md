@@ -223,7 +223,7 @@ El generador de funciones es el instrumento encargado de inyectar señales de es
   - **Amplitud (Amplitude):** Configura la amplitud pico-pico (Vpp), pico (Vp) o valor eficaz (VRMS).
   - **Offset de CD:** Permite desplazar el nivel de continua de la señal hacia arriba o hacia abajo respecto al eje de cero voltios.
 
-<img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="400">
+<img src="../recursos/imgs/multisim_generador_funciones_panel.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="300">
 
 <img src="../recursos/imgs/multisim_generador_funciones_panel1.png" alt="Carátula y panel de configuración del generador de funciones virtual" width="600">
 
@@ -237,7 +237,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 
 * **Selección del Instrumento:** Puedes seleccionar el osciloscopio estándar de dos canales, el osciloscopio de cuatro canales, o réplicas de instrumentos comerciales de laboratorio como el **Osciloscopio Tektronix**.
 
-<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="400">
+<img src="../recursos/imgs/multisim_conexion_osciloscopio.png" alt="Conexión de osciloscopio con personalización de color en los cables de medición" width="300">
 
 * **Conexión de Canales y Tierras:**
   - Conecta el **Canal A (CH1)** al nodo donde ingresa la señal de estímulo (por ejemplo, a la salida del generador de funciones).
@@ -269,7 +269,7 @@ Para analizar la respuesta en el tiempo, formas de onda y efectos de semiconduct
 <img src="../recursos/imgs/multisim_osciloscopio_pantalla1.png" alt="Pantalla del osciloscopio virtual mostrando señales superpuestas tras la función Auto-set" width="700">
 ---
 
-##  Consejos Prácticos de Ingeniería y Resolución de Problemas
+##  Consejos y Resolución de Problemas
 
 - **Conflicto de Modos de Simulación:** Si al presionar el botón de inicio el programa muestra una advertencia de error o la simulación se congela, verifica el menú desplegable de la esquina superior derecha. Asegúrate de que el modo activo corresponda a **Interactive** para pruebas dinámicas con instrumentos o a **Analyses and Simulation** si ejecutas barridos matemáticos.
 - **Importancia de la Tierra (`GND`):** Todos los circuitos analógicos y mixtos en Multisim requieren al menos una referencia a tierra física (0 V). Si olvidas colocarla, el motor de cálculo SPICE no podrá resolver la matriz nodal y arrojará un error de convergencia.
