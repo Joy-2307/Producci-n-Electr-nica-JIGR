@@ -649,8 +649,6 @@ Design → Redefine Board Shape
 
 Dibuja el perímetro real de la tarjeta.
 
-<img src="../recursos/imgs/altium_redefine_board_shape.png" alt="Definición del Board Shape" width="600">
-
 ---
 
 ## Origen
@@ -723,9 +721,6 @@ La estructura física de las capas se configura en:
 ```text
 Design → Layer Stack Manager
 ```
-
-<img src="../recursos/imgs/altium_layer_stack_manager.png" alt="Layer Stack Manager" width="850">
-
 Para una PCB sencilla de dos capas normalmente tendremos:
 
 ```text
