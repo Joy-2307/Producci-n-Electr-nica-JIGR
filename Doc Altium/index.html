@@ -1,0 +1,1689 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Doc%20Multisim/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Guía en Altium - Producción Electrónica.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+      <link rel="stylesheet" href="../recursos/archivos/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-esencial-de-altium-designer-26111" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Producción Electrónica." class="md-header__button md-logo" aria-label="Producción Electrónica." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3zm5 11v3h1v-3zm2 0v3h1v-3zm2 0v3h1v-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Producción Electrónica.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía en Altium
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Equipo%20de%20trabajo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Equipo de Trabajo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Primeros%20pasos%20Kicad/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guía de Inicio Rápido con KiCad
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Mods%20CE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Procesamiento de SVG a RML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Roland%20MonoFab/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aplicación con MonoFab
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Doc%20Multisim/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Simulaciones en Multisim
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guía en Altium
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Producción Electrónica." class="md-nav__button md-logo" aria-label="Producción Electrónica." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3zm5 11v3h1v-3zm2 0v3h1v-3zm2 0v3h1v-3z"/></svg>
+
+    </a>
+    Producción Electrónica.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Equipo%20de%20trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipo de Trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Primeros%20pasos%20Kicad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Inicio Rápido con KiCad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mods%20CE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procesamiento de SVG a RML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Roland%20MonoFab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicación con MonoFab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Doc%20Multisim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulaciones en Multisim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía en Altium
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía en Altium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenido
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guia-esencial-de-altium-designer-26111">Guía esencial de Altium Designer 26.11.1</h1>
+<p>Esta guía resume las herramientas y procesos indispensables para desarrollar un proyecto de PCB en <strong>Altium Designer</strong>, desde el esquemático hasta la generación de los archivos de fabricación.</p>
+<p>No pretende explicar todas las funciones disponibles en Altium, sino servir como referencia rápida para recordar:</p>
+<ul>
+<li>dónde se encuentran las herramientas principales;</li>
+<li>cómo colocar y conectar componentes;</li>
+<li>cómo importar librerías;</li>
+<li>cómo transferir el esquemático al PCB;</li>
+<li>cómo configurar reglas;</li>
+<li>cómo colocar y rutear componentes;</li>
+<li>cómo comprobar el diseño;</li>
+<li>cómo generar los archivos necesarios para fabricación.</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+La interfaz de Altium es contextual. Algunas herramientas únicamente aparecen cuando se encuentra activo un documento de esquemático (<code>.SchDoc</code>) o PCB (<code>.PcbDoc</code>).</p>
+</blockquote>
+<hr />
+<h2 id="contenido">Contenido</h2>
+<ul>
+<li><a href="#1-vista-general-de-altium">1. Vista general de Altium</a></li>
+<li><a href="#2-crear-y-organizar-un-proyecto">2. Crear y organizar un proyecto</a></li>
+<li><a href="#3-paneles-importantes">3. Paneles importantes</a></li>
+<li><a href="#4-navegación-grid-y-unidades">4. Navegación, Grid y unidades</a></li>
+<li><a href="#5-componentes-y-librerías">5. Componentes y librerías</a></li>
+<li><a href="#6-importar-librerías-externas">6. Importar librerías externas</a></li>
+<li><a href="#7-editor-de-esquemáticos">7. Editor de esquemáticos</a></li>
+<li><a href="#8-colocar-y-editar-componentes">8. Colocar y editar componentes</a></li>
+<li><a href="#9-conexiones-eléctricas">9. Conexiones eléctricas</a></li>
+<li><a href="#10-net-labels-ports-y-alimentación">10. Net Labels, Ports y alimentación</a></li>
+<li><a href="#11-organización-visual-del-esquemático">11. Organización visual del esquemático</a></li>
+<li><a href="#12-designators-y-anotación">12. Designators y anotación</a></li>
+<li><a href="#13-validar-el-esquemático">13. Validar el esquemático</a></li>
+<li><a href="#14-transferir-el-diseño-al-pcb">14. Transferir el diseño al PCB</a></li>
+<li><a href="#15-vista-general-del-pcb-editor">15. Vista general del PCB Editor</a></li>
+<li><a href="#16-board-shape-origen-y-grid">16. Board Shape, origen y Grid</a></li>
+<li><a href="#17-capas-de-la-pcb">17. Capas de la PCB</a></li>
+<li><a href="#18-layer-stack-manager">18. Layer Stack Manager</a></li>
+<li><a href="#19-placement-de-componentes">19. Placement de componentes</a></li>
+<li><a href="#20-reglas-de-diseño">20. Reglas de diseño</a></li>
+<li><a href="#21-importar-reglas">21. Importar reglas</a></li>
+<li><a href="#22-routing">22. Routing</a></li>
+<li><a href="#23-cambio-de-capa-y-vías">23. Cambio de capa y vías</a></li>
+<li><a href="#24-polygon-pours-y-planos-de-gnd">24. Polygon Pours y planos de GND</a></li>
+<li><a href="#25-auto-route">25. Auto Route</a></li>
+<li><a href="#26-drc-y-revisión-final">26. DRC y revisión final</a></li>
+<li><a href="#27-vista-3d">27. Vista 3D</a></li>
+<li><a href="#28-gerber-y-archivos-de-perforación">28. Gerber y archivos de perforación</a></li>
+<li><a href="#29-flujo-general-recomendado">29. Flujo general recomendado</a></li>
+</ul>
+<hr />
+<h1 id="1-vista-general-de-altium">1. Vista general de Altium</h1>
+<p>Altium Designer integra dentro del mismo programa el diseño del:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Esquemático
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    ↓
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>PCB
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ↓
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Archivos de fabricación
+</span></code></pre></div>
+<p>La interfaz principal contiene:</p>
+<ul>
+<li>barra superior de menús;</li>
+<li>área central de documentos;</li>
+<li>panel <code>Projects</code>;</li>
+<li>panel <code>Properties</code>;</li>
+<li>panel <code>Components</code>;</li>
+<li>herramientas específicas según el documento activo.</li>
+</ul>
+<p><img src="../recursos/imgs/altium_pantalla_general.png" alt="Vista general de Altium Designer" width="800"></p>
+<p>Una característica importante es que las opciones cambian dependiendo del documento activo.</p>
+<p>Por ejemplo:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>.SchDoc → herramientas de esquemático
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>.PcbDoc → herramientas de PCB
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>.SchLib → editor de símbolos
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>.PcbLib → editor de footprints
+</span></code></pre></div>
+<hr />
+<h1 id="2-crear-y-organizar-un-proyecto">2. Crear y organizar un proyecto</h1>
+<p>Para un diseño de PCB se utiliza un proyecto tipo:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>PCB Project
+</span></code></pre></div>
+<p>Una estructura básica normalmente contiene:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Proyecto
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>│
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── Proyecto.PrjPcb
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── Main.SchDoc
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>└── Main.PcbDoc
+</span></code></pre></div>
+<p>Desde el panel <code>Projects</code> pueden añadirse nuevos documentos haciendo clic derecho sobre el proyecto:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Add New to Project → Schematic
+</span></code></pre></div>
+<p>o:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Add New to Project → PCB
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_panel_projects.png" alt="Panel Projects con documentos del proyecto" width="400"></p>
+<p>Guarda los documentos desde el principio con nombres claros.</p>
+<hr />
+<h1 id="3-paneles-importantes">3. Paneles importantes</h1>
+<p>Los paneles pueden abrirse desde:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>View → Panels
+</span></code></pre></div>
+<p>Los más importantes son:</p>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Projects</code></td>
+<td>Archivos y estructura del proyecto</td>
+</tr>
+<tr>
+<td><code>Properties</code></td>
+<td>Propiedades del objeto seleccionado</td>
+</tr>
+<tr>
+<td><code>Components</code></td>
+<td>Búsqueda y colocación de componentes</td>
+</tr>
+<tr>
+<td><code>Messages</code></td>
+<td>Errores y advertencias</td>
+</tr>
+<tr>
+<td><code>View Configuration</code></td>
+<td>Capas y visualización del PCB</td>
+</tr>
+<tr>
+<td><code>PCB Rules And Violations</code></td>
+<td>Violaciones de reglas</td>
+</tr>
+</tbody>
+</table>
+<p>El panel más utilizado es:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Properties
+</span></code></pre></div>
+<p>Su contenido cambia según el objeto seleccionado.</p>
+<p><img src="../recursos/imgs/altium_panel_properties.png" alt="Panel Properties" width="350"></p>
+<hr />
+<h1 id="4-navegacion-grid-y-unidades">4. Navegación, Grid y unidades</h1>
+<p>Durante el diseño es importante trabajar utilizando una cuadrícula o:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Grid
+</span></code></pre></div>
+<p>El Grid permite mover y colocar objetos sobre posiciones ordenadas.</p>
+<p>En muchos contextos puede modificarse rápidamente mediante:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>G
+</span></code></pre></div>
+<p>En el PCB también podemos alternar las unidades utilizando:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Q
+</span></code></pre></div>
+<p>Normalmente trabajaremos con:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>mm
+</span></code></pre></div>
+<p>o:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mil
+</span></code></pre></div>
+<p>Para cancelar una herramienta o salir del modo actual utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Esc
+</span></code></pre></div>
+<p>Durante muchas herramientas interactivas:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Tab
+</span></code></pre></div>
+<p>permite abrir las propiedades del objeto que estamos colocando.</p>
+<hr />
+<h1 id="5-componentes-y-librerias">5. Componentes y librerías</h1>
+<p>Un componente utilizado en un proyecto puede contener diferentes representaciones:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Componente
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>│
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>├── Símbolo
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>├── Footprint
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>└── Modelo 3D
+</span></code></pre></div>
+<p>El <strong>símbolo</strong> se utiliza en el esquemático.</p>
+<p>El <strong>footprint</strong> representa físicamente el componente en la PCB.</p>
+<p>El <strong>modelo 3D</strong> permite revisar su forma física.</p>
+<blockquote>
+<p>[!IMPORTANT]
+Antes de transferir un componente al PCB comprueba que tenga un footprint correcto.</p>
+</blockquote>
+<hr />
+<h2 id="buscar-componentes">Buscar componentes</h2>
+<p>Abre:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>View → Panels → Components
+</span></code></pre></div>
+<p>Desde este panel puedes:</p>
+<ol>
+<li>seleccionar una librería;</li>
+<li>buscar un componente;</li>
+<li>revisar sus datos;</li>
+<li>colocarlo en el esquemático.</li>
+</ol>
+<p><img src="../recursos/imgs/altium_components_panel.png" alt="Panel Components" width="450"></p>
+<hr />
+<h2 id="componentes-externos">Componentes externos</h2>
+<p>Si un componente no se encuentra disponible, puede buscarse en plataformas como:</p>
+<p><a href="https://www.snapeda.com/">SnapMagic</a></p>
+<p>o directamente en el sitio del fabricante.</p>
+<p>Cuando sea posible busca utilizando el:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Manufacturer Part Number
+</span></code></pre></div>
+<p>exacto.</p>
+<blockquote>
+<p>[!WARNING]
+Comprueba siempre el símbolo, footprint y numeración de pads contra el datasheet oficial antes de fabricar una PCB.</p>
+</blockquote>
+<hr />
+<h1 id="6-importar-librerias-externas">6. Importar librerías externas</h1>
+<p>Altium puede utilizar librerías externas como:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>.IntLib
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>.SchLib
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>.PcbLib
+</span></code></pre></div>
+<p>Para utilizar una <code>.IntLib</code>:</p>
+<ol>
+<li>descarga y descomprime la librería;</li>
+<li>localiza el archivo <code>.IntLib</code>;</li>
+<li>ábrelo con Altium;</li>
+<li>selecciona:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Install Library
+</span></code></pre></div>
+<ol>
+<li>abre:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>View → Panels → Components
+</span></code></pre></div>
+<ol>
+<li>comprueba que los componentes aparezcan disponibles.</li>
+</ol>
+<p><img src="../recursos/imgs/altium_intlib_install.png" alt="Instalación de una librería IntLib" width="600"></p>
+<p>Si únicamente necesitas utilizar el componente no es necesario modificar los archivos fuente de la librería.</p>
+<hr />
+<h1 id="7-editor-de-esquematicos">7. Editor de esquemáticos</h1>
+<p>El <code>.SchDoc</code> contiene la representación lógica del circuito.</p>
+<p>Aquí se colocan:</p>
+<ul>
+<li>componentes;</li>
+<li>conexiones;</li>
+<li>Net Labels;</li>
+<li>Ports;</li>
+<li>Power Ports;</li>
+<li>textos y elementos gráficos.</li>
+</ul>
+<p><img src="../recursos/imgs/altium_schematic_view.png" alt="Vista general del editor de esquemáticos" width="800"></p>
+<p>Antes de comenzar comprueba que el Grid permita conectar correctamente los pines de los componentes.</p>
+<hr />
+<h1 id="8-colocar-y-editar-componentes">8. Colocar y editar componentes</h1>
+<p>Abre:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>View → Panels → Components
+</span></code></pre></div>
+<p>Busca el componente y utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Place
+</span></code></pre></div>
+<p>Una vez unido al cursor:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>clic izquierdo → colocar
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>Space → rotar
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>X / Y → reflejar durante determinadas operaciones
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>Tab → modificar propiedades
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>Esc → terminar
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_place_component.png" alt="Colocación de un componente" width="600"></p>
+<p>Las propiedades importantes normalmente incluyen:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Designator
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>Comment
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>Parameters
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>Models
+</span></code></pre></div>
+<p>Ejemplos de Designators:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>R1
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>C1
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>U1
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>D1
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>J1
+</span></code></pre></div>
+<hr />
+<h1 id="9-conexiones-electricas">9. Conexiones eléctricas</h1>
+<p>Para conectar eléctricamente componentes utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Place → Wire
+</span></code></pre></div>
+<p>Procedimiento:</p>
+<ol>
+<li>selecciona <code>Wire</code>;</li>
+<li>haz clic sobre el extremo del primer pin;</li>
+<li>guía el cable;</li>
+<li>haz clic para crear esquinas;</li>
+<li>llega al pin destino;</li>
+<li>termina con <code>Esc</code>.</li>
+</ol>
+<p><img src="../recursos/imgs/altium_schematic_wire.png" alt="Conexiones mediante Wire" width="600"></p>
+<blockquote>
+<p>[!IMPORTANT]
+<code>Wire</code> y <code>Line</code> no son lo mismo.</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>Wire → conexión eléctrica
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>Line → dibujo
+</span></code></pre></div>
+<p>Nunca utilices una línea gráfica para sustituir un Wire.</p>
+<hr />
+<h2 id="junctions">Junctions</h2>
+<p>Cuando varias conexiones deben unirse eléctricamente puede aparecer un:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Junction
+</span></code></pre></div>
+<p>normalmente representado mediante un punto.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>        |
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>--------●--------
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>        |
+</span></code></pre></div>
+<p>Procura evitar cruces ambiguos en el esquemático.</p>
+<hr />
+<h1 id="10-net-labels-ports-y-alimentacion">10. Net Labels, Ports y alimentación</h1>
+<h2 id="net-labels">Net Labels</h2>
+<p>Para evitar cables largos utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Place → Net Label
+</span></code></pre></div>
+<p>Dos puntos que pertenecen a una misma red pueden compartir el mismo nombre.</p>
+<p>Ejemplo:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>SDA
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>SCL
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>TX
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>RX
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>RESET
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_net_label.png" alt="Uso de Net Labels" width="600"></p>
+<hr />
+<h2 id="ports">Ports</h2>
+<p>Para diseños divididos en varias hojas puede utilizarse:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Place → Port
+</span></code></pre></div>
+<p>Son especialmente útiles en diseños jerárquicos.</p>
+<hr />
+<h2 id="power-ports">Power Ports</h2>
+<p>Para alimentación utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>Place → Power Port
+</span></code></pre></div>
+<p>Ejemplos:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>GND
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>5V
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>3V3
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>12V
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_power_port.png" alt="Power Ports de alimentación" width="500"></p>
+<p>El nombre de la red es lo que determina la conexión eléctrica.</p>
+<hr />
+<h1 id="11-organizacion-visual-del-esquematico">11. Organización visual del esquemático</h1>
+<p>Además de conexiones eléctricas pueden utilizarse:</p>
+<ul>
+<li>texto;</li>
+<li>líneas;</li>
+<li>rectángulos;</li>
+<li>elementos gráficos.</li>
+</ul>
+<p>Estos sirven únicamente para organizar visualmente el circuito.</p>
+<p>Una estructura recomendable es dividirlo en bloques:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>POWER
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>MICROCONTROLLER
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>INPUTS
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>OUTPUTS
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>SENSORS
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>COMMUNICATION
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_schematic_text.png" alt="Organización visual del esquemático" width="600"></p>
+<p>Siempre que sea posible mantén un flujo visual lógico:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>ENTRADAS → PROCESAMIENTO → SALIDAS
+</span></code></pre></div>
+<hr />
+<h1 id="12-designators-y-anotacion">12. Designators y anotación</h1>
+<p>Antes de transferir el proyecto al PCB todos los componentes deben tener identificadores únicos.</p>
+<p>Utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Tools → Annotation → Annotate Schematics
+</span></code></pre></div>
+<p>Esto permite transformar:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>R? → R1
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>R? → R2
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>C? → C1
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>U? → U1
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_annotate_schematics.png" alt="Herramienta Annotate Schematics" width="700"></p>
+<p>Comprueba que no existan designadores duplicados.</p>
+<hr />
+<h1 id="13-validar-el-esquematico">13. Validar el esquemático</h1>
+<p>Antes de crear el PCB ejecuta:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>Project → Validate PCB Project
+</span></code></pre></div>
+<p>Los errores y advertencias aparecen en:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>View → Panels → Messages
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_messages_panel.png" alt="Panel Messages" width="700"></p>
+<p>Revisa especialmente:</p>
+<ul>
+<li>conexiones incorrectas;</li>
+<li>pines sin conectar;</li>
+<li>conflictos eléctricos;</li>
+<li>designadores;</li>
+<li>componentes sin footprint.</li>
+</ul>
+<p>No ignores errores sin comprender primero su causa.</p>
+<hr />
+<h1 id="14-transferir-el-diseno-al-pcb">14. Transferir el diseño al PCB</h1>
+<p>Con el esquemático terminado utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>Design → Update PCB Document
+</span></code></pre></div>
+<p>Altium abrirá el:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Engineering Change Order
+</span></code></pre></div>
+<p>o:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>ECO
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_engineering_change_order.png" alt="Engineering Change Order" width="800"></p>
+<p>El flujo correcto es:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Update PCB Document
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>        ↓
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>Validate Changes
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>        ↓
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>Execute Changes
+</span></code></pre></div>
+<p>Esto transferirá:</p>
+<ul>
+<li>componentes;</li>
+<li>footprints;</li>
+<li>Nets;</li>
+<li>conexiones.</li>
+</ul>
+<p>Si un componente no puede transferirse, comprueba primero su footprint.</p>
+<hr />
+<h1 id="15-vista-general-del-pcb-editor">15. Vista general del PCB Editor</h1>
+<p>El <code>.PcbDoc</code> contiene el diseño físico.</p>
+<p>Aquí encontraremos:</p>
+<ul>
+<li>componentes;</li>
+<li>pads;</li>
+<li>pistas;</li>
+<li>vias;</li>
+<li>polígonos;</li>
+<li>capas;</li>
+<li>Board Shape.</li>
+</ul>
+<p><img src="../recursos/imgs/altium_pcb_editor_general.png" alt="Vista general del PCB Editor" width="800"></p>
+<p>Los modos principales son:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>1 → Board Planning Mode
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>2 → 2D Layout Mode
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>3 → 3D Layout Mode
+</span></code></pre></div>
+<hr />
+<h1 id="16-board-shape-origen-y-grid">16. Board Shape, origen y Grid</h1>
+<h2 id="board-shape">Board Shape</h2>
+<p>Define físicamente el tamaño de la PCB.</p>
+<p>Puede redefinirse mediante:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Design → Redefine Board Shape
+</span></code></pre></div>
+<p>Dibuja el perímetro real de la tarjeta.</p>
+<hr />
+<h2 id="origen">Origen</h2>
+<p>Es recomendable establecer un punto conocido como origen.</p>
+<p>Utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>Edit → Origin → Set
+</span></code></pre></div>
+<p>Normalmente puede colocarse en una esquina de la tarjeta.</p>
+<p><img src="../recursos/imgs/altium_set_origin.png" alt="Configuración del origen" width="600"></p>
+<hr />
+<h2 id="grid">Grid</h2>
+<p>Presiona:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>G
+</span></code></pre></div>
+<p>para cambiar rápidamente el Snap Grid.</p>
+<p>Utiliza una cuadrícula suficientemente grande para organizar el diseño y reduce su tamaño únicamente cuando necesites ajustes más precisos.</p>
+<hr />
+<h1 id="17-capas-de-la-pcb">17. Capas de la PCB</h1>
+<p>Las capas principales que debes conocer son:</p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Top Layer</code></td>
+<td>Cobre superior</td>
+</tr>
+<tr>
+<td><code>Bottom Layer</code></td>
+<td>Cobre inferior</td>
+</tr>
+<tr>
+<td><code>Top Overlay</code></td>
+<td>Serigrafía superior</td>
+</tr>
+<tr>
+<td><code>Bottom Overlay</code></td>
+<td>Serigrafía inferior</td>
+</tr>
+<tr>
+<td><code>Top Solder</code></td>
+<td>Máscara superior</td>
+</tr>
+<tr>
+<td><code>Bottom Solder</code></td>
+<td>Máscara inferior</td>
+</tr>
+<tr>
+<td><code>Top Paste</code></td>
+<td>Pasta de soldadura superior</td>
+</tr>
+<tr>
+<td><code>Bottom Paste</code></td>
+<td>Pasta inferior</td>
+</tr>
+<tr>
+<td><code>Mechanical</code></td>
+<td>Información mecánica</td>
+</tr>
+<tr>
+<td><code>Keep-Out</code></td>
+<td>Zonas restringidas</td>
+</tr>
+</tbody>
+</table>
+<p>El panel principal para controlar su visualización es:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>View → Panels → View Configuration
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_view_configuration.png" alt="Panel View Configuration" width="400"></p>
+<p>Para recorrer modos de visualización de una sola capa utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>Shift + S
+</span></code></pre></div>
+<hr />
+<h1 id="18-layer-stack-manager">18. Layer Stack Manager</h1>
+<p>La estructura física de las capas se configura en:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>Design → Layer Stack Manager
+</span></code></pre></div>
+Para una PCB sencilla de dos capas normalmente tendremos:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>Top Copper
+</span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a>Dielectric
+</span><span id="__span-52-3"><a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a>Bottom Copper
+</span></code></pre></div>
+<p>además de máscara y serigrafía.</p>
+<p>En proyectos multicapa pueden añadirse capas internas.</p>
+<p>La estructura utilizada debe ser compatible con el fabricante.</p>
+<hr />
+<h1 id="19-placement-de-componentes">19. Placement de componentes</h1>
+<p>Después del ECO los componentes deben organizarse dentro del Board Shape.</p>
+<p>Durante el placement utiliza las:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>Connection Lines
+</span></code></pre></div>
+<p>para observar qué componentes deben conectarse.</p>
+<p><img src="../recursos/imgs/altium_connection_lines.png" alt="Connection Lines durante el placement" width="700"></p>
+<p>Orden recomendado:</p>
+<ol>
+<li>conectores y componentes con posición mecánica fija;</li>
+<li>circuitos principales;</li>
+<li>componentes asociados;</li>
+<li>capacitores de desacoplo cerca de sus pines;</li>
+<li>componentes secundarios.</li>
+</ol>
+<p>Mientras mueves un componente:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>Space → rotar
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>L → cambiar entre Top y Bottom
+</span></code></pre></div>
+<p>No comiences a rutear hasta tener un placement razonablemente organizado.</p>
+<hr />
+<h1 id="20-reglas-de-diseno">20. Reglas de diseño</h1>
+<p>Las reglas determinan restricciones como:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>Clearance
+</span><span id="__span-55-2"><a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>Track Width
+</span><span id="__span-55-3"><a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>Via Size
+</span><span id="__span-55-4"><a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>Hole Size
+</span><span id="__span-55-5"><a id="__codelineno-55-5" name="__codelineno-55-5" href="#__codelineno-55-5"></a>Component Clearance
+</span></code></pre></div>
+<p>Dependiendo del proyecto encontrarás:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>Design → Rules
+</span></code></pre></div>
+<p>o:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>Design → Constraint Manager
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_design_rules.png" alt="PCB Rules and Constraints Editor" width="800"></p>
+<p>En Altium 26 algunos proyectos utilizan el nuevo <code>Constraint Manager</code>.</p>
+<hr />
+<h2 id="reglas-esenciales">Reglas esenciales</h2>
+<h3 id="clearance">Clearance</h3>
+<p>Separación mínima entre objetos eléctricos.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>Electrical → Clearance
+</span></code></pre></div>
+<hr />
+<h3 id="width">Width</h3>
+<p>Ancho permitido para las pistas.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>Routing → Width
+</span></code></pre></div>
+<p>Normalmente contiene:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>Minimum
+</span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>Preferred
+</span><span id="__span-60-3"><a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a>Maximum
+</span></code></pre></div>
+<hr />
+<h3 id="via-style">Via Style</h3>
+<p>Dimensiones de las vías.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>Routing Via Style
+</span></code></pre></div>
+<p>Incluye:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>Via Diameter
+</span><span id="__span-62-2"><a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>Hole Size
+</span></code></pre></div>
+<blockquote>
+<p>[!IMPORTANT]
+Configura estos valores según las capacidades reales del fabricante.</p>
+</blockquote>
+<hr />
+<h1 id="21-importar-reglas">21. Importar reglas</h1>
+<p>Si ya dispones de un archivo de reglas:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>*.rul
+</span></code></pre></div>
+<p>en proyectos que utilizan el editor tradicional:</p>
+<ol>
+<li>abre:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Design → Rules
+</span></code></pre></div>
+<ol>
+<li>haz clic derecho en el árbol de reglas;</li>
+<li>selecciona:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>Import Rules
+</span></code></pre></div>
+<ol>
+<li>selecciona el archivo <code>.rul</code>;</li>
+<li>importa las reglas necesarias;</li>
+<li>revisa sus valores y prioridades.</li>
+</ol>
+<p><img src="../recursos/imgs/altium_import_rules.png" alt="Importación de reglas RUL" width="650"></p>
+<p>No utilices reglas importadas sin comprobar que correspondan con tu fabricante y proyecto.</p>
+<hr />
+<h1 id="22-routing">22. Routing</h1>
+<p>Para crear físicamente las conexiones utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>Route → Interactive Routing
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_interactive_routing.png" alt="Interactive Routing" width="750"></p>
+<p>Procedimiento:</p>
+<ol>
+<li>inicia Interactive Routing;</li>
+<li>haz clic en un pad;</li>
+<li>sigue la Connection Line;</li>
+<li>coloca segmentos;</li>
+<li>termina sobre el pad destino.</li>
+</ol>
+<p>Una vez completada correctamente la conexión, la Connection Line desaparecerá.</p>
+<hr />
+<h2 id="herramientas-durante-routing">Herramientas durante Routing</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>Shift + Space → cambiar estilo de esquina
+</span><span id="__span-67-2"><a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a>Shift + R → cambiar modo de obstáculos
+</span><span id="__span-67-3"><a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a>Tab → opciones de Routing
+</span><span id="__span-67-4"><a id="__codelineno-67-4" name="__codelineno-67-4" href="#__codelineno-67-4"></a>Backspace → eliminar último segmento
+</span></code></pre></div>
+<p>Los modos de resolución de obstáculos incluyen opciones como:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>Walkaround
+</span><span id="__span-68-2"><a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a>Push
+</span><span id="__span-68-3"><a id="__codelineno-68-3" name="__codelineno-68-3" href="#__codelineno-68-3"></a>Ignore
+</span></code></pre></div>
+<p>Para comenzar resulta recomendable utilizar:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>Walkaround
+</span></code></pre></div>
+<hr />
+<h1 id="23-cambio-de-capa-y-vias">23. Cambio de capa y vías</h1>
+<p>Cuando una pista debe pasar de:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>Top Layer
+</span></code></pre></div>
+<p>a:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>Bottom Layer
+</span></code></pre></div>
+<p>es necesario insertar una:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>Via
+</span></code></pre></div>
+<p>Durante Interactive Routing puedes cambiar a otra capa disponible y Altium insertará automáticamente una vía.</p>
+<p><img src="../recursos/imgs/altium_routing_change_layer.png" alt="Cambio de capa durante Routing" width="700"></p>
+<p>Una vía contiene principalmente:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>Diameter
+</span><span id="__span-73-2"><a id="__codelineno-73-2" name="__codelineno-73-2" href="#__codelineno-73-2"></a>Hole Size
+</span></code></pre></div>
+<p>y sus dimensiones deben cumplir las reglas del fabricante.</p>
+<hr />
+<h1 id="24-polygon-pours-y-planos-de-gnd">24. Polygon Pours y planos de GND</h1>
+<p>Un <code>Polygon Pour</code> permite crear grandes regiones de cobre.</p>
+<p>Se utiliza habitualmente para:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>GND
+</span></code></pre></div>
+<p>Para crear uno:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-75-1"><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>Place → Polygon Pour
+</span></code></pre></div>
+<ol>
+<li>selecciona la capa;</li>
+<li>asigna:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-76-1"><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>Net = GND
+</span></code></pre></div>
+<ol>
+<li>dibuja el perímetro;</li>
+<li>finaliza el polígono.</li>
+</ol>
+<p><img src="../recursos/imgs/altium_polygon_pour_gnd.png" alt="Polygon Pour conectado a GND" width="750"></p>
+<p>Después de modificar la PCB ejecuta:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>Tools → Polygon Pours → Repour All
+</span></code></pre></div>
+<p>para recalcular los polígonos.</p>
+<p>Los polígonos respetarán automáticamente las reglas de Clearance.</p>
+<hr />
+<h1 id="25-auto-route">25. Auto Route</h1>
+<p>Altium incluye:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-78-1"><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>Route → Auto Route
+</span></code></pre></div>
+<p>para intentar rutear automáticamente el PCB.</p>
+<p>Puede ser útil para experimentar o estudiar posibles rutas, pero no sustituye un buen placement ni una revisión manual.</p>
+<p>Antes de utilizarlo deben estar correctamente configurados:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-79-1"><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>Board Shape
+</span><span id="__span-79-2"><a id="__codelineno-79-2" name="__codelineno-79-2" href="#__codelineno-79-2"></a>Layers
+</span><span id="__span-79-3"><a id="__codelineno-79-3" name="__codelineno-79-3" href="#__codelineno-79-3"></a>Placement
+</span><span id="__span-79-4"><a id="__codelineno-79-4" name="__codelineno-79-4" href="#__codelineno-79-4"></a>Clearance
+</span><span id="__span-79-5"><a id="__codelineno-79-5" name="__codelineno-79-5" href="#__codelineno-79-5"></a>Width
+</span><span id="__span-79-6"><a id="__codelineno-79-6" name="__codelineno-79-6" href="#__codelineno-79-6"></a>Via Style
+</span></code></pre></div>
+<p>Para aprender diseño PCB es preferible comenzar utilizando <strong>Interactive Routing manual</strong>.</p>
+<hr />
+<h1 id="26-drc-y-revision-final">26. DRC y revisión final</h1>
+<p>Antes de fabricar ejecuta primero:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-80-1"><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>Tools → Polygon Pours → Repour All
+</span></code></pre></div>
+<p>y después:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-81-1"><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>Tools → Design Rule Check
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_design_rule_checker.png" alt="Design Rule Checker" width="850"></p>
+<p>Ejecuta:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-82-1"><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>Run Design Rule Check
+</span></code></pre></div>
+<p>Revisa los errores desde:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-83-1"><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>View → Panels → PCB Rules And Violations
+</span></code></pre></div>
+<p>o desde:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-84-1"><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>Messages
+</span></code></pre></div>
+<hr />
+<h2 id="problemas-comunes">Problemas comunes</h2>
+<h3 id="clearance-constraint">Clearance Constraint</h3>
+<p>Dos objetos están demasiado cerca.</p>
+<h3 id="width-constraint">Width Constraint</h3>
+<p>Una pista utiliza un ancho fuera de las reglas.</p>
+<h3 id="short-circuit-constraint">Short-Circuit Constraint</h3>
+<p>Dos Nets diferentes están eléctricamente conectadas.</p>
+<h3 id="un-routed-net">Un-Routed Net</h3>
+<p>Existe una conexión pendiente.</p>
+<h3 id="silk-to-solder-mask">Silk to Solder Mask</h3>
+<p>Texto o serigrafía demasiado cerca de un pad.</p>
+<p>No reduzcas o desactives reglas únicamente para eliminar errores.</p>
+<p>Corrige primero la causa.</p>
+<hr />
+<h1 id="27-vista-3d">27. Vista 3D</h1>
+<p>Para visualizar la PCB en tres dimensiones utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-85-1"><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>3
+</span></code></pre></div>
+<p>Para volver a 2D:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-86-1"><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>2
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_final_3d_view.png" alt="Vista 3D final de la PCB" width="850"></p>
+<p>Utiliza esta vista para comprobar:</p>
+<ul>
+<li>orientación;</li>
+<li>conectores;</li>
+<li>alturas;</li>
+<li>componentes inferiores;</li>
+<li>agujeros;</li>
+<li>interferencias mecánicas.</li>
+</ul>
+<p>Un componente puede funcionar correctamente en el PCB aunque no tenga modelo 3D, pero no podrás realizar una revisión mecánica completa.</p>
+<hr />
+<h1 id="28-gerber-y-archivos-de-perforacion">28. Gerber y archivos de perforación</h1>
+<p>Una vez que:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>DRC = correcto
+</span></code></pre></div>
+<p>y la PCB ha sido revisada, pueden generarse los archivos de fabricación.</p>
+<hr />
+<h2 id="gerber">Gerber</h2>
+<p>Utiliza:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-88-1"><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>File → Fabrication Outputs → Gerber Files
+</span></code></pre></div>
+<p>o:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-89-1"><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>File → Fabrication Outputs → Gerber X2 Files
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_gerber_setup.png" alt="Configuración de Gerber" width="850"></p>
+<p>Para una PCB típica de dos capas normalmente se generan:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-90-1"><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>Top Copper
+</span><span id="__span-90-2"><a id="__codelineno-90-2" name="__codelineno-90-2" href="#__codelineno-90-2"></a>Bottom Copper
+</span><span id="__span-90-3"><a id="__codelineno-90-3" name="__codelineno-90-3" href="#__codelineno-90-3"></a>Top Solder
+</span><span id="__span-90-4"><a id="__codelineno-90-4" name="__codelineno-90-4" href="#__codelineno-90-4"></a>Bottom Solder
+</span><span id="__span-90-5"><a id="__codelineno-90-5" name="__codelineno-90-5" href="#__codelineno-90-5"></a>Top Overlay
+</span><span id="__span-90-6"><a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a>Bottom Overlay
+</span><span id="__span-90-7"><a id="__codelineno-90-7" name="__codelineno-90-7" href="#__codelineno-90-7"></a>Board Outline
+</span></code></pre></div>
+<p>Las capas:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>Top Paste
+</span><span id="__span-91-2"><a id="__codelineno-91-2" name="__codelineno-91-2" href="#__codelineno-91-2"></a>Bottom Paste
+</span></code></pre></div>
+<p>se utilizan principalmente para fabricar stencils de ensamblaje SMD.</p>
+<p>Consulta siempre qué formato solicita el fabricante.</p>
+<hr />
+<h2 id="nc-drill">NC Drill</h2>
+<p>Los archivos de perforación se generan mediante:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>File → Fabrication Outputs → NC Drill Files
+</span></code></pre></div>
+<p><img src="../recursos/imgs/altium_nc_drill_setup.png" alt="Configuración de NC Drill" width="800"></p>
+<p>Incluyen información sobre:</p>
+<ul>
+<li>vias;</li>
+<li>pads through-hole;</li>
+<li>mounting holes;</li>
+<li>perforaciones.</li>
+</ul>
+<p>Comprueba que Gerber y NC Drill utilicen:</p>
+<ul>
+<li>unidades compatibles;</li>
+<li>misma referencia de coordenadas;</li>
+<li>mismo origen.</li>
+</ul>
+<hr />
+<h2 id="output-job">Output Job</h2>
+<p>Para proyectos que generarás varias veces es recomendable utilizar un:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-93-1"><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>*.OutJob
+</span></code></pre></div>
+<p>y centralizar dentro de él:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>Gerber
+</span><span id="__span-94-2"><a id="__codelineno-94-2" name="__codelineno-94-2" href="#__codelineno-94-2"></a>NC Drill
+</span><span id="__span-94-3"><a id="__codelineno-94-3" name="__codelineno-94-3" href="#__codelineno-94-3"></a>DRC
+</span></code></pre></div>
+<p>Esto evita tener que configurar las salidas manualmente cada vez.</p>
+<hr />
+<h2 id="verificar-antes-de-enviar">Verificar antes de enviar</h2>
+<p>Después de generar los archivos abre los Gerbers y archivos de perforación en un visor CAM.</p>
+<p>Comprueba:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>cobre
+</span><span id="__span-95-2"><a id="__codelineno-95-2" name="__codelineno-95-2" href="#__codelineno-95-2"></a>máscara
+</span><span id="__span-95-3"><a id="__codelineno-95-3" name="__codelineno-95-3" href="#__codelineno-95-3"></a>serigrafía
+</span><span id="__span-95-4"><a id="__codelineno-95-4" name="__codelineno-95-4" href="#__codelineno-95-4"></a>contorno
+</span><span id="__span-95-5"><a id="__codelineno-95-5" name="__codelineno-95-5" href="#__codelineno-95-5"></a>agujeros
+</span></code></pre></div>
+<p>especialmente que los taladros coincidan exactamente con pads y vías.</p>
+<hr />
+<h1 id="29-flujo-general-recomendado">29. Flujo general recomendado</h1>
+<p>El proceso esencial de trabajo en Altium puede resumirse como:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-96-1"><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>CREAR PROYECTO
+</span><span id="__span-96-2"><a id="__codelineno-96-2" name="__codelineno-96-2" href="#__codelineno-96-2"></a>      ↓
+</span><span id="__span-96-3"><a id="__codelineno-96-3" name="__codelineno-96-3" href="#__codelineno-96-3"></a>CREAR ESQUEMÁTICO
+</span><span id="__span-96-4"><a id="__codelineno-96-4" name="__codelineno-96-4" href="#__codelineno-96-4"></a>      ↓
+</span><span id="__span-96-5"><a id="__codelineno-96-5" name="__codelineno-96-5" href="#__codelineno-96-5"></a>IMPORTAR LIBRERÍAS NECESARIAS
+</span><span id="__span-96-6"><a id="__codelineno-96-6" name="__codelineno-96-6" href="#__codelineno-96-6"></a>      ↓
+</span><span id="__span-96-7"><a id="__codelineno-96-7" name="__codelineno-96-7" href="#__codelineno-96-7"></a>COLOCAR COMPONENTES
+</span><span id="__span-96-8"><a id="__codelineno-96-8" name="__codelineno-96-8" href="#__codelineno-96-8"></a>      ↓
+</span><span id="__span-96-9"><a id="__codelineno-96-9" name="__codelineno-96-9" href="#__codelineno-96-9"></a>CONECTAR CON WIRES
+</span><span id="__span-96-10"><a id="__codelineno-96-10" name="__codelineno-96-10" href="#__codelineno-96-10"></a>      ↓
+</span><span id="__span-96-11"><a id="__codelineno-96-11" name="__codelineno-96-11" href="#__codelineno-96-11"></a>NET LABELS / POWER PORTS
+</span><span id="__span-96-12"><a id="__codelineno-96-12" name="__codelineno-96-12" href="#__codelineno-96-12"></a>      ↓
+</span><span id="__span-96-13"><a id="__codelineno-96-13" name="__codelineno-96-13" href="#__codelineno-96-13"></a>ANOTAR COMPONENTES
+</span><span id="__span-96-14"><a id="__codelineno-96-14" name="__codelineno-96-14" href="#__codelineno-96-14"></a>      ↓
+</span><span id="__span-96-15"><a id="__codelineno-96-15" name="__codelineno-96-15" href="#__codelineno-96-15"></a>VALIDATE PCB PROJECT
+</span><span id="__span-96-16"><a id="__codelineno-96-16" name="__codelineno-96-16" href="#__codelineno-96-16"></a>      ↓
+</span><span id="__span-96-17"><a id="__codelineno-96-17" name="__codelineno-96-17" href="#__codelineno-96-17"></a>COMPROBAR FOOTPRINTS
+</span><span id="__span-96-18"><a id="__codelineno-96-18" name="__codelineno-96-18" href="#__codelineno-96-18"></a>      ↓
+</span><span id="__span-96-19"><a id="__codelineno-96-19" name="__codelineno-96-19" href="#__codelineno-96-19"></a>UPDATE PCB DOCUMENT
+</span><span id="__span-96-20"><a id="__codelineno-96-20" name="__codelineno-96-20" href="#__codelineno-96-20"></a>      ↓
+</span><span id="__span-96-21"><a id="__codelineno-96-21" name="__codelineno-96-21" href="#__codelineno-96-21"></a>VALIDATE CHANGES
+</span><span id="__span-96-22"><a id="__codelineno-96-22" name="__codelineno-96-22" href="#__codelineno-96-22"></a>      ↓
+</span><span id="__span-96-23"><a id="__codelineno-96-23" name="__codelineno-96-23" href="#__codelineno-96-23"></a>EXECUTE CHANGES
+</span><span id="__span-96-24"><a id="__codelineno-96-24" name="__codelineno-96-24" href="#__codelineno-96-24"></a>      ↓
+</span><span id="__span-96-25"><a id="__codelineno-96-25" name="__codelineno-96-25" href="#__codelineno-96-25"></a>DEFINIR BOARD SHAPE
+</span><span id="__span-96-26"><a id="__codelineno-96-26" name="__codelineno-96-26" href="#__codelineno-96-26"></a>      ↓
+</span><span id="__span-96-27"><a id="__codelineno-96-27" name="__codelineno-96-27" href="#__codelineno-96-27"></a>CONFIGURAR GRID Y CAPAS
+</span><span id="__span-96-28"><a id="__codelineno-96-28" name="__codelineno-96-28" href="#__codelineno-96-28"></a>      ↓
+</span><span id="__span-96-29"><a id="__codelineno-96-29" name="__codelineno-96-29" href="#__codelineno-96-29"></a>CONFIGURAR / IMPORTAR RULES
+</span><span id="__span-96-30"><a id="__codelineno-96-30" name="__codelineno-96-30" href="#__codelineno-96-30"></a>      ↓
+</span><span id="__span-96-31"><a id="__codelineno-96-31" name="__codelineno-96-31" href="#__codelineno-96-31"></a>PLACEMENT
+</span><span id="__span-96-32"><a id="__codelineno-96-32" name="__codelineno-96-32" href="#__codelineno-96-32"></a>      ↓
+</span><span id="__span-96-33"><a id="__codelineno-96-33" name="__codelineno-96-33" href="#__codelineno-96-33"></a>INTERACTIVE ROUTING
+</span><span id="__span-96-34"><a id="__codelineno-96-34" name="__codelineno-96-34" href="#__codelineno-96-34"></a>      ↓
+</span><span id="__span-96-35"><a id="__codelineno-96-35" name="__codelineno-96-35" href="#__codelineno-96-35"></a>VIAS
+</span><span id="__span-96-36"><a id="__codelineno-96-36" name="__codelineno-96-36" href="#__codelineno-96-36"></a>      ↓
+</span><span id="__span-96-37"><a id="__codelineno-96-37" name="__codelineno-96-37" href="#__codelineno-96-37"></a>POLYGON POUR GND
+</span><span id="__span-96-38"><a id="__codelineno-96-38" name="__codelineno-96-38" href="#__codelineno-96-38"></a>      ↓
+</span><span id="__span-96-39"><a id="__codelineno-96-39" name="__codelineno-96-39" href="#__codelineno-96-39"></a>REPOUR ALL
+</span><span id="__span-96-40"><a id="__codelineno-96-40" name="__codelineno-96-40" href="#__codelineno-96-40"></a>      ↓
+</span><span id="__span-96-41"><a id="__codelineno-96-41" name="__codelineno-96-41" href="#__codelineno-96-41"></a>DRC
+</span><span id="__span-96-42"><a id="__codelineno-96-42" name="__codelineno-96-42" href="#__codelineno-96-42"></a>      ↓
+</span><span id="__span-96-43"><a id="__codelineno-96-43" name="__codelineno-96-43" href="#__codelineno-96-43"></a>REVISIÓN 2D / 3D
+</span><span id="__span-96-44"><a id="__codelineno-96-44" name="__codelineno-96-44" href="#__codelineno-96-44"></a>      ↓
+</span><span id="__span-96-45"><a id="__codelineno-96-45" name="__codelineno-96-45" href="#__codelineno-96-45"></a>GENERAR GERBER
+</span><span id="__span-96-46"><a id="__codelineno-96-46" name="__codelineno-96-46" href="#__codelineno-96-46"></a>      ↓
+</span><span id="__span-96-47"><a id="__codelineno-96-47" name="__codelineno-96-47" href="#__codelineno-96-47"></a>GENERAR NC DRILL
+</span><span id="__span-96-48"><a id="__codelineno-96-48" name="__codelineno-96-48" href="#__codelineno-96-48"></a>      ↓
+</span><span id="__span-96-49"><a id="__codelineno-96-49" name="__codelineno-96-49" href="#__codelineno-96-49"></a>VERIFICAR ARCHIVOS
+</span><span id="__span-96-50"><a id="__codelineno-96-50" name="__codelineno-96-50" href="#__codelineno-96-50"></a>      ↓
+</span><span id="__span-96-51"><a id="__codelineno-96-51" name="__codelineno-96-51" href="#__codelineno-96-51"></a>FABRICAR
+</span></code></pre></div>
+<hr />
+<h1 id="herramientas-y-atajos-que-conviene-recordar">Herramientas y atajos que conviene recordar</h1>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Esc</code></td>
+<td>Cancelar o salir de una herramienta</td>
+</tr>
+<tr>
+<td><code>Tab</code></td>
+<td>Modificar propiedades durante una operación</td>
+</tr>
+<tr>
+<td><code>Space</code></td>
+<td>Rotar objeto</td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td>Cambiar Grid</td>
+</tr>
+<tr>
+<td><code>Q</code></td>
+<td>Cambiar unidades mm/mil en PCB</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Board Planning Mode</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>2D PCB Mode</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>3D PCB Mode</td>
+</tr>
+<tr>
+<td><code>Shift + S</code></td>
+<td>Single Layer Mode</td>
+</tr>
+<tr>
+<td><code>Shift + Space</code></td>
+<td>Cambiar estilo de esquina durante Routing</td>
+</tr>
+<tr>
+<td><code>Shift + R</code></td>
+<td>Cambiar modo de resolución de obstáculos</td>
+</tr>
+<tr>
+<td><code>Backspace</code></td>
+<td>Eliminar último segmento durante Routing</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>Cambiar componente entre Top y Bottom durante movimiento</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="herramientas-principales-que-debes-conocer">Herramientas principales que debes conocer</h1>
+<h2 id="esquematico">Esquemático</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-97-1"><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>Components
+</span><span id="__span-97-2"><a id="__codelineno-97-2" name="__codelineno-97-2" href="#__codelineno-97-2"></a>Properties
+</span><span id="__span-97-3"><a id="__codelineno-97-3" name="__codelineno-97-3" href="#__codelineno-97-3"></a>Wire
+</span><span id="__span-97-4"><a id="__codelineno-97-4" name="__codelineno-97-4" href="#__codelineno-97-4"></a>Net Label
+</span><span id="__span-97-5"><a id="__codelineno-97-5" name="__codelineno-97-5" href="#__codelineno-97-5"></a>Port
+</span><span id="__span-97-6"><a id="__codelineno-97-6" name="__codelineno-97-6" href="#__codelineno-97-6"></a>Power Port
+</span><span id="__span-97-7"><a id="__codelineno-97-7" name="__codelineno-97-7" href="#__codelineno-97-7"></a>Annotate Schematics
+</span><span id="__span-97-8"><a id="__codelineno-97-8" name="__codelineno-97-8" href="#__codelineno-97-8"></a>Validate PCB Project
+</span><span id="__span-97-9"><a id="__codelineno-97-9" name="__codelineno-97-9" href="#__codelineno-97-9"></a>Messages
+</span></code></pre></div>
+<h2 id="pcb">PCB</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-98-1"><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>Update PCB Document
+</span><span id="__span-98-2"><a id="__codelineno-98-2" name="__codelineno-98-2" href="#__codelineno-98-2"></a>Engineering Change Order
+</span><span id="__span-98-3"><a id="__codelineno-98-3" name="__codelineno-98-3" href="#__codelineno-98-3"></a>Board Shape
+</span><span id="__span-98-4"><a id="__codelineno-98-4" name="__codelineno-98-4" href="#__codelineno-98-4"></a>Origin
+</span><span id="__span-98-5"><a id="__codelineno-98-5" name="__codelineno-98-5" href="#__codelineno-98-5"></a>Grid
+</span><span id="__span-98-6"><a id="__codelineno-98-6" name="__codelineno-98-6" href="#__codelineno-98-6"></a>View Configuration
+</span><span id="__span-98-7"><a id="__codelineno-98-7" name="__codelineno-98-7" href="#__codelineno-98-7"></a>Layer Stack Manager
+</span><span id="__span-98-8"><a id="__codelineno-98-8" name="__codelineno-98-8" href="#__codelineno-98-8"></a>Design Rules / Constraint Manager
+</span><span id="__span-98-9"><a id="__codelineno-98-9" name="__codelineno-98-9" href="#__codelineno-98-9"></a>Interactive Routing
+</span><span id="__span-98-10"><a id="__codelineno-98-10" name="__codelineno-98-10" href="#__codelineno-98-10"></a>Via
+</span><span id="__span-98-11"><a id="__codelineno-98-11" name="__codelineno-98-11" href="#__codelineno-98-11"></a>Polygon Pour
+</span><span id="__span-98-12"><a id="__codelineno-98-12" name="__codelineno-98-12" href="#__codelineno-98-12"></a>Repour All
+</span><span id="__span-98-13"><a id="__codelineno-98-13" name="__codelineno-98-13" href="#__codelineno-98-13"></a>Design Rule Check
+</span><span id="__span-98-14"><a id="__codelineno-98-14" name="__codelineno-98-14" href="#__codelineno-98-14"></a>3D View
+</span></code></pre></div>
+<h2 id="fabricacion">Fabricación</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-99-1"><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>Gerber
+</span><span id="__span-99-2"><a id="__codelineno-99-2" name="__codelineno-99-2" href="#__codelineno-99-2"></a>Gerber X2
+</span><span id="__span-99-3"><a id="__codelineno-99-3" name="__codelineno-99-3" href="#__codelineno-99-3"></a>NC Drill
+</span><span id="__span-99-4"><a id="__codelineno-99-4" name="__codelineno-99-4" href="#__codelineno-99-4"></a>OutJob
+</span><span id="__span-99-5"><a id="__codelineno-99-5" name="__codelineno-99-5" href="#__codelineno-99-5"></a>CAM Viewer
+</span></code></pre></div>
+<p>Conocer estas herramientas y comprender cómo se relacionan entre sí es suficiente para desarrollar la mayor parte de los proyectos PCB básicos e intermedios en Altium Designer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips", "navigation.tabs", "navigation.top", "toc.integrate"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
