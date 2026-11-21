@@ -16,3 +16,4 @@ Descubre las diferentes secciones del portafolio:
 [<i class="fa-solid fa-gear"></i> Aplicación con MonoFab](Roland MonoFab.md){ .md-button .md-button }
 [<i class="fa-solid fa-microchip"></i> Simulación en Multisim](Doc Multisim.md){ .md-button .md-button }
 [<i class="fa-solid fa-microchip"></i> Documentación en Altium](Doc Altium.md){ .md-button .md-button }
+[<i class="fa-solid fa-gear"></i> Aplicación con MonoFab](Doc Soldaduras.md){ .md-button .md-button }
