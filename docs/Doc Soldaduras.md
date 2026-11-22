@@ -1,4 +1,3 @@
-
 # Guía Completa de Técnicas de Soldadura Electrónica (THT y SMD)
 
 A continuación, se presenta la documentación técnica detallada para la correcta preparación, ejecución e inspección de uniones soldadas en circuitos impresos (PCBs), diseñada paso a paso para principiantes utilizando como caso práctico el ensamblaje de un módulo **UNIT Pulsar Nano C6** y una PCB personalizada.
@@ -12,8 +11,9 @@ A continuación, se presenta la documentación técnica detallada para la correc
 4. [Técnica de Soldadura Superficial (SMD) Paso a Paso](#4-técnica-de-soldadura-superficial-smd-paso-a-paso)
 5. [Técnica de Soldadura de Inserción (Through-Hole / THT) Paso a Paso](#5-técnica-de-soldadura-de-inserción-through-hole--tht-paso-a-paso)
 6. [Inspección Óptica, Diagnóstico de Defectos y Pruebas Eléctricas](#6-inspección-óptica-diagnóstico-de-defectos-y-pruebas-eléctricas)
-7. [Recomendaciones de Seguridad y Mantenimiento del Equipo](#7-recomendaciones-de-seguridad-y-mantenimiento-del-equipo)
-8. [Galería del Ensamblaje Final](#8-galería-del-ensamblaje-final)
+7. [Evidencia en Video del Proceso de Soldadura](#7-evidencia-en-video-del-proceso-de-soldadura)
+8. [Recomendaciones de Seguridad y Mantenimiento del Equipo](#8-recomendaciones-de-seguridad-y-mantenimiento-del-equipo)
+9. [Galería del Ensamblaje Final](#9-galería-del-ensamblaje-final)
 
 ---
 
@@ -175,7 +175,20 @@ Antes de energizar el circuito:
 
 ---
 
-## 7. Recomendaciones de Seguridad y Mantenimiento del Equipo
+## 7. Evidencia en Video del Proceso de Soldadura
+
+A continuación se muestra el registro en video de la técnica aplicada para soldar los pines (*pin headers*) del módulo **UNIT Pulsar Nano C6**, respetando los tiempos de calentamiento y la alineación mecánica:
+
+* **Soldadura de Pines en el Módulo Pulsar Nano C6:**
+  <video controls width="100%">
+    <source src="../recursos/imgs/soldadura_pines_pulsar.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de video.
+  </video>
+  <sub>Ejecución paso a paso de la soldadura Through-Hole en los pines del módulo UNIT Pulsar Nano C6, mostrando el calentamiento simultáneo del pad y el pin, la alimentación del estaño y la formación del menisco cóncavo.</sub>
+
+---
+
+## 8. Recomendaciones de Seguridad y Mantenimiento del Equipo
 
 > **Nota:** Se recomienda aplicar estrictamente las siguientes medidas de seguridad y cuidado del equipo durante cada sesión de soldadura:
 >
@@ -186,7 +199,7 @@ Antes de energizar el circuito:
 
 ---
 
-## 8. Galería del Ensamblaje Final
+## 9. Galería del Ensamblaje Final
 
 A continuación se muestra el resultado final de la integración entre el módulo **UNIT Pulsar Nano C6** y la PCB base tras completar las etapas de soldadura SMD, THT, limpieza e inspección:
 
