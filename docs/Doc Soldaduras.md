@@ -39,7 +39,7 @@ Antes de encender el cautín, es indispensable organizar una estación de trabaj
 Soldar en electrónica **no consiste en derretir estaño sobre la punta del cautín y "pegarlo" como si fuera silicón**. Una unión eléctrica y mecánicamente confiable se logra mediante un proceso metalúrgico llamado **mojabilidad (*wetting*)**, en el cual el estaño fundido reacciona superficialmente con el cobre limpio del *pad* y el terminal del componente formando una aleación intermetálica continua.
 
 <p align="center">
-  <img src="../recursos/imgs/diagrama_tecnica_tht.jpeg" alt="Diagrama transversal de la técnica correcta de soldadura Through-Hole" width="800"><br>
+  <img src="../recursos/imgs/diagrama_tecnica_tht.jpg" alt="Diagrama transversal de la técnica correcta de soldadura Through-Hole" width="800"><br>
   <sub>Figura: Corte transversal de una unión Through-Hole correcta: la punta del cautín a 45° calienta simultáneamente el pad de cobre y el pin del componente mientras el hilo de soldadura se alimenta desde el lado opuesto.</sub>
 </p>
 
@@ -143,7 +143,7 @@ Los componentes de inserción (*Through-Hole Technology*), como tiras de pines (
 Toda placa soldada debe someterse a una **inspección óptica con lupa** y a una **verificación eléctrica con multímetro** antes de conectarla a una fuente de alimentación o puerto USB.
 
 <p align="center">
-  <img src="../recursos/imgs/comparativa_juntas_soldadura.jpeg" alt="Comparativa visual entre una junta ideal y los 4 defectos comunes de soldadura" width="800"><br>
+  <img src="../recursos/imgs/comparativa_juntas_soldadura.jpg" alt="Comparativa visual entre una junta ideal y los 4 defectos comunes de soldadura" width="800"><br>
   <sub>Figura: Guía visual de diagnóstico comparando el perfil transversal de una junta ideal frente a los cuatro errores más frecuentes en soldadura electrónica.</sub>
 </p>
 
