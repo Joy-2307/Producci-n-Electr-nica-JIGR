@@ -212,3 +212,12 @@ A continuación se muestra el resultado final de la integración entre el módul
   <img src="../recursos/imgs/ensamblaje_final_2.jpeg" alt="Vista en detalle del acoplamiento final en la PCB" width="500"><br>
   <sub>Figura: Vista en detalle del acoplamiento mecánico y eléctrico final listo para pruebas de firmware.</sub>
 </p>
+
+---
+
+Evidencias de mi primer trabajo de soldadura 
+
+<p align="center">
+  <img src="../recursos/imgs/PRIMERT.jpeg" alt="Vista en detalle del acoplamiento final en la PCB" width="500"><br>
+  <sub>Figura: Vista en detalle del acoplamiento mecánico y eléctrico final listo para pruebas de firmware.</sub>
+</p>
